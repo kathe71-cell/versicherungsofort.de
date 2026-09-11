@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>versicherungsofort.de – Versicherungsvergleich &amp; Ratgeber</title>
+    <link>https://versicherungsofort.de/</link>
+    <description>Unabhängiger Tarifvergleich, Rechner und Spartipps für Versicherungen in Deutschland.</description>
+    <language>de-DE</language>
+    <lastBuildDate>Mon, 07 Sep 2026 12:00:00 +0200</lastBuildDate>
+    <atom:link href="https://versicherungsofort.de/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Versicherungs-Check 2026: Bis zu 850 € Einsparpotenzial</title>
+      <link>https://versicherungsofort.de/</link>
+      <guid>https://versicherungsofort.de/#vergleich</guid>
+      <pubDate>Mon, 07 Sep 2026 10:00:00 +0200</pubDate>
+      <description>KFZ-, Haftpflicht- und Hausratversicherungen im Leistungs- und Beitragsvergleich.</description>
+    </item>
+  </channel>
+</rss>

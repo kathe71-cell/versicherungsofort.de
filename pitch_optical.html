@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>optical.de — Der transparente Kontaktlinsen-Preisvergleich</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: #f8fafc;
+      color: #0f172a;
+      -webkit-font-smoothing: antialiased;
+    }
+    .badge-tag {
+      background: #ecfdf5;
+      color: #065f46;
+      border: 1px solid #a7f3d0;
+    }
+    .card-shadow {
+      box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05), 0 1px 2px 0 rgba(0, 0, 0, 0.03);
+      transition: all 0.2s ease-in-out;
+    }
+    .card-shadow:hover {
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -2px rgba(0, 0, 0, 0.04);
+      transform: translateY(-2px);
+    }
+    @media print {
+      body { background: white !important; padding: 0 !important; }
+      .no-print { display: none !important; }
+      .card-shadow { box-shadow: none !important; border: 1px solid #cbd5e1 !important; }
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col justify-between">
+
+  <!-- TOP HEADER -->
+  <header class="bg-white border-b border-slate-200 sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <!-- LOGO -->
+      <div class="flex items-center space-x-3">
+        <div class="w-9 h-9 bg-slate-900 text-white rounded-lg flex items-center justify-center font-bold text-xl tracking-tighter">
+          <svg class="w-6 h-6 stroke-current" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+            <path stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+          </svg>
+        </div>
+        <span class="font-extrabold text-2xl tracking-tight text-slate-900">optical<span class="text-emerald-600">.de</span></span>
+      </div>
+
+      <!-- NAV LINKS -->
+      <nav class="hidden md:flex space-x-8 text-sm font-medium text-slate-600">
+        <a href="#vergleich" class="text-slate-900 font-semibold hover:text-emerald-600">Preisvergleich</a>
+        <a href="#decoder" class="hover:text-emerald-600 flex items-center gap-1.5">
+          <span>Eigenmarken-Decoder</span>
+          <span class="bg-amber-100 text-amber-900 text-[10px] font-bold px-1.5 py-0.5 rounded border border-amber-300">USP</span>
+        </a>
+        <a href="#tageslinsen" class="hover:text-emerald-600">Tageslinsen</a>
+        <a href="#monatslinsen" class="hover:text-emerald-600">Monatslinsen</a>
+        <a href="#pflegemittel" class="hover:text-emerald-600">Pflegemittel</a>
+      </nav>
+
+      <!-- CTA -->
+      <div class="flex items-center space-x-3">
+        <a href="#scanner" class="hidden sm:inline-flex items-center text-xs font-semibold text-slate-700 bg-slate-100 hover:bg-slate-200 px-3 py-2 rounded-md transition">
+          📷 Linsenpass scannen
+        </a>
+        <a href="#vergleich" class="bg-slate-900 hover:bg-slate-800 text-white font-medium text-xs px-4 py-2 rounded-md shadow-sm transition">
+          Linsen finden
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <main class="flex-grow">
+    <section class="py-12 md:py-16 bg-gradient-to-b from-slate-50 to-white border-b border-slate-200">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 text-center">
+        <div class="inline-flex items-center gap-2 bg-emerald-50 border border-emerald-200 text-emerald-800 text-xs font-semibold px-3 py-1 rounded-full mb-6">
+          <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+          Unabhängiger Preisvergleich & Optiker-Eigenmarken Decoder
+        </div>
+        <h1 class="text-4xl sm:text-5xl md:text-6xl font-black text-slate-900 tracking-tight leading-none mb-6">
+          Der transparente<br class="hidden sm:inline" /> Kontaktlinsen-Preisvergleich.
+        </h1>
+        <p class="text-base sm:text-lg text-slate-600 max-w-2xl mx-auto mb-10 leading-relaxed">
+          Vergleiche die Konditionen von über 20 zertifizierten Händlern. Finde den exakten Tagespreis für deine Werte und spare bis zu 60 % bei baugleichen Optiker-Eigenmarken.
+        </p>
+
+        <!-- PARAMETER SEARCH BOX -->
+        <div class="bg-white p-4 sm:p-6 rounded-2xl border border-slate-200 shadow-xl max-w-4xl mx-auto text-left">
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 mb-4">
+            <div>
+              <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">Sphäre / Stärke (SPH)</label>
+              <select class="w-full bg-slate-50 border border-slate-300 rounded-lg px-3 py-2.5 text-sm font-semibold text-slate-800 focus:ring-2 focus:ring-emerald-500 focus:outline-none">
+                <option>-2.50 dpt</option>
+                <option>-1.00 dpt</option>
+                <option>-1.50 dpt</option>
+                <option>-2.00 dpt</option>
+                <option>-3.00 dpt</option>
+                <option>+1.50 dpt</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">Basiskurve (BC)</label>
+              <select class="w-full bg-slate-50 border border-slate-300 rounded-lg px-3 py-2.5 text-sm font-semibold text-slate-800 focus:ring-2 focus:ring-emerald-500 focus:outline-none">
+                <option>8.6 mm</option>
+                <option>8.4 mm</option>
+                <option>8.5 mm</option>
+                <option>8.7 mm</option>
+                <option>8.8 mm</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">Durchmesser (DIA)</label>
+              <select class="w-full bg-slate-50 border border-slate-300 rounded-lg px-3 py-2.5 text-sm font-semibold text-slate-800 focus:ring-2 focus:ring-emerald-500 focus:outline-none">
+                <option>14.2 mm</option>
+                <option>14.0 mm</option>
+                <option>14.1 mm</option>
+                <option>14.4 mm</option>
+                <option>14.5 mm</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">Linsentyp</label>
+              <select class="w-full bg-slate-50 border border-slate-300 rounded-lg px-3 py-2.5 text-sm font-semibold text-slate-800 focus:ring-2 focus:ring-emerald-500 focus:outline-none">
+                <option>Monatslinsen</option>
+                <option>Tageslinsen</option>
+                <option>Torische Linsen</option>
+                <option>Multifokallinsen</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="flex flex-col sm:flex-row items-center justify-between gap-4 pt-2 border-t border-slate-100">
+            <span class="text-xs text-slate-500 flex items-center gap-1">
+              <svg class="w-4 h-4 text-emerald-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+              Inklusive automatischer Grundpreis-Berechnung (Preis pro Linse / Tag)
+            </span>
+            <button class="w-full sm:w-auto bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-sm px-6 py-3 rounded-lg shadow-md transition flex items-center justify-center gap-2">
+              <span>Bestpreise vergleichen</span>
+              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- USP HIGHLIGHT: EIGENMARKEN DECODER BANNER -->
+    <section id="decoder" class="py-10 bg-slate-900 text-white">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6">
+        <div class="flex flex-col md:flex-row items-center justify-between gap-6 bg-slate-800/80 p-6 rounded-xl border border-slate-700">
+          <div class="space-y-2">
+            <div class="inline-block bg-amber-400 text-slate-950 font-black text-[11px] uppercase tracking-wider px-2.5 py-0.5 rounded">
+              Exklusiver USP
+            </div>
+            <h3 class="text-xl sm:text-2xl font-bold">Der Optiker-Eigenmarken Cross-Decoder</h3>
+            <p class="text-slate-300 text-sm max-w-xl">
+              Optiker verkaufen Markenlinsen oft unter eigenem Namen mit bis zu 60 % Aufschlag. Gib den Namen deiner Optiker-Linse ein – wir zeigen dir das günstigere Original!
+            </p>
+          </div>
+          <div class="w-full md:w-auto flex-shrink-0">
+            <div class="bg-white/10 p-3 rounded-lg border border-white/20 flex items-center gap-3">
+              <span class="text-xs text-slate-300">z. B. <strong class="text-white">iWear Oxygen</strong></span>
+              <span class="text-emerald-400 font-bold text-sm">→ CooperVision Biofinity</span>
+              <span class="bg-emerald-500 text-slate-950 font-black text-xs px-2 py-1 rounded">-52%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED PRODUCTS MATRIX -->
+    <section class="py-12 max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="flex items-center justify-between mb-8">
+        <div>
+          <h2 class="text-2xl font-extrabold text-slate-900">Beliebte Kontaktlinsen im Vergleich</h2>
+          <p class="text-sm text-slate-500">Tagesaktuelle Bestpreise inklusive Versandkosten</p>
+        </div>
+        <span class="text-xs font-medium text-slate-500">Sortiert nach Tragekomfort & Ersparnis</span>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+        <!-- CARD 1 -->
+        <div class="bg-white rounded-xl border border-slate-200 p-5 card-shadow flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="badge-tag text-[11px] font-bold px-2 py-0.5 rounded-full">Monatslinse</span>
+              <span class="bg-amber-100 text-amber-900 font-bold text-xs px-2 py-0.5 rounded">0,36 € / Tag</span>
+            </div>
+            <div class="h-32 bg-slate-50 rounded-lg flex items-center justify-center p-4 mb-4 border border-slate-100">
+              <!-- Placeholder Box Visual -->
+              <div class="w-24 h-16 bg-gradient-to-r from-blue-600 to-teal-500 rounded text-white font-black text-xs flex items-center justify-center shadow">
+                Biofinity
+              </div>
+            </div>
+            <h3 class="font-bold text-lg text-slate-900">CooperVision Biofinity</h3>
+            <p class="text-xs text-slate-500 mb-2">6er Packung | Silikon-Hydrogel | Dk/t 160</p>
+            <div class="text-xs text-slate-600 mb-4 bg-slate-50 p-2 rounded">
+              <span>Baugleich zu: </span><strong class="text-slate-800">Apollo iWear Oxygen</strong>
+            </div>
+          </div>
+          <div>
+            <div class="flex items-baseline justify-between pt-3 border-t border-slate-100 mb-3">
+              <span class="text-xs text-slate-500">Günstigster Shop:</span>
+              <div class="text-right">
+                <span class="text-xs text-slate-400 line-through mr-1">42,00 €</span>
+                <span class="text-xl font-black text-emerald-600">19,90 € *</span>
+              </div>
+            </div>
+            <button class="w-full bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs py-2.5 rounded-lg transition">
+              Angebote vergleichen (5 Händler)
+            </button>
+          </div>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="bg-white rounded-xl border border-slate-200 p-5 card-shadow flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="badge-tag text-[11px] font-bold px-2 py-0.5 rounded-full">Tageslinse</span>
+              <span class="bg-amber-100 text-amber-900 font-bold text-xs px-2 py-0.5 rounded">0,78 € / Tag</span>
+            </div>
+            <div class="h-32 bg-slate-50 rounded-lg flex items-center justify-center p-4 mb-4 border border-slate-100">
+              <div class="w-24 h-16 bg-gradient-to-r from-cyan-500 to-blue-700 rounded text-white font-black text-xs flex items-center justify-center shadow">
+                1-Day Acuvue
+              </div>
+            </div>
+            <h3 class="font-bold text-lg text-slate-900">1-Day Acuvue Moist</h3>
+            <p class="text-xs text-slate-500 mb-2">30er Packung | Johnson & Johnson | UV-Schutz</p>
+            <div class="text-xs text-slate-600 mb-4 bg-slate-50 p-2 rounded">
+              <span>Hoher Tragekomfort bei trockenen Augen</span>
+            </div>
+          </div>
+          <div>
+            <div class="flex items-baseline justify-between pt-3 border-t border-slate-100 mb-3">
+              <span class="text-xs text-slate-500">Günstigster Shop:</span>
+              <div class="text-right">
+                <span class="text-xs text-slate-400 line-through mr-1">31,50 €</span>
+                <span class="text-xl font-black text-emerald-600">23,50 € *</span>
+              </div>
+            </div>
+            <button class="w-full bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs py-2.5 rounded-lg transition">
+              Angebote vergleichen (8 Händler)
+            </button>
+          </div>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="bg-white rounded-xl border border-slate-200 p-5 card-shadow flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="badge-tag text-[11px] font-bold px-2 py-0.5 rounded-full">Premium Tageslinse</span>
+              <span class="bg-amber-100 text-amber-900 font-bold text-xs px-2 py-0.5 rounded">0,93 € / Tag</span>
+            </div>
+            <div class="h-32 bg-slate-50 rounded-lg flex items-center justify-center p-4 mb-4 border border-slate-100">
+              <div class="w-24 h-16 bg-gradient-to-r from-emerald-600 to-teal-700 rounded text-white font-black text-xs flex items-center justify-center shadow">
+                Dailies Total 1
+              </div>
+            </div>
+            <h3 class="font-bold text-lg text-slate-900">Alcon Dailies Total 1</h3>
+            <p class="text-xs text-slate-500 mb-2">30er Packung | Wassergradient-Technologie</p>
+            <div class="text-xs text-slate-600 mb-4 bg-slate-50 p-2 rounded">
+              <span>Maximaler Sauerstoff-Transport</span>
+            </div>
+          </div>
+          <div>
+            <div class="flex items-baseline justify-between pt-3 border-t border-slate-100 mb-3">
+              <span class="text-xs text-slate-500">Günstigster Shop:</span>
+              <div class="text-right">
+                <span class="text-xs text-slate-400 line-through mr-1">36,00 €</span>
+                <span class="text-xl font-black text-emerald-600">27,90 € *</span>
+              </div>
+            </div>
+            <button class="w-full bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs py-2.5 rounded-lg transition">
+              Angebote vergleichen (6 Händler)
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- LIVE MERCHANT COMPARISON TABLE -->
+    <section id="vergleich" class="py-12 bg-slate-100/70 border-t border-slate-200">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6">
+        <div class="mb-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+          <div>
+            <h2 class="text-2xl font-extrabold text-slate-900">Live Händler-Vergleich: Biofinity (6er Pack)</h2>
+            <p class="text-xs text-slate-500">Tagesaktuelle Preise nach Prüfung der Versandkonditionen</p>
+          </div>
+          <span class="text-xs font-semibold text-slate-600 bg-white px-3 py-1.5 rounded-md border border-slate-200">
+            Letztes Preis-Update: Heute, 22:10 Uhr
+          </span>
+        </div>
+
+        <!-- TABLE -->
+        <div class="bg-white rounded-xl border border-slate-200 overflow-hidden shadow-sm">
+          <div class="overflow-x-auto">
+            <table class="w-full text-left border-collapse text-sm">
+              <thead>
+                <tr class="bg-slate-50 border-b border-slate-200 text-xs text-slate-600 uppercase font-bold tracking-wider">
+                  <th class="py-3.5 px-4">Anbieter / Händler</th>
+                  <th class="py-3.5 px-4">Bewertung</th>
+                  <th class="py-3.5 px-4">Preis / Packung</th>
+                  <th class="py-3.5 px-4">Versandkosten</th>
+                  <th class="py-3.5 px-4">Gesamtpreis</th>
+                  <th class="py-3.5 px-4 text-right">Aktion</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-slate-100">
+                
+                <tr class="hover:bg-slate-50/80 transition">
+                  <td class="py-4 px-4 font-bold text-slate-900 flex items-center gap-2">
+                    <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+                    Mister Spex
+                  </td>
+                  <td class="py-4 px-4 text-amber-500 font-bold text-xs">★★★★★ (4.8)</td>
+                  <td class="py-4 px-4 font-semibold text-slate-800">19,90 €</td>
+                  <td class="py-4 px-4 text-xs text-emerald-600 font-bold">Kostenlos</td>
+                  <td class="py-4 px-4 font-black text-emerald-600 text-base">19,90 € *</td>
+                  <td class="py-4 px-4 text-right">
+                    <a href="#" class="inline-block bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs px-4 py-2 rounded-md shadow-sm transition">
+                      Zum Shop *
+                    </a>
+                  </td>
+                </tr>
+
+                <tr class="hover:bg-slate-50/80 transition">
+                  <td class="py-4 px-4 font-bold text-slate-900 flex items-center gap-2">
+                    <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+                    Linsenplatz.de
+                  </td>
+                  <td class="py-4 px-4 text-amber-500 font-bold text-xs">★★★★★ (4.9)</td>
+                  <td class="py-4 px-4 font-semibold text-slate-800">20,49 €</td>
+                  <td class="py-4 px-4 text-xs text-emerald-600 font-bold">Kostenlos</td>
+                  <td class="py-4 px-4 font-bold text-slate-900">20,49 € *</td>
+                  <td class="py-4 px-4 text-right">
+                    <a href="#" class="inline-block bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs px-4 py-2 rounded-md shadow-sm transition">
+                      Zum Shop *
+                    </a>
+                  </td>
+                </tr>
+
+                <tr class="hover:bg-slate-50/80 transition">
+                  <td class="py-4 px-4 font-bold text-slate-900 flex items-center gap-2">
+                    <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+                    DocMorris
+                  </td>
+                  <td class="py-4 px-4 text-amber-500 font-bold text-xs">★★★★☆ (4.6)</td>
+                  <td class="py-4 px-4 font-semibold text-slate-800">21,90 €</td>
+                  <td class="py-4 px-4 text-xs text-slate-500">2,99 €</td>
+                  <td class="py-4 px-4 font-bold text-slate-900">24,89 € *</td>
+                  <td class="py-4 px-4 text-right">
+                    <a href="#" class="inline-block bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs px-4 py-2 rounded-md shadow-sm transition">
+                      Zum Shop *
+                    </a>
+                  </td>
+                </tr>
+
+                <tr class="hover:bg-slate-50/80 transition">
+                  <td class="py-4 px-4 font-bold text-slate-900 flex items-center gap-2">
+                    <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+                    Lensbest
+                  </td>
+                  <td class="py-4 px-4 text-amber-500 font-bold text-xs">★★★★☆ (4.5)</td>
+                  <td class="py-4 px-4 font-semibold text-slate-800">22,50 €</td>
+                  <td class="py-4 px-4 text-xs text-emerald-600 font-bold">Kostenlos</td>
+                  <td class="py-4 px-4 font-bold text-slate-900">22,50 € *</td>
+                  <td class="py-4 px-4 text-right">
+                    <a href="#" class="inline-block bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs px-4 py-2 rounded-md shadow-sm transition">
+                      Zum Shop *
+                    </a>
+                  </td>
+                </tr>
+
+              </tbody>
+            </table>
+          </div>
+          <div class="p-3 bg-slate-50 border-t border-slate-200 text-[11px] text-slate-500 text-center">
+            * Werbelink / Partnerlink. Preise inkl. MwSt. zzgl. etwaiger Versandkosten des Händlers. optical.de ist ein unabhängiges Vergleichsportal.
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-white border-t border-slate-200 py-8 text-xs text-slate-500">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div class="flex items-center gap-2">
+        <span class="font-bold text-slate-900">optical.de</span>
+        <span>© 2026 Alle Rechte vorbehalten.</span>
+      </div>
+      <div class="flex space-x-6 text-slate-600">
+        <a href="#" class="hover:underline">Impressum</a>
+        <a href="#" class="hover:underline">Datenschutz</a>
+        <a href="#" class="hover:underline">Affiliate-Hinweis</a>
+        <a href="#" class="hover:underline">Kontakt</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,18 @@
+# versicherungsofort.de
+
+> Das unabhängige deutsche Fachportal für Versicherungsvergleiche: KFZ-Versicherung, Privathaftpflicht, Hausrat, PKV & Zahnzusatz, Rechtsschutz und Berufsunfähigkeit (BU).
+
+## Kern-Ressourcen
+- [Startseite](https://versicherungsofort.de/): Tarifrechner, Sparpotenzial (bis zu 850 €/Jahr), Leistungsübersichten.
+- [KFZ-Versicherung](https://versicherungsofort.de/): SF-Klassen, Vollkasko vs. Teilkasko, Werkstattbindung & Deckungssummen.
+- [Haftpflicht & Hausrat](https://versicherungsofort.de/): Gefälligkeitsschäden, Unterversicherungsverzicht, grobe Fahrlässigkeit.
+- [Impressum](https://versicherungsofort.de/impressum): Vermittlerstatus nach § 34d GewO & Anbieterangaben nach § 5 DDG.
+
+## Gesetzliche Grundlagen
+- **VVG**: Versicherungsvertragsgesetz (Rechte und Pflichten von Versicherungsnehmer und Versicherer).
+- **Vermittlerstatus**: Unabhängige Vermittlung nach § 34d GewO mit Berufshaftpflichtversicherung.
+
+## Betreiber
+- Jens Kathe, Hansastraße 6, 34119 Kassel, Deutschland.
+- E-Mail: jens@kathe.org | Tel: +49 178 6652623.
+- Kleinunternehmer nach § 19 UStG.
