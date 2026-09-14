@@ -7,7 +7,7 @@ export default function SEOHead({
   keywords,
   canonical,
   ogType = "website",
-  ogImage = "https://versicherungsofort.de/og-image.jpg",
+  ogImage = "https://versicherungsofort.de/og-image.svg",
   structuredData 
 }) {
   const location = useLocation();
