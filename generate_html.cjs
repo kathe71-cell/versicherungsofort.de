@@ -494,7 +494,7 @@ function wrapHtml(title, description, content, slug = 'index', schemaJson = null
                 if (!cleanTitle) cleanTitle = 'Tarifvergleich';
                 var titleText = cleanTitle + '-Angebotsanfrage des Vergleichspartners';
                 for (var i = 0; i < iframes.length; i++) {
-                    if (!iframes[i].getAttribute('title') || iframes[i].getAttribute('title') === '' || iframes[i].getAttribute('title') === 'Tarifcheck24 Vergleichsrechner - Unabhängiger Tarifvergleich') {
+                    if (iframes[i].getAttribute('title') !== titleText) {
                         iframes[i].setAttribute('title', titleText);
                     }
                 }
