@@ -1899,6 +1899,7 @@ console.log("✓ Generated robots.txt");
 // --- 7. VERIFY VERCEL EXPORT CONFIG & PROJECT LINKING ---
 const vercelJson = {
     "version": 2,
+    "framework": null,
     "cleanUrls": true,
     "headers": [
         {
