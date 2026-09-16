@@ -90,11 +90,29 @@ export default function IframeLoader({ iframeId, scriptSrc }) {
     }
   }, [consentGiven, scriptSrc, iframeId, isLoading]);
 
-  // Monitor iframe content for cookie warnings
+  // Monitor iframe content for cookie warnings & enforce non-empty iframe title
   useEffect(() => {
     if (!scriptLoaded || !iframeId) return;
 
+    const enforceTitle = () => {
+      const container = document.getElementById(iframeId);
+      if (!container) return;
+      const ifr = container.querySelector('iframe') || (container.tagName === 'IFRAME' ? container : null);
+      if (ifr) {
+        const rawTitle = document.title ? document.title.split('-')[0].trim() : 'Tarifvergleich';
+        const cleanTitle = rawTitle.replace(/Vergleich\s*\d*/gi, '').trim() || 'Tarifvergleich';
+        const titleText = `${cleanTitle}-Angebotsanfrage des Vergleichspartners`;
+        if (ifr.getAttribute('title') !== titleText) {
+          ifr.setAttribute('title', titleText);
+          try { ifr.title = titleText; } catch(e) {}
+        }
+      }
+    };
+
+    const intervalId = setInterval(enforceTitle, 150);
+
     const observer = new MutationObserver(() => {
+      enforceTitle();
       const iframeElement = document.getElementById(iframeId);
       if (iframeElement) {
         const textContent = iframeElement.textContent || '';
@@ -107,10 +125,13 @@ export default function IframeLoader({ iframeId, scriptSrc }) {
 
     const iframeElement = document.getElementById(iframeId);
     if (iframeElement) {
-      observer.observe(iframeElement, { childList: true, subtree: true, characterData: true });
+      observer.observe(iframeElement, { childList: true, subtree: true, characterData: true, attributes: true });
     }
 
-    return () => observer.disconnect();
+    return () => {
+      clearInterval(intervalId);
+      observer.disconnect();
+    };
   }, [scriptLoaded, iframeId]);
   
   const openCookieSettings = () => {

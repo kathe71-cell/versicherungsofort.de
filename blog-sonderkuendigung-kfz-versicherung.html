@@ -459,20 +459,69 @@
     <script>
         lucide.createIcons();
         (function enforceIframeTitles() {
+            function getTitleText() {
+                var rawTitle = document.title ? document.title.split('-')[0].trim() : 'Tarifvergleich';
+                var cleanTitle = rawTitle.replace(/Vergleichs*d*/gi, '').trim();
+                if (!cleanTitle) cleanTitle = 'Tarifvergleich';
+                return cleanTitle + '-Angebotsanfrage des Vergleichspartners';
+            }
+
+            try {
+                var origSetAttr = HTMLIFrameElement.prototype.setAttribute;
+                HTMLIFrameElement.prototype.setAttribute = function(name, val) {
+                    if (name && String(name).toLowerCase() === 'title') {
+                        if (!val || String(val).trim() === '' || String(val).trim() === '""') {
+                            val = getTitleText();
+                        }
+                    }
+                    return origSetAttr.call(this, name, val);
+                };
+            } catch(e) {}
+
+            try {
+                var titleDesc = Object.getOwnPropertyDescriptor(HTMLIFrameElement.prototype, 'title');
+                if (titleDesc && titleDesc.set) {
+                    var origSet = titleDesc.set;
+                    Object.defineProperty(HTMLIFrameElement.prototype, 'title', {
+                        get: function() {
+                            var cur = titleDesc.get ? titleDesc.get.call(this) : this.getAttribute('title');
+                            return (cur && cur.trim()) ? cur : getTitleText();
+                        },
+                        set: function(val) {
+                            if (!val || String(val).trim() === '' || String(val).trim() === '""') {
+                                val = getTitleText();
+                            }
+                            origSet.call(this, val);
+                        },
+                        configurable: true,
+                        enumerable: true
+                    });
+                }
+            } catch(e) {}
+
             function updateTitles() {
                 var iframes = document.getElementsByTagName('iframe');
-                var rawTitle = document.title ? document.title.split('-')[0].trim() : 'Tarifvergleich';
-                var cleanTitle = rawTitle.replace(/Vergleichs*d*/i, '').trim();
-                if (!cleanTitle) cleanTitle = 'Tarifvergleich';
-                var titleText = cleanTitle + '-Angebotsanfrage des Vergleichspartners';
+                var titleText = getTitleText();
                 for (var i = 0; i < iframes.length; i++) {
-                    if (iframes[i].getAttribute('title') !== titleText) {
+                    var currentTitle = iframes[i].getAttribute('title');
+                    if (!currentTitle || currentTitle.trim() === '' || currentTitle.trim() === '""' || currentTitle !== titleText) {
                         iframes[i].setAttribute('title', titleText);
+                        try { iframes[i].title = titleText; } catch(e) {}
                     }
                 }
             }
+
             updateTitles();
-            setInterval(updateTitles, 500);
+            setInterval(updateTitles, 150);
+
+            if (typeof MutationObserver !== 'undefined') {
+                var obs = new MutationObserver(function() {
+                    updateTitles();
+                });
+                if (document.documentElement) {
+                    obs.observe(document.documentElement, { childList: true, subtree: true, attributes: true, attributeFilter: ['title'] });
+                }
+            }
         })();
     </script>
     
