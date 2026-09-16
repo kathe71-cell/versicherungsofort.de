@@ -61,7 +61,7 @@ const faqCategories = [
     faqs: [
       {
         question: "Wer kann sich privat krankenversichern?",
-        answer: "Selbständige, Freiberufler, Beamte und Angestellte mit einem Einkommen über der Versicherungspflichtgrenze (2025: 69.300 € brutto/Jahr) können in die private Krankenversicherung wechseln."
+        answer: "Selbständige, Freiberufler, Beamte und Angestellte mit einem Einkommen über der Versicherungspflichtgrenze (2026: 77.400 € brutto/Jahr) können in die private Krankenversicherung wechseln."
       },
       {
         question: "Kann ich von der PKV zurück in die GKV?",

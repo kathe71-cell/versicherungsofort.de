@@ -1,65 +1,50 @@
+import React from 'react';
 
 export default function PkvVsGkvGuide() {
   return (
-    <article>
-      <h1>PKV vs. GKV: Der ultimative Vergleich – Wann lohnt sich die Private Krankenversicherung?</h1>
-      <p>Die Wahl zwischen privater (PKV) und gesetzlicher Krankenversicherung (GKV) ist eine der wichtigsten und folgenreichsten finanziellen Entscheidungen im Berufsleben. Beide Systeme haben ihre Vor- und Nachteile – dieser umfassende Vergleich hilft Ihnen, die richtige Wahl für Ihre persönliche Situation zu treffen.</p>
+    <article className="prose prose-slate max-w-none">
+      <h1>PKV vs. GKV: Der Systemvergleich – Wann lohnt sich die Private Krankenversicherung?</h1>
+      <p>Die Wahl zwischen der privaten Krankenversicherung (PKV) und der gesetzlichen Krankenversicherung (GKV) ist eine der wichtigsten finanziellen Weichenstellungen im Berufsleben. Beide Systeme unterscheiden sich grundlegend in Finanzierung, Leistungsangebot und Beitragsberechnung im Alter.</p>
 
-      <h2>Das deutsche Krankenversicherungssystem im Überblick</h2>
-      <p>Deutschland hat eines der ältesten und umfassendsten Krankenversicherungssysteme der Welt. Das duale System aus gesetzlicher und privater Krankenversicherung bietet unterschiedliche Ansätze zur Absicherung im Krankheitsfall. Rund 73 Millionen Menschen sind in der GKV versichert, weitere 9 Millionen in der PKV.</p>
+      <h2>Das duale Krankenversicherungssystem im Überblick</h2>
+      <p>In Deutschland existiert ein duales Krankenversicherungssystem aus GKV und PKV. Rund 73 Millionen Menschen sind in der gesetzlichen Krankenversicherung abgesichert, während rund 9 Millionen Personen eine private Krankenvollversicherung nutzen. Während die GKV nach dem Solidaritätsprinzip organisiert ist, basiert die PKV auf dem Äquivalenzprinzip und der individuellen Risiko- und Tarifkalkulation.</p>
 
       <h2>Wer kann in die PKV wechseln?</h2>
-      <p>Nicht jeder kann frei zwischen GKV und PKV wählen. In die PKV wechseln können:</p>
+      <p>Der Zugang zur privaten Krankenversicherung ist gesetzlich geregelt. Eine Vollversicherung in der PKV steht folgenden Personengruppen offen:</p>
       <ul>
-        <li>Arbeitnehmer, deren Jahreseinkommen die Jahresarbeitsentgeltgrenze übersteigt (2025: 73.800 Euro brutto)</li>
-        <li>Selbstständige und Freiberufler (ohne Einkommensbeschränkung)</li>
-        <li>Beamte (erhalten staatliche Beihilfe und benötigen nur einen Restkostentarif)</li>
-        <li>Studenten unter bestimmten Voraussetzungen</li>
+        <li><strong>Angestellte:</strong> Wenn das regelmäßige Jahresarbeitsentgelt die allgemeine Versicherungspflichtgrenze (JAEG 2026: <strong>77.400 €</strong> brutto/Jahr bzw. 6.450 € brutto/Monat) übersteigt.</li>
+        <li><strong>Selbstständige &amp; Freiberufler:</strong> Unabhängig von der Höhe des Einkommens ab Beginn der selbstständigen Tätigkeit.</li>
+        <li><strong>Beamte &amp; Beihilfeberechtigte:</strong> Erhalten Beihilfe vom Dienstherrn (je nach Bundesland 50 % bis 80 %) und sichern nur die verbleibende Restkostenquote über eine PKV ab.</li>
+        <li><strong>Studierende:</strong> Können sich zu Studienbeginn von der Versicherungspflicht befreien lassen.</li>
       </ul>
 
-      <h2>Vorteile der privaten Krankenversicherung</h2>
-      <h3>Bessere Leistungen</h3>
-      <p>PKV-Versicherte genießen in der Regel einen deutlich umfassenderen Versicherungsschutz als gesetzlich Versicherte. Typische Leistungsvorteile:</p>
+      <h2>Vorteile &amp; Besonderheiten der privaten Krankenversicherung</h2>
+      <h3>Tariflich vereinbarte Leistungen</h3>
+      <p>Im Gegensatz zur GKV, deren Leistungskatalog gesetzlich definiert ist (§ 12 SGB V), bestimmt in der PKV der gewählte Vertrag den genauen Leistungsumfang. Typische Bausteine:</p>
       <ul>
-        <li>Chefarzt- oder Facharztbehandlung ohne lange Wartezeiten</li>
-        <li>Unterbringung im Ein- oder Zweibettzimmer bei Krankenhausaufenthalten</li>
-        <li>Zahnersatz mit hochwertigeren Materialien und ohne Eigenanteil</li>
-        <li>Heilpraktiker- und alternative Heilmethoden</li>
-        <li>Brillen und Kontaktlinsen in höheren Erstattungsbeträgen</li>
-        <li>Auslandskrankenversicherung oft bereits inklusive</li>
+        <li>Behandlung als Privatpatient im Krankenhaus (z.B. Ein- oder Zweibettzimmer, Chefarztbehandlung je nach Vereinbarung)</li>
+        <li>Hochwertige Zahnersatz-Erstattung (z.B. 80 % bis 100 % für Inlays, Implantate und Prophylaxe)</li>
+        <li>Erstattung von Heilpraktikerleistungen oder sehhilfen je nach Tarifbaustein</li>
+        <li>Garantierter Leistungsumfang ohne gesetzliche Kürzungen während der Vertragslaufzeit</li>
       </ul>
-      <h3>Beitragsvorteile für junge, gesunde Versicherungsnehmer</h3>
-      <p>Ein junger, gesunder Arbeitnehmer zahlt in der PKV oft deutlich weniger als in der GKV. Der GKV-Beitrag berechnet sich prozentual am Gehalt (ca. 14-16% inkl. Arbeitgeberanteil), während die PKV risikobasiert kalkuliert – Alter und Gesundheitszustand spielen eine entscheidende Rolle.</p>
+      <h3>Risiko- und altersbasierte Beitragskalkulation</h3>
+      <p>Der Beitrag in der PKV richtet sich nach dem Eintrittsalter, dem Gesundheitszustand bei Antragstellung und dem gewählten Leistungsumfang. Für junge, gesunde Angestellte mit hohem Einkommen liegt der Beitrag oft unter dem Höchstsatz der GKV.</p>
 
-      <h2>Nachteile der PKV – Was Sie wissen müssen</h2>
-      <h3>Beitragsentwicklung im Alter</h3>
-      <p>Der größte Nachteil der PKV ist die Beitragsentwicklung im Laufe des Lebens. Mit zunehmendem Alter steigen die Beiträge in der Regel deutlich an. Anders als in der GKV gibt es keinen Solidarausgleich – jeder zahlt entsprechend seinem individuellem Risiko. Ohne ausreichend angesparte Alterungsrückstellungen können PKV-Beiträge im Rentenalter zur erheblichen Belastung werden.</p>
-      <h3>Familienversicherung nicht möglich</h3>
-      <p>In der GKV können Ehepartner ohne eigenes Einkommen und Kinder kostenlos mitversichert werden. In der PKV muss jedes Familienmitglied einzeln versichert werden – das erhöht die Gesamtkosten für Familien erheblich.</p>
-      <h3>Rückkehr in die GKV ist schwierig</h3>
-      <p>Wer einmal in der PKV versichert ist, kommt nur unter bestimmten Umständen wieder in die GKV zurück. Ein Wechsel zurück ist in der Regel nur möglich, wenn das Einkommen dauerhaft unter die Jahresarbeitsentgeltgrenze fällt oder man arbeitslos wird.</p>
+      <h2>Herausforderungen &amp; Aspekte bei der Entscheidung</h2>
+      <h3>Beitragsentwicklung &amp; Beitragsberechnung im Alter</h3>
+      <p>Die Beitragsentwicklung in der PKV verläuft unabhängig vom Einkommen im Alter. Um Beitragsanpassungen abzufedern, bildet die PKV gesetzliche und tarifliche Alterungsrückstellungen. Zusätzlich entfällt ab dem 60. Lebensjahr der 10-%-Zuschlag, und Rentner können einen Beitragszuschuss der Rentenversicherung beantragen.</p>
+      <p>In der GKV zahlen versicherungspflichtige Rentner (KVdR) Beiträge auf ihre gesetzliche Rente. Freiwillig in der GKV versicherte Rentner zahlen hingegen Beiträge auf alle Einkünfte (inklusive Betriebsrenten, Mieteinnahmen und Kapitalerträge).</p>
 
-      <h2>Vorteile der gesetzlichen Krankenversicherung</h2>
-      <h3>Solidarprinzip und Familienabsicherung</h3>
-      <p>Die GKV basiert auf dem Solidarprinzip: Alle zahlen entsprechend ihrer wirtschaftlichen Leistungsfähigkeit und erhalten im Krankheitsfall die notwendige Versorgung. Besonders für Familien mit mehreren Kindern und einem familiären Einverdiener ist die GKV durch die kostenlose Familienversicherung meist günstiger.</p>
-      <h3>Planungssicherheit im Alter</h3>
-      <p>GKV-Beiträge steigen zwar ebenfalls, aber im Rentenalter zahlen GKV-Versicherte Beiträge nur auf ihre Rente – nicht auf ein angenommenes Risikoprofil. Das macht die Kosten planbarer.</p>
-      <h3>Kein Krankheitenkatalog bei Abschluss</h3>
-      <p>Die GKV nimmt jeden auf – unabhängig von Vorerkrankungen. In der PKV können Vorerkrankungen zu Leistungsausschlüssen, Beitragszuschlägen oder sogar zur Ablehnung des Antrags führen.</p>
+      <h3>Familienversicherung</h3>
+      <p>In der GKV sind Ehepartner ohne eigenes Einkommen sowie Kinder unter bestimmten Voraussetzungen beitragsfrei familienversichert. In der PKV muss für jedes Familienmitglied ein eigener Vertrag abgeschlossen werden.</p>
 
-      <h2>So treffen Sie die richtige Entscheidung</h2>
-      <p>Die Entscheidung für PKV oder GKV ist sehr individuell und hängt von vielen Faktoren ab:</p>
-      <ul>
-        <li>Einkommenshöhe und -stabilität (Selbstständige vs. Angestellte)</li>
-        <li>Familienplanung (Single vs. Familie mit Kindern)</li>
-        <li>Gesundheitszustand und Vorerkrankungen</li>
-        <li>Berufsgruppe (Beamte profitieren besonders von der PKV)</li>
-        <li>Erwartete Karriereentwicklung und langfristige Einkommensperspektive</li>
-      </ul>
-      <p>Als Faustregel gilt: Junge, gesunde Singles oder Gutverdiener ohne Familienplanung profitieren oft von der PKV. Für Familien, Menschen mit Vorerkrankungen oder wer sich nicht sicher ist, ob er dauerhaft über der Einkommensgrenze bleiben wird, ist die GKV oft die sicherere Wahl.</p>
+      <h3>Rückkehrgrenzen in die GKV</h3>
+      <p>Ein Wechsel von der PKV zurück in die GKV ist ab dem 55. Lebensjahr gesetzlich stark eingeschränkt (§ 6 Abs. 3a SGB V). Bei jüngeren Angestellten ist eine Rückkehr nur möglich, wenn das Einkommen dauerhaft unter die JAEG fällt.</p>
 
-      <h2>Fazit</h2>
-      <p>Die Wahl zwischen PKV und GKV sollte niemals aus dem Bauch heraus getroffen werden. Lassen Sie sich von einem unabhängigen Versicherungsberater beraten, der einen umfassenden Marktvergleich durchführen kann – und denken Sie dabei nicht nur an heute, sondern auch an die nächsten 30-40 Jahre.</p>
+      <h2>Redaktionelle Quellen &amp; Datenstand</h2>
+      <p className="text-xs text-slate-500 leading-relaxed font-medium pt-4 border-t border-slate-200">
+        Datenstand: 2026. Quellen: Bundesministerium für Arbeit und Soziales (Rechengrößen der Sozialversicherung 2026), GKV-Spitzenverband, Verband der Privaten Krankenversicherung e.V. (PKV-Verband).
+      </p>
     </article>
   );
 }

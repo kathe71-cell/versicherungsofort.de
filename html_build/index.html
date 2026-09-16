@@ -112,16 +112,16 @@
 <body class="min-h-screen bg-slate-50/50 text-slate-900 flex flex-col antialiased relative">
     <div class="fixed inset-0 bg-grid pointer-events-none"></div>
     
-<header class="sticky top-0 z-50 bg-white/90 backdrop-blur-xl border-b border-slate-200 transition-all duration-300">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex justify-between items-center h-20 gap-3 md:gap-6">
-            <a href="index.html" class="flex items-center space-x-2 group flex-shrink-0">
-                <div class="w-10 h-10 bg-slate-900 rounded-xl flex items-center justify-center shadow-sm group-hover:scale-105 transition-all duration-300">
-                    <i data-lucide="shield" class="w-5 h-5 text-white"></i>
+<header class="sticky top-0 z-50 bg-white/95 backdrop-blur-xl border-b border-slate-200 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16 sm:h-20 gap-2 sm:gap-6 overflow-hidden">
+            <a href="index.html" class="flex items-center space-x-2 group flex-shrink">
+                <div class="w-8 h-8 sm:w-10 sm:h-10 bg-slate-900 rounded-xl flex items-center justify-center shadow-xs group-hover:scale-105 transition-all duration-300 flex-shrink-0">
+                    <i data-lucide="shield" class="w-4 h-4 sm:w-5 sm:h-5 text-white"></i>
                 </div>
-                <div class="flex items-baseline tracking-tighter">
-                    <span class="text-xl font-black text-slate-900">versicherung</span>
-                    <span class="text-xl font-extrabold text-blue-600">sofort</span>
+                <div class="flex items-baseline tracking-tighter truncate">
+                    <span class="text-base sm:text-xl font-black text-slate-900">versicherung</span>
+                    <span class="text-base sm:text-xl font-extrabold text-blue-600">sofort</span>
                 </div>
             </a>
 
@@ -136,16 +136,16 @@
                 </button>
             </div>
 
-            <nav class="flex items-center gap-2 sm:gap-6">
+            <nav class="flex items-center gap-2 sm:gap-6 flex-shrink-0">
                 <!-- Mobile Search Icon Button -->
-                <button type="button" onclick="openSearchModal()" aria-label="Suche öffnen" class="md:hidden w-10 h-10 rounded-xl bg-slate-100 flex items-center justify-center text-slate-700 hover:bg-blue-50 hover:text-blue-600 transition-all border border-slate-200 cursor-pointer">
-                    <i data-lucide="search" class="w-5 h-5"></i>
+                <button type="button" onclick="openSearchModal()" aria-label="Suche öffnen" class="md:hidden w-8 h-8 sm:w-10 sm:h-10 rounded-xl bg-slate-100 flex items-center justify-center text-slate-700 hover:bg-blue-50 hover:text-blue-600 transition-all border border-slate-200 cursor-pointer">
+                    <i data-lucide="search" class="w-4 h-4 sm:w-5 sm:h-5"></i>
                 </button>
                 <div class="hidden lg:flex space-x-7 items-center">
                     <a href="ratgeber.html" class="text-xs font-black text-slate-600 hover:text-blue-600 uppercase tracking-widest transition-colors">Ratgeber</a>
                     <a href="faq.html" class="text-xs font-black text-slate-600 hover:text-blue-600 uppercase tracking-widest transition-colors">FAQ</a>
                 </div>
-                <a href="index.html#versicherungen" class="bg-blue-600 hover:bg-blue-700 text-white rounded-full px-5 sm:px-7 py-2.5 sm:py-3 text-xs sm:text-sm font-black shadow-lg shadow-blue-500/20 transition-all duration-300 hover:-translate-y-0.5 whitespace-nowrap">
+                <a href="index.html#versicherungen" class="bg-blue-600 hover:bg-blue-700 text-white rounded-full px-3.5 sm:px-7 py-2 sm:py-3 text-[11px] sm:text-sm font-black shadow-md shadow-blue-500/20 transition-all duration-300 hover:-translate-y-0.5 whitespace-nowrap">
                     Tarife vergleichen*
                 </a>
             </nav>
@@ -158,12 +158,12 @@
             
 <section class="relative bg-white pt-20 pb-28 lg:pt-32 lg:pb-40 overflow-hidden px-4 border-b border-slate-100">
     <div class="relative max-w-7xl mx-auto text-center">
-        <div class="inline-flex items-center gap-3 px-5 py-2 rounded-full border border-slate-200 text-xs font-black uppercase tracking-widest text-slate-600 mb-10 bg-slate-50 shadow-sm">
+        <div class="inline-flex items-center gap-3 px-5 py-2 rounded-full border border-slate-200 text-xs font-black uppercase tracking-widest text-slate-600 mb-10 bg-slate-50 shadow-xs">
             <span class="w-2 h-2 rounded-full bg-blue-600"></span>
-            Unabhängig & Sicherer Vergleich
+            Unabhängiges Informations- & Vergleichsportal
         </div>
         <h1 class="text-4xl sm:text-6xl lg:text-7xl font-black text-slate-900 mb-8 tracking-tightest leading-[1.1]">
-            Versicherungen vergleichen. <br/><span class="text-blue-600">Faktenbasiert & digital.</span>
+            Versicherungen vergleichen. <br/><span class="text-blue-600">Faktenbasiert & transparent.</span>
         </h1>
         <p class="text-lg md:text-xl text-slate-600 mb-12 max-w-2xl mx-auto leading-relaxed font-semibold tracking-tight">
             Transparente Tarifübersichten von über 300 Versicherungsgesellschaften. Ohne Verkaufsdruck, ohne versteckte Gebühren.
@@ -184,18 +184,18 @@
         <div class="grid md:grid-cols-3 gap-8">
             <div class="glass p-8 rounded-3xl border border-slate-200">
                 <div class="icon-pill mb-6 bg-slate-900 text-white"><i data-lucide="zap" class="w-5 h-5"></i></div>
-                <h3 class="text-xl font-black mb-2 tracking-tight">Echtzeit-Berechnung</h3>
-                <p class="text-slate-600 font-medium text-sm leading-relaxed">Modernste Vergleichs-Algorithmen berechnen Ihren persönlichen Beitrag in unter 60 Sekunden.</p>
+                <h3 class="text-xl font-black mb-2 tracking-tight">Direkte Rechner-Eingabe</h3>
+                <p class="text-slate-600 font-medium text-sm leading-relaxed">Eingestellte Online-Vergleichsrechner unserer Partner ermöglichen die sofortige Eingabe Ihrer Objektdaten.</p>
             </div>
             <div class="glass p-8 rounded-3xl border border-slate-200">
                 <div class="icon-pill mb-6 bg-slate-900 text-white"><i data-lucide="shield" class="w-5 h-5"></i></div>
-                <h3 class="text-xl font-black mb-2 tracking-tight">Verschlüsselt & Datenschutz</h3>
+                <h3 class="text-xl font-black mb-2 tracking-tight">Verschlüsselt & DSGVO-konform</h3>
                 <p class="text-slate-600 font-medium text-sm leading-relaxed">Verschlüsselte Datenübertragung (HTTPS). Lokaler System-Schriftarten-Stack ohne externe Google-Fonts-CDNs.</p>
             </div>
             <div class="glass p-8 rounded-3xl border border-slate-200">
                 <div class="icon-pill mb-6 bg-slate-900 text-white"><i data-lucide="trending-down" class="w-5 h-5"></i></div>
-                <h3 class="text-xl font-black mb-2 tracking-tight">Nachweisbare Ersparnis</h3>
-                <p class="text-slate-600 font-medium text-sm leading-relaxed">Durch den objektiven Marktüberblick sichern Sie sich exakt das passende Preis-Leistungs-Verhältnis.</p>
+                <h3 class="text-xl font-black mb-2 tracking-tight">Transparente Preisübersicht</h3>
+                <p class="text-slate-600 font-medium text-sm leading-relaxed">Vergleichen Sie Leistungen und Beiträge sachlich gegeneinander auf Basis der Anbieterkonditionen.</p>
             </div>
         </div>
     </div>
@@ -204,11 +204,345 @@
 <section id="versicherungen" class="py-24 bg-white">
     <div class="max-w-7xl mx-auto px-4">
         <div class="mb-20 text-center">
-            <h2 class="text-3xl md:text-5xl font-black text-slate-900 mb-6 tracking-tightest leading-tight">Alle Versicherungsvergleiche auf einen Blick</h2>
+            <h2 class="text-3xl md:text-5xl font-black text-slate-900 mb-6 tracking-tightest leading-tight">Alle verfügbaren Versicherungsvergleiche</h2>
             <p class="text-slate-600 font-medium text-base max-w-2xl mx-auto">Wählen Sie Ihre gewünschte Sparte für detaillierte Tarifrechner und transparente Konditionen.</p>
         </div>
         <div class="space-y-12">
             
+    <div class="mb-16">
+        <div class="flex items-center space-x-6 mb-8">
+            <h3 class="text-xs font-black uppercase tracking-[0.25em] text-slate-500">Fahrzeuge & Mobilität</h3>
+            <div class="flex-1 h-px bg-slate-200"></div>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+    
+            <a href="kfz.html" class="glass group rounded-3xl p-7 hover:bg-white hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between h-full border border-slate-200">
+                <div>
+                    <div class="icon-pill mb-5 text-slate-900 group-hover:bg-blue-600 group-hover:text-white transition-colors duration-300">
+                        <i data-lucide="car"></i>
+                    </div>
+                    <h4 class="text-lg font-bold text-slate-900 mb-2 tracking-tight leading-snug">Kfz-Versicherung</h4>
+                    <p class="text-slate-600 text-xs font-medium leading-relaxed mb-6">Pkw-Haftpflicht, Teilkasko & Vollkasko vergleichen.</p>
+                </div>
+                <div class="flex items-center text-xs font-black uppercase tracking-wider text-blue-600 group-hover:translate-x-1 transition-transform">
+                    Tarife vergleichen* <i data-lucide="chevron-right" class="w-4 h-4 ml-1"></i>
+                </div>
+            </a>
+        
+            <a href="motorrad.html" class="glass group rounded-3xl p-7 hover:bg-white hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between h-full border border-slate-200">
+                <div>
+                    <div class="icon-pill mb-5 text-slate-900 group-hover:bg-blue-600 group-hover:text-white transition-colors duration-300">
+                        <i data-lucide="gauge"></i>
+                    </div>
+                    <h4 class="text-lg font-bold text-slate-900 mb-2 tracking-tight leading-snug">Motorradversicherung</h4>
+                    <p class="text-slate-600 text-xs font-medium leading-relaxed mb-6">Motorräder, Roller & Quads günstig absichern.</p>
+                </div>
+                <div class="flex items-center text-xs font-black uppercase tracking-wider text-blue-600 group-hover:translate-x-1 transition-transform">
+                    Tarife vergleichen* <i data-lucide="chevron-right" class="w-4 h-4 ml-1"></i>
+                </div>
+            </a>
+        </div></div>
+    <div class="mb-16">
+        <div class="flex items-center space-x-6 mb-8">
+            <h3 class="text-xs font-black uppercase tracking-[0.25em] text-slate-500">Haftpflicht & Sachwerte</h3>
+            <div class="flex-1 h-px bg-slate-200"></div>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+    
+            <a href="haftpflicht.html" class="glass group rounded-3xl p-7 hover:bg-white hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between h-full border border-slate-200">
+                <div>
+                    <div class="icon-pill mb-5 text-slate-900 group-hover:bg-blue-600 group-hover:text-white transition-colors duration-300">
+                        <i data-lucide="shield"></i>
+                    </div>
+                    <h4 class="text-lg font-bold text-slate-900 mb-2 tracking-tight leading-snug">Privathaftpflicht</h4>
+                    <p class="text-slate-600 text-xs font-medium leading-relaxed mb-6">Absicherung vor Schadensersatzansprüchen Dritter.</p>
+                </div>
+                <div class="flex items-center text-xs font-black uppercase tracking-wider text-blue-600 group-hover:translate-x-1 transition-transform">
+                    Tarife vergleichen* <i data-lucide="chevron-right" class="w-4 h-4 ml-1"></i>
+                </div>
+            </a>
+        
+            <a href="hausrat.html" class="glass group rounded-3xl p-7 hover:bg-white hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between h-full border border-slate-200">
+                <div>
+                    <div class="icon-pill mb-5 text-slate-900 group-hover:bg-blue-600 group-hover:text-white transition-colors duration-300">
+                        <i data-lucide="home"></i>
+                    </div>
+                    <h4 class="text-lg font-bold text-slate-900 mb-2 tracking-tight leading-snug">Hausratversicherung</h4>
+                    <p class="text-slate-600 text-xs font-medium leading-relaxed mb-6">Schutz für Möbel & Wertsachen bei Feuer, Einbruch & Sturm.</p>
+                </div>
+                <div class="flex items-center text-xs font-black uppercase tracking-wider text-blue-600 group-hover:translate-x-1 transition-transform">
+                    Tarife vergleichen* <i data-lucide="chevron-right" class="w-4 h-4 ml-1"></i>
+                </div>
+            </a>
+        
+            <a href="wohngebaeudeversicherung.html" class="glass group rounded-3xl p-7 hover:bg-white hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between h-full border border-slate-200">
+                <div>
+                    <div class="icon-pill mb-5 text-slate-900 group-hover:bg-blue-600 group-hover:text-white transition-colors duration-300">
+                        <i data-lucide="home"></i>
+                    </div>
+                    <h4 class="text-lg font-bold text-slate-900 mb-2 tracking-tight leading-snug">Wohngebäudeversicherung</h4>
+                    <p class="text-slate-600 text-xs font-medium leading-relaxed mb-6">Immobilienschutz bei Feuer, Leitungswasser & Elementarschäden.</p>
+                </div>
+                <div class="flex items-center text-xs font-black uppercase tracking-wider text-blue-600 group-hover:translate-x-1 transition-transform">
+                    Tarife vergleichen* <i data-lucide="chevron-right" class="w-4 h-4 ml-1"></i>
+                </div>
+            </a>
+        
+            <a href="tierhalterhaftpflicht.html" class="glass group rounded-3xl p-7 hover:bg-white hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between h-full border border-slate-200">
+                <div>
+                    <div class="icon-pill mb-5 text-slate-900 group-hover:bg-blue-600 group-hover:text-white transition-colors duration-300">
+                        <i data-lucide="dog"></i>
+                    </div>
+                    <h4 class="text-lg font-bold text-slate-900 mb-2 tracking-tight leading-snug">Hundehaftpflicht & Tierhalter</h4>
+                    <p class="text-slate-600 text-xs font-medium leading-relaxed mb-6">Haftpflichtschutz für Hunde- & Pferdehalter.</p>
+                </div>
+                <div class="flex items-center text-xs font-black uppercase tracking-wider text-blue-600 group-hover:translate-x-1 transition-transform">
+                    Tarife vergleichen* <i data-lucide="chevron-right" class="w-4 h-4 ml-1"></i>
+                </div>
+            </a>
+        
+            <a href="hundekrankenversicherung.html" class="glass group rounded-3xl p-7 hover:bg-white hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between h-full border border-slate-200">
+                <div>
+                    <div class="icon-pill mb-5 text-slate-900 group-hover:bg-blue-600 group-hover:text-white transition-colors duration-300">
+                        <i data-lucide="activity"></i>
+                    </div>
+                    <h4 class="text-lg font-bold text-slate-900 mb-2 tracking-tight leading-snug">Hundekrankenversicherung</h4>
+                    <p class="text-slate-600 text-xs font-medium leading-relaxed mb-6">Tierarztkosten & Operationsschutz für Hunde.</p>
+                </div>
+                <div class="flex items-center text-xs font-black uppercase tracking-wider text-blue-600 group-hover:translate-x-1 transition-transform">
+                    Tarife vergleichen* <i data-lucide="chevron-right" class="w-4 h-4 ml-1"></i>
+                </div>
+            </a>
+        
+            <a href="grundbesitzerhaftpflicht.html" class="glass group rounded-3xl p-7 hover:bg-white hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between h-full border border-slate-200">
+                <div>
+                    <div class="icon-pill mb-5 text-slate-900 group-hover:bg-blue-600 group-hover:text-white transition-colors duration-300">
+                        <i data-lucide="building-2"></i>
+                    </div>
+                    <h4 class="text-lg font-bold text-slate-900 mb-2 tracking-tight leading-snug">Haus- & Grundbesitzerhaftpflicht</h4>
+                    <p class="text-slate-600 text-xs font-medium leading-relaxed mb-6">Haftpflichtschutz für Vermieter & Grundstückseigentümer.</p>
+                </div>
+                <div class="flex items-center text-xs font-black uppercase tracking-wider text-blue-600 group-hover:translate-x-1 transition-transform">
+                    Tarife vergleichen* <i data-lucide="chevron-right" class="w-4 h-4 ml-1"></i>
+                </div>
+            </a>
+        </div></div>
+    <div class="mb-16">
+        <div class="flex items-center space-x-6 mb-8">
+            <h3 class="text-xs font-black uppercase tracking-[0.25em] text-slate-500">Recht & Gewerbe</h3>
+            <div class="flex-1 h-px bg-slate-200"></div>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+    
+            <a href="rechtsschutz.html" class="glass group rounded-3xl p-7 hover:bg-white hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between h-full border border-slate-200">
+                <div>
+                    <div class="icon-pill mb-5 text-slate-900 group-hover:bg-blue-600 group-hover:text-white transition-colors duration-300">
+                        <i data-lucide="scale"></i>
+                    </div>
+                    <h4 class="text-lg font-bold text-slate-900 mb-2 tracking-tight leading-snug">Rechtsschutzversicherung</h4>
+                    <p class="text-slate-600 text-xs font-medium leading-relaxed mb-6">Kostenübernahme für Anwälte & Gerichte je nach Baustein.</p>
+                </div>
+                <div class="flex items-center text-xs font-black uppercase tracking-wider text-blue-600 group-hover:translate-x-1 transition-transform">
+                    Tarife vergleichen* <i data-lucide="chevron-right" class="w-4 h-4 ml-1"></i>
+                </div>
+            </a>
+        
+            <a href="firmenversicherung.html" class="glass group rounded-3xl p-7 hover:bg-white hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between h-full border border-slate-200">
+                <div>
+                    <div class="icon-pill mb-5 text-slate-900 group-hover:bg-blue-600 group-hover:text-white transition-colors duration-300">
+                        <i data-lucide="building"></i>
+                    </div>
+                    <h4 class="text-lg font-bold text-slate-900 mb-2 tracking-tight leading-snug">Firmen- & Gewerbeversicherung</h4>
+                    <p class="text-slate-600 text-xs font-medium leading-relaxed mb-6">Betriebshaftpflicht & Inhaltsversicherung für Gewerbe.</p>
+                </div>
+                <div class="flex items-center text-xs font-black uppercase tracking-wider text-blue-600 group-hover:translate-x-1 transition-transform">
+                    Angebot anfragen* <i data-lucide="chevron-right" class="w-4 h-4 ml-1"></i>
+                </div>
+            </a>
+        </div></div>
+    <div class="mb-16">
+        <div class="flex items-center space-x-6 mb-8">
+            <h3 class="text-xs font-black uppercase tracking-[0.25em] text-slate-500">Gesundheit & Pflege</h3>
+            <div class="flex-1 h-px bg-slate-200"></div>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+    
+            <a href="pkv.html" class="glass group rounded-3xl p-7 hover:bg-white hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between h-full border border-slate-200">
+                <div>
+                    <div class="icon-pill mb-5 text-slate-900 group-hover:bg-blue-600 group-hover:text-white transition-colors duration-300">
+                        <i data-lucide="heart-pulse"></i>
+                    </div>
+                    <h4 class="text-lg font-bold text-slate-900 mb-2 tracking-tight leading-snug">Private Krankenversicherung (PKV)</h4>
+                    <p class="text-slate-600 text-xs font-medium leading-relaxed mb-6">Krankenvollversicherung für Angestellte über JAEG, Beamte & Selbstständige.</p>
+                </div>
+                <div class="flex items-center text-xs font-black uppercase tracking-wider text-blue-600 group-hover:translate-x-1 transition-transform">
+                    Tarife vergleichen* <i data-lucide="chevron-right" class="w-4 h-4 ml-1"></i>
+                </div>
+            </a>
+        
+            <a href="pkv-beamte.html" class="glass group rounded-3xl p-7 hover:bg-white hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between h-full border border-slate-200">
+                <div>
+                    <div class="icon-pill mb-5 text-slate-900 group-hover:bg-blue-600 group-hover:text-white transition-colors duration-300">
+                        <i data-lucide="user-check"></i>
+                    </div>
+                    <h4 class="text-lg font-bold text-slate-900 mb-2 tracking-tight leading-snug">PKV für Beamte & Anwärter</h4>
+                    <p class="text-slate-600 text-xs font-medium leading-relaxed mb-6">Beihilfe-Ergänzungstarife für den öffentlichen Dienst.</p>
+                </div>
+                <div class="flex items-center text-xs font-black uppercase tracking-wider text-blue-600 group-hover:translate-x-1 transition-transform">
+                    Tarife vergleichen* <i data-lucide="chevron-right" class="w-4 h-4 ml-1"></i>
+                </div>
+            </a>
+        
+            <a href="pkv-studenten.html" class="glass group rounded-3xl p-7 hover:bg-white hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between h-full border border-slate-200">
+                <div>
+                    <div class="icon-pill mb-5 text-slate-900 group-hover:bg-blue-600 group-hover:text-white transition-colors duration-300">
+                        <i data-lucide="graduation-cap"></i>
+                    </div>
+                    <h4 class="text-lg font-bold text-slate-900 mb-2 tracking-tight leading-snug">PKV für Studenten</h4>
+                    <p class="text-slate-600 text-xs font-medium leading-relaxed mb-6">Studentische Krankenversicherungstarife.</p>
+                </div>
+                <div class="flex items-center text-xs font-black uppercase tracking-wider text-blue-600 group-hover:translate-x-1 transition-transform">
+                    Tarife vergleichen* <i data-lucide="chevron-right" class="w-4 h-4 ml-1"></i>
+                </div>
+            </a>
+        
+            <a href="pkv-55.html" class="glass group rounded-3xl p-7 hover:bg-white hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between h-full border border-slate-200">
+                <div>
+                    <div class="icon-pill mb-5 text-slate-900 group-hover:bg-blue-600 group-hover:text-white transition-colors duration-300">
+                        <i data-lucide="users"></i>
+                    </div>
+                    <h4 class="text-lg font-bold text-slate-900 mb-2 tracking-tight leading-snug">PKV Tarifwechsel ab 55</h4>
+                    <p class="text-slate-600 text-xs font-medium leading-relaxed mb-6">Beitragsoptimierung & interner Tarifwechsel nach § 204 VVG.</p>
+                </div>
+                <div class="flex items-center text-xs font-black uppercase tracking-wider text-blue-600 group-hover:translate-x-1 transition-transform">
+                    Angebot anfragen* <i data-lucide="chevron-right" class="w-4 h-4 ml-1"></i>
+                </div>
+            </a>
+        
+            <a href="krankenzusatz.html" class="glass group rounded-3xl p-7 hover:bg-white hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between h-full border border-slate-200">
+                <div>
+                    <div class="icon-pill mb-5 text-slate-900 group-hover:bg-blue-600 group-hover:text-white transition-colors duration-300">
+                        <i data-lucide="smile"></i>
+                    </div>
+                    <h4 class="text-lg font-bold text-slate-900 mb-2 tracking-tight leading-snug">Zahnzusatz & Krankenzusatz</h4>
+                    <p class="text-slate-600 text-xs font-medium leading-relaxed mb-6">Tarifabhängige Kostenerstattung für Zahnersatz & Prophylaxe.</p>
+                </div>
+                <div class="flex items-center text-xs font-black uppercase tracking-wider text-blue-600 group-hover:translate-x-1 transition-transform">
+                    Tarife vergleichen* <i data-lucide="chevron-right" class="w-4 h-4 ml-1"></i>
+                </div>
+            </a>
+        
+            <a href="pflege.html" class="glass group rounded-3xl p-7 hover:bg-white hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between h-full border border-slate-200">
+                <div>
+                    <div class="icon-pill mb-5 text-slate-900 group-hover:bg-blue-600 group-hover:text-white transition-colors duration-300">
+                        <i data-lucide="activity"></i>
+                    </div>
+                    <h4 class="text-lg font-bold text-slate-900 mb-2 tracking-tight leading-snug">Pflegezusatzversicherung</h4>
+                    <p class="text-slate-600 text-xs font-medium leading-relaxed mb-6">Pflegetagegeld & Erstattung für Pflegegrade 1-5.</p>
+                </div>
+                <div class="flex items-center text-xs font-black uppercase tracking-wider text-blue-600 group-hover:translate-x-1 transition-transform">
+                    Tarife vergleichen* <i data-lucide="chevron-right" class="w-4 h-4 ml-1"></i>
+                </div>
+            </a>
+        </div></div>
+    <div class="mb-16">
+        <div class="flex items-center space-x-6 mb-8">
+            <h3 class="text-xs font-black uppercase tracking-[0.25em] text-slate-500">Vorsorge & Arbeitskraft</h3>
+            <div class="flex-1 h-px bg-slate-200"></div>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+    
+            <a href="berufsunfaehigkeit.html" class="glass group rounded-3xl p-7 hover:bg-white hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between h-full border border-slate-200">
+                <div>
+                    <div class="icon-pill mb-5 text-slate-900 group-hover:bg-blue-600 group-hover:text-white transition-colors duration-300">
+                        <i data-lucide="briefcase"></i>
+                    </div>
+                    <h4 class="text-lg font-bold text-slate-900 mb-2 tracking-tight leading-snug">Berufsunfähigkeitsversicherung (BU)</h4>
+                    <p class="text-slate-600 text-xs font-medium leading-relaxed mb-6">Einkommensschutz bei dauerhafter Krankheit oder Unfall.</p>
+                </div>
+                <div class="flex items-center text-xs font-black uppercase tracking-wider text-blue-600 group-hover:translate-x-1 transition-transform">
+                    Tarife vergleichen* <i data-lucide="chevron-right" class="w-4 h-4 ml-1"></i>
+                </div>
+            </a>
+        
+            <a href="unfallversicherung.html" class="glass group rounded-3xl p-7 hover:bg-white hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between h-full border border-slate-200">
+                <div>
+                    <div class="icon-pill mb-5 text-slate-900 group-hover:bg-blue-600 group-hover:text-white transition-colors duration-300">
+                        <i data-lucide="shield-alert"></i>
+                    </div>
+                    <h4 class="text-lg font-bold text-slate-900 mb-2 tracking-tight leading-snug">Unfallversicherung</h4>
+                    <p class="text-slate-600 text-xs font-medium leading-relaxed mb-6">24-Stunden-Invaliditätsschutz für Freizeit & Beruf.</p>
+                </div>
+                <div class="flex items-center text-xs font-black uppercase tracking-wider text-blue-600 group-hover:translate-x-1 transition-transform">
+                    Tarife vergleichen* <i data-lucide="chevron-right" class="w-4 h-4 ml-1"></i>
+                </div>
+            </a>
+        
+            <a href="risikolebensversicherung.html" class="glass group rounded-3xl p-7 hover:bg-white hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between h-full border border-slate-200">
+                <div>
+                    <div class="icon-pill mb-5 text-slate-900 group-hover:bg-blue-600 group-hover:text-white transition-colors duration-300">
+                        <i data-lucide="life-buoy"></i>
+                    </div>
+                    <h4 class="text-lg font-bold text-slate-900 mb-2 tracking-tight leading-snug">Risikolebensversicherung</h4>
+                    <p class="text-slate-600 text-xs font-medium leading-relaxed mb-6">Hinterbliebenenschutz zur Immobilien- & Familienabsicherung.</p>
+                </div>
+                <div class="flex items-center text-xs font-black uppercase tracking-wider text-blue-600 group-hover:translate-x-1 transition-transform">
+                    Tarife vergleichen* <i data-lucide="chevron-right" class="w-4 h-4 ml-1"></i>
+                </div>
+            </a>
+        
+            <a href="lebensversicherung.html" class="glass group rounded-3xl p-7 hover:bg-white hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between h-full border border-slate-200">
+                <div>
+                    <div class="icon-pill mb-5 text-slate-900 group-hover:bg-blue-600 group-hover:text-white transition-colors duration-300">
+                        <i data-lucide="umbrella"></i>
+                    </div>
+                    <h4 class="text-lg font-bold text-slate-900 mb-2 tracking-tight leading-snug">Kapitallebensversicherung</h4>
+                    <p class="text-slate-600 text-xs font-medium leading-relaxed mb-6">Kombination aus Todesfallschutz und Sparanteil.</p>
+                </div>
+                <div class="flex items-center text-xs font-black uppercase tracking-wider text-blue-600 group-hover:translate-x-1 transition-transform">
+                    Tarife vergleichen* <i data-lucide="chevron-right" class="w-4 h-4 ml-1"></i>
+                </div>
+            </a>
+        
+            <a href="rente.html" class="glass group rounded-3xl p-7 hover:bg-white hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between h-full border border-slate-200">
+                <div>
+                    <div class="icon-pill mb-5 text-slate-900 group-hover:bg-blue-600 group-hover:text-white transition-colors duration-300">
+                        <i data-lucide="coins"></i>
+                    </div>
+                    <h4 class="text-lg font-bold text-slate-900 mb-2 tracking-tight leading-snug">Private Rentenversicherung</h4>
+                    <p class="text-slate-600 text-xs font-medium leading-relaxed mb-6">Private Altersvorsorgevereinbarung mit Rentenoption.</p>
+                </div>
+                <div class="flex items-center text-xs font-black uppercase tracking-wider text-blue-600 group-hover:translate-x-1 transition-transform">
+                    Tarife vergleichen* <i data-lucide="chevron-right" class="w-4 h-4 ml-1"></i>
+                </div>
+            </a>
+        
+            <a href="riester.html" class="glass group rounded-3xl p-7 hover:bg-white hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between h-full border border-slate-200">
+                <div>
+                    <div class="icon-pill mb-5 text-slate-900 group-hover:bg-blue-600 group-hover:text-white transition-colors duration-300">
+                        <i data-lucide="landmark"></i>
+                    </div>
+                    <h4 class="text-lg font-bold text-slate-900 mb-2 tracking-tight leading-snug">Riester-Rente</h4>
+                    <p class="text-slate-600 text-xs font-medium leading-relaxed mb-6">Staatlich geförderte Altersvorsorge mit Zulagen.</p>
+                </div>
+                <div class="flex items-center text-xs font-black uppercase tracking-wider text-blue-600 group-hover:translate-x-1 transition-transform">
+                    Tarife vergleichen* <i data-lucide="chevron-right" class="w-4 h-4 ml-1"></i>
+                </div>
+            </a>
+        
+            <a href="ruerup.html" class="glass group rounded-3xl p-7 hover:bg-white hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between h-full border border-slate-200">
+                <div>
+                    <div class="icon-pill mb-5 text-slate-900 group-hover:bg-blue-600 group-hover:text-white transition-colors duration-300">
+                        <i data-lucide="trending-up"></i>
+                    </div>
+                    <h4 class="text-lg font-bold text-slate-900 mb-2 tracking-tight leading-snug">Rürup-Rente (Basisrente)</h4>
+                    <p class="text-slate-600 text-xs font-medium leading-relaxed mb-6">Steuerbegünstigte Basisversorgung für Selbstständige & Angestellte.</p>
+                </div>
+                <div class="flex items-center text-xs font-black uppercase tracking-wider text-blue-600 group-hover:translate-x-1 transition-transform">
+                    Tarife vergleichen* <i data-lucide="chevron-right" class="w-4 h-4 ml-1"></i>
+                </div>
+            </a>
+        </div></div>
         </div>
     </div>
 </section>

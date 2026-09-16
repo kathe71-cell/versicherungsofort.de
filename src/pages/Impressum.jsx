@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Building2, Phone, Mail, Globe, User } from 'lucide-react';
+import { User, Phone, Mail, Globe, Info, ShieldCheck } from 'lucide-react';
 
 export default function ImpressumPage() {
   useEffect(() => {
@@ -8,113 +8,102 @@ export default function ImpressumPage() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gray-50 py-12">
+    <div className="min-h-screen bg-slate-50 py-12">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-8">
-          <h1 className="text-3xl font-bold text-gray-900 mb-2">Impressum</h1>
-          <p className="text-gray-600">Rechtliche Angaben nach § 5 DDG (Digitale-Dienste-Gesetz)</p>
+          <h1 className="text-3xl font-extrabold text-slate-900 mb-2">Impressum</h1>
+          <p className="text-slate-600 font-medium text-sm">Rechtliche Angaben nach § 5 DDG (Digitale-Dienste-Gesetz)</p>
         </div>
 
         <div className="space-y-6">
-          <Card>
+          <Card className="bg-white border-slate-200">
             <CardHeader>
-              <CardTitle className="flex items-center gap-2">
-                <User className="w-5 h-5" />
-                Anbieter & Verantwortlich
+              <CardTitle className="flex items-center gap-2 text-slate-900 font-bold">
+                <User className="w-5 h-5 text-blue-600" />
+                Anbieter & Betreiber
               </CardTitle>
             </CardHeader>
-            <CardContent className="space-y-2">
-              <p><strong>Jens Kathe</strong></p>
+            <CardContent className="space-y-1.5 text-sm text-slate-700">
+              <p className="font-bold text-slate-900">Jens Kathe</p>
               <p>Hansastraße 6</p>
               <p>34119 Kassel</p>
               <p>Deutschland</p>
             </CardContent>
           </Card>
 
-          <Card>
+          <Card className="bg-white border-slate-200">
             <CardHeader>
-              <CardTitle className="flex items-center gap-2">
-                <Phone className="w-5 h-5" />
-                Kontakt
+              <CardTitle className="flex items-center gap-2 text-slate-900 font-bold">
+                <Phone className="w-5 h-5 text-blue-600" />
+                Kontaktmöglichkeiten
               </CardTitle>
             </CardHeader>
-            <CardContent className="space-y-2">
+            <CardContent className="space-y-2 text-sm text-slate-700">
               <p className="flex items-center gap-2">
-                <Phone className="w-4 h-4" />
+                <Phone className="w-4 h-4 text-slate-500" />
                 <span>Telefon: 0178 6652623</span>
               </p>
               <p className="flex items-center gap-2">
-                <Mail className="w-4 h-4" />
+                <Mail className="w-4 h-4 text-slate-500" />
                 <span>E-Mail: jens@kathe.org</span>
               </p>
               <p className="flex items-center gap-2">
-                <Globe className="w-4 h-4" />
+                <Globe className="w-4 h-4 text-slate-500" />
                 <span>Web: www.versicherungsofort.de</span>
               </p>
             </CardContent>
           </Card>
 
-          <Card>
+          <Card className="bg-white border-slate-200">
             <CardHeader>
-              <CardTitle>Gewerberechtliche Angaben</CardTitle>
+              <CardTitle className="flex items-center gap-2 text-slate-900 font-bold">
+                <Info className="w-5 h-5 text-blue-600" />
+                Umsatzsteuer-Hinweis
+              </CardTitle>
             </CardHeader>
-            <CardContent className="space-y-3">
-              <div className="bg-blue-50 p-4 rounded-lg">
-                <h3 className="font-semibold text-blue-900 mb-2">Kleinunternehmer</h3>
-                <p className="text-sm text-blue-800">
-                  Nach § 19 UStG wird keine Umsatzsteuer ausgewiesen.
-                </p>
-              </div>
+            <CardContent className="space-y-2 text-sm text-slate-700">
+              <p>
+                Gemäß § 19 UStG (Kleinunternehmerregelung) wird keine Umsatzsteuer berechnet und ausgewiesen.
+              </p>
             </CardContent>
           </Card>
 
-          <Card>
+          <Card className="bg-white border-slate-200">
             <CardHeader>
-              <CardTitle>Vermittlertätigkeit & Haftung</CardTitle>
+              <CardTitle className="flex items-center gap-2 text-slate-900 font-bold">
+                <ShieldCheck className="w-5 h-5 text-blue-600" />
+                Tätigkeit & Betreiberrolle
+              </CardTitle>
             </CardHeader>
-            <CardContent className="space-y-3">
-              <div className="bg-blue-50 p-4 rounded-lg">
-                <h3 className="font-semibold text-blue-900 mb-2">Vermittlerstatus</h3>
-                <p className="text-sm text-blue-800">
-                  Wir sind als Versicherungsmakler nach § 34d GewO tätig und vertreten die Interessen 
-                  unserer Kunden. Wir erhalten von unseren Versicherungspartnern eine Provision für 
-                  erfolgreich vermittelte Verträge.
-                </p>
-              </div>
-
-              <div>
-                <h3 className="font-semibold mb-2">Berufshaftpflichtversicherung</h3>
-                <p className="text-sm text-gray-700">
-                  Vermittlertätigkeit erfolgt über lizenzierte Partner<br />
-                  Deckungssumme: 1.000.000 € je Versicherungsfall<br />
-                  Räumlicher Geltungsbereich: Europa
-                </p>
-              </div>
+            <CardContent className="space-y-3 text-sm text-slate-700 leading-relaxed">
+              <p>
+                <strong>versicherungsofort.de</strong> ist ein unabhängiges Verbraucher- und Informationsportal. Der Betreiber tritt nicht selbst als eigenständiger Versicherungsmakler oder Versicherungsvertreter nach § 34d GewO auf.
+              </p>
+              <p>
+                Die auf der Website bereitgestellten Vergleichsrechner und Vermittlungsstrecken werden durch zugelassene technische Partner und Vergleichsnetzwerke (wie z.B. TARIFCHECK24 GmbH, Zolltorstraße 11, 21502 Geesthacht) zur Verfügung gestellt. Die Tarifberechnung, Antragsprüfung und Vermittlungsleistung erfolgt direkt über die jeweiligen Einbindungspartner.
+              </p>
+              <p className="text-xs text-slate-500">
+                * Hinweis zu Vergütungen: Für vermittelte Verträge über Partnerlinks erhält der Betreiber gegebenenfalls eine Vermittlungsprovision vom jeweiligen Partnernetzwerk.
+              </p>
             </CardContent>
           </Card>
 
-          <Card>
+          <Card className="bg-white border-slate-200">
             <CardHeader>
-              <CardTitle>Haftungsausschluss</CardTitle>
+              <CardTitle className="text-slate-900 font-bold">Haftungsausschluss</CardTitle>
             </CardHeader>
-            <CardContent className="text-sm text-gray-700 space-y-3">
+            <CardContent className="text-sm text-slate-700 space-y-4 leading-relaxed">
               <div>
-                <h3 className="font-semibold">Inhalt des Onlineangebotes</h3>
+                <h3 className="font-bold text-slate-900 mb-1">Inhalte des Onlineangebots</h3>
                 <p>
-                  Der Betreiber übernimmt keinerlei Gewähr für die Aktualität, Korrektheit, 
-                  Vollständigkeit oder Qualität der bereitgestellten Informationen. 
-                  Haftungsansprüche gegen den Betreiber, welche sich auf Schäden materieller 
-                  oder ideeller Art beziehen, sind grundsätzlich ausgeschlossen.
+                  Alle Inhalte dieser Website werden mit größtmöglicher Sorgfalt erstellt. Der Betreiber übernimmt jedoch keine Gewähr für die Richtigkeit, Vollständigkeit und Aktualität der bereitgestellten Informationen und Beitragsberechnungen der Partnerrechner.
                 </p>
               </div>
 
               <div>
-                <h3 className="font-semibold">Verweise und Links</h3>
+                <h3 className="font-bold text-slate-900 mb-1">Verweise und Links</h3>
                 <p>
-                  Bei direkten oder indirekten Verweisen auf fremde Internetseiten 
-                  ("Links"), die außerhalb des Verantwortungsbereiches des Betreibers liegen, 
-                  würde eine Haftungsverpflichtung ausschließlich in dem Fall in Kraft treten, 
-                  in dem der Betreiber von den Inhalten Kenntnis hat.
+                  Diese Website enthält Verknüpfungen zu Websites Dritter ("externe Links"). Diese Websites unterliegen der Haftung der jeweiligen Betreiber.
                 </p>
               </div>
             </CardContent>

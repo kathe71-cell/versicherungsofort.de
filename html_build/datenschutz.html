@@ -129,16 +129,16 @@
 <body class="min-h-screen bg-slate-50/50 text-slate-900 flex flex-col antialiased relative">
     <div class="fixed inset-0 bg-grid pointer-events-none"></div>
     
-<header class="sticky top-0 z-50 bg-white/90 backdrop-blur-xl border-b border-slate-200 transition-all duration-300">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex justify-between items-center h-20 gap-3 md:gap-6">
-            <a href="index.html" class="flex items-center space-x-2 group flex-shrink-0">
-                <div class="w-10 h-10 bg-slate-900 rounded-xl flex items-center justify-center shadow-sm group-hover:scale-105 transition-all duration-300">
-                    <i data-lucide="shield" class="w-5 h-5 text-white"></i>
+<header class="sticky top-0 z-50 bg-white/95 backdrop-blur-xl border-b border-slate-200 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16 sm:h-20 gap-2 sm:gap-6 overflow-hidden">
+            <a href="index.html" class="flex items-center space-x-2 group flex-shrink">
+                <div class="w-8 h-8 sm:w-10 sm:h-10 bg-slate-900 rounded-xl flex items-center justify-center shadow-xs group-hover:scale-105 transition-all duration-300 flex-shrink-0">
+                    <i data-lucide="shield" class="w-4 h-4 sm:w-5 sm:h-5 text-white"></i>
                 </div>
-                <div class="flex items-baseline tracking-tighter">
-                    <span class="text-xl font-black text-slate-900">versicherung</span>
-                    <span class="text-xl font-extrabold text-blue-600">sofort</span>
+                <div class="flex items-baseline tracking-tighter truncate">
+                    <span class="text-base sm:text-xl font-black text-slate-900">versicherung</span>
+                    <span class="text-base sm:text-xl font-extrabold text-blue-600">sofort</span>
                 </div>
             </a>
 
@@ -153,16 +153,16 @@
                 </button>
             </div>
 
-            <nav class="flex items-center gap-2 sm:gap-6">
+            <nav class="flex items-center gap-2 sm:gap-6 flex-shrink-0">
                 <!-- Mobile Search Icon Button -->
-                <button type="button" onclick="openSearchModal()" aria-label="Suche öffnen" class="md:hidden w-10 h-10 rounded-xl bg-slate-100 flex items-center justify-center text-slate-700 hover:bg-blue-50 hover:text-blue-600 transition-all border border-slate-200 cursor-pointer">
-                    <i data-lucide="search" class="w-5 h-5"></i>
+                <button type="button" onclick="openSearchModal()" aria-label="Suche öffnen" class="md:hidden w-8 h-8 sm:w-10 sm:h-10 rounded-xl bg-slate-100 flex items-center justify-center text-slate-700 hover:bg-blue-50 hover:text-blue-600 transition-all border border-slate-200 cursor-pointer">
+                    <i data-lucide="search" class="w-4 h-4 sm:w-5 sm:h-5"></i>
                 </button>
                 <div class="hidden lg:flex space-x-7 items-center">
                     <a href="ratgeber.html" class="text-xs font-black text-slate-600 hover:text-blue-600 uppercase tracking-widest transition-colors">Ratgeber</a>
                     <a href="faq.html" class="text-xs font-black text-slate-600 hover:text-blue-600 uppercase tracking-widest transition-colors">FAQ</a>
                 </div>
-                <a href="index.html#versicherungen" class="bg-blue-600 hover:bg-blue-700 text-white rounded-full px-5 sm:px-7 py-2.5 sm:py-3 text-xs sm:text-sm font-black shadow-lg shadow-blue-500/20 transition-all duration-300 hover:-translate-y-0.5 whitespace-nowrap">
+                <a href="index.html#versicherungen" class="bg-blue-600 hover:bg-blue-700 text-white rounded-full px-3.5 sm:px-7 py-2 sm:py-3 text-[11px] sm:text-sm font-black shadow-md shadow-blue-500/20 transition-all duration-300 hover:-translate-y-0.5 whitespace-nowrap">
                     Tarife vergleichen*
                 </a>
             </nav>
@@ -197,153 +197,60 @@
 
             <div class="max-w-4xl prose pt-16 ">
                 <div class="mb-10"><h2 class="text-2xl font-black mb-4">Datenschutz auf einen Blick</h2><div class="prose font-medium"><div >
-                <h3 >Ihre Rechte im Überblick</h3>
+                <h3 >Ihre Rechte nach DSGVO</h3>
                 <p >
-                  Sie haben jederzeit das Recht auf Auskunft über Ihre bei uns gespeicherten Daten, 
-                  deren Herkunft, Empfänger und den Zweck der Datenverarbeitung. Ebenso haben Sie 
-                  das Recht auf Berichtigung oder Löschung Ihrer Daten.
+                  Sie haben jederzeit das Recht auf Auskunft über Ihre gespeicherten personenbezogenen Daten, deren Herkunft und Empfänger sowie den Zweck der Datenverarbeitung. Ebenso haben Sie ein Recht auf Berichtigung, Sperrung oder Löschung dieser Daten.
                 </p>
               </div>
 
               <h3 >Allgemeine Hinweise</h3>
               <p >
-                Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren 
-                personenbezogenen Daten passiert, wenn Sie diese Website besuchen. 
-                Personenbezogene Daten sind alle Daten, mit denen Sie persönlich identifiziert 
-                werden können. Ausführliche Informationen zum Thema Datenschutz entnehmen Sie 
-                unserer unter diesem Text aufgeführten Datenschutzerklärung.
-              </p></div></div><div class="mb-10"><h2 class="text-2xl font-black mb-4">Datenerfassung auf dieser Website</h2><div class="prose font-medium"><div>
-                <h3 >Wer ist verantwortlich für die Datenerfassung?</h3>
-                <p >
-                  Die Datenverarbeitung auf dieser Website erfolgt durch den Websitebetreiber. 
-                  Dessen Kontaktdaten können Sie dem Impressum dieser Website entnehmen.
-                </p>
-              </div>
+                Diese Datenschutzerklärung klärt Sie über die Art, den Umfang und Zweck der Verarbeitung von personenbezogenen Daten innerhalb unseres Onlineangebotes auf.
+              </p></div></div><div class="mb-10"><h2 class="text-2xl font-black mb-4">Verantwortliche Stelle</h2><div class="prose font-medium"><p >
+                Verantwortlich für die Datenverarbeitung auf dieser Website ist:
+              </p>
+              <div >
+                <p >Jens Kathe</p>
+                <p>Hansastraße 6</p>
+                <p>34119 Kassel</p>
+                <p>Deutschland</p>
+                <p>E-Mail: jens@kathe.org</p>
+                <p>Telefon: 0178 6652623</p>
+              </div></div></div><div class="mb-10"><h2 class="text-2xl font-black mb-4">Cookies & Web-Analyse</h2><div class="prose font-medium"><p>
+                Unsere Website nutzt lokale Speicherung (`localStorage`) zur Speicherung Ihrer Cookie-Einwilligung. 
+              </p>
 
               <div>
-                <h3 >Wie erfassen wir Ihre Daten?</h3>
+                <h4 >Vercel Web Analytics</h4>
                 <p >
-                  Ihre Daten werden zum einen dadurch erhoben, dass Sie uns diese mitteilen:
+                  Zur bedarfsgerechten Gestaltung und statistischen Auswertung unserer Website nutzen wir Vercel Web Analytics (Vercel Inc.). Vercel Web Analytics verarbeitet Daten in anonymisierter Form und verwendet keine Tracking-Cookies von Drittanbietern.
                 </p>
-                <ul >
-                  <li>Daten aus Kontaktformularen und Vergleichsrechnern</li>
-                  <li>Daten bei der Versicherungsberatung und -vermittlung</li>
-                  <li>Cookie-Einstellungen und Präferenzen</li>
-                </ul>
-              </div>
+              </div></div></div><div class="mb-10"><h2 class="text-2xl font-black mb-4">Einbindung von Partner-Vergleichsrechnern</h2><div class="prose font-medium"><p>
+                Auf unseren Unterseiten binden wir Vergleichsrechner von Partnernetzwerken (z.B. TARIFCHECK24 GmbH, Zolltorstraße 11, 21502 Geesthacht) per iFrame bzw. JavaScript-Formular ein.
+              </p>
 
-              <div>
-                <h3 >Wofür nutzen wir Ihre Daten?</h3>
-                <ul >
-                  <li>Zur Bereitstellung der Website und deren Funktionalitäten</li>
-                  <li>Für die Versicherungsberatung und -vermittlung</li>
-                  <li>Zur Kommunikation und Kundenbetreuung</li>
-                  <li>Für statistische Auswertungen (anonymisiert)</li>
-                </ul>
-              </div></div></div><div class="mb-10"><h2 class="text-2xl font-black mb-4">Cookies und Tracking</h2><div class="prose font-medium"><div >
-                <h3 >Cookie-Einwilligung erforderlich</h3>
+              <div >
+                <h4 >Datenverarbeitung im Vergleichsrechner</h4>
                 <p >
-                  Wir verwenden Cookies nur nach Ihrer ausdrücklichen Einwilligung. 
-                  Sie können Ihre Einwilligung jederzeit widerrufen oder anpassen.
+                  Wenn Sie Eingaben im Vergleichsrechner vornehmen, werden diese Daten direkt an den jeweiligen Schnittstellen-Betreiber (TARIFCHECK24 GmbH) übermittelt, um Beitragsberechnungen durchzuführen. Die Datenverarbeitung erfolgt auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO (Vertragsanbahnung) und Ihrer Einwilligung (Art. 6 Abs. 1 lit. a DSGVO).
                 </p>
-              </div>
-
-              <div>
-                <h3 >Arten von Cookies</h3>
+              </div></div></div><div class="mb-10"><h2 class="text-2xl font-black mb-4">Ihre Betroffenenrechte</h2><div class="prose font-medium"><div >
                 <div >
-                  <div >
-                    <h4 >Notwendige Cookies</h4>
-                    <p >
-                      Technisch erforderlich für die Grundfunktionalität der Website
-                    </p>
-                  </div>
-                  <div >
-                    <h4 >Analyse-Cookies</h4>
-                    <p >
-                      Helfen uns, die Nutzung der Website zu verstehen und zu verbessern
-                    </p>
-                  </div>
-                  <div >
-                    <h4 >Marketing-Cookies</h4>
-                    <p >
-                      Ermöglichen Affiliate-Tracking und personalisierte Werbung
-                    </p>
-                  </div>
-                </div>
-              </div></div></div><div class="mb-10"><h2 class="text-2xl font-black mb-4">Affiliate-Partner & gemeinsame Verantwortlichkeit</h2><div class="prose font-medium"><div >
-                <h3 >Wichtiger Hinweis</h3>
-                <p >
-                  Bei der Nutzung unserer Vergleichsrechner werden Ihre Daten an unsere 
-                  Affiliate-Partner übermittelt. Hierbei kann eine gemeinsame Verantwortlichkeit 
-                  im Sinne der DSGVO entstehen.
-                </p>
-              </div>
-
-              <div>
-                <h3 >Unsere Partner</h3>
-                <ul >
-                  <li>
-                    <strong>partner-versicherung.de:</strong> 
-                    Technischer Partner für Vergleichsrechner und Vermittlung
-                  </li>
-                  <li>
-                    <strong>Verschiedene Versicherer:</strong> 
-                    Direkte Übermittlung für Angebotsstellung
-                  </li>
-                </ul>
-              </div>
-
-              <div>
-                <h3 >Rechtsgrundlagen</h3>
-                <ul >
-                  <li>Art. 6 Abs. 1 lit. a DSGVO (Einwilligung)</li>
-                  <li>Art. 6 Abs. 1 lit. b DSGVO (Vertragserfüllung)</li>
-                  <li>Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse)</li>
-                </ul>
-              </div></div></div><div class="mb-10"><h2 class="text-2xl font-black mb-4">Ihre Rechte</h2><div class="prose font-medium"><div >
-                <div >
-                  <h4 >Auskunftsrecht</h4>
-                  <p >
-                    Sie haben das Recht zu erfahren, welche Daten wir über Sie gespeichert haben.
-                  </p>
+                  <h4 >Auskunft & Berichtigung</h4>
+                  <p >Sie haben das Recht auf kostenlose Auskunft über Ihre verarbeiteten Daten.</p>
                 </div>
                 <div >
-                  <h4 >Berichtigungsrecht</h4>
-                  <p >
-                    Unrichtige Daten können Sie jederzeit korrigieren lassen.
-                  </p>
-                </div>
-                <div >
-                  <h4 >Löschungsrecht</h4>
-                  <p >
-                    Sie können die Löschung Ihrer Daten verlangen (Recht auf Vergessenwerden).
-                  </p>
-                </div>
-                <div >
-                  <h4 >Widerspruchsrecht</h4>
-                  <p >
-                    Sie können der Verarbeitung Ihrer Daten widersprechen.
-                  </p>
+                  <h4 >Löschung & Einschränkung</h4>
+                  <p >Sie können die Löschung oder Einschränkung der Verarbeitung verlangen.</p>
                 </div>
               </div>
 
               <div >
-                <h3 >Kontakt für Datenschutzanfragen</h3>
+                <h4 >Kontakt für Datenschutzfragen</h4>
                 <p >
-                  E-Mail: datenschutz@versicherungsofort.de<br />
-                  Telefon: +49 (0) 30 12345678<br />
-                  Post: versicherungsofort.de, Datenschutz, Musterstraße 123, 12345 Berlin
+                  Bei Fragen zum Datenschutz richten Sie Ihre Anfrage bitte per E-Mail an: <strong>jens@kathe.org</strong> oder per Post an Jens Kathe, Hansastraße 6, 34119 Kassel.
                 </p>
-              </div></div></div><div class="mb-10"><h2 class="text-2xl font-black mb-4">Speicherdauer</h2><div class="prose font-medium"><p >
-                Ihre personenbezogenen Daten werden nur so lange gespeichert, wie es für die 
-                jeweiligen Zwecke erforderlich ist oder gesetzliche Aufbewahrungsfristen dies vorsehen:
-              </p>
-              <ul >
-                <li>Beratungsdaten: 10 Jahre (Vermittlerrecht)</li>
-                <li>Vertragsdaten: Laufzeit + 3 Jahre</li>
-                <li>Marketing-Daten: bis zum Widerruf der Einwilligung</li>
-                <li>Cookies: je nach Typ 1 Tag bis 2 Jahre</li>
-              </ul></div></div>
+              </div></div></div>
                 
                 
 

@@ -129,16 +129,16 @@
 <body class="min-h-screen bg-slate-50/50 text-slate-900 flex flex-col antialiased relative">
     <div class="fixed inset-0 bg-grid pointer-events-none"></div>
     
-<header class="sticky top-0 z-50 bg-white/90 backdrop-blur-xl border-b border-slate-200 transition-all duration-300">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex justify-between items-center h-20 gap-3 md:gap-6">
-            <a href="index.html" class="flex items-center space-x-2 group flex-shrink-0">
-                <div class="w-10 h-10 bg-slate-900 rounded-xl flex items-center justify-center shadow-sm group-hover:scale-105 transition-all duration-300">
-                    <i data-lucide="shield" class="w-5 h-5 text-white"></i>
+<header class="sticky top-0 z-50 bg-white/95 backdrop-blur-xl border-b border-slate-200 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16 sm:h-20 gap-2 sm:gap-6 overflow-hidden">
+            <a href="index.html" class="flex items-center space-x-2 group flex-shrink">
+                <div class="w-8 h-8 sm:w-10 sm:h-10 bg-slate-900 rounded-xl flex items-center justify-center shadow-xs group-hover:scale-105 transition-all duration-300 flex-shrink-0">
+                    <i data-lucide="shield" class="w-4 h-4 sm:w-5 sm:h-5 text-white"></i>
                 </div>
-                <div class="flex items-baseline tracking-tighter">
-                    <span class="text-xl font-black text-slate-900">versicherung</span>
-                    <span class="text-xl font-extrabold text-blue-600">sofort</span>
+                <div class="flex items-baseline tracking-tighter truncate">
+                    <span class="text-base sm:text-xl font-black text-slate-900">versicherung</span>
+                    <span class="text-base sm:text-xl font-extrabold text-blue-600">sofort</span>
                 </div>
             </a>
 
@@ -153,16 +153,16 @@
                 </button>
             </div>
 
-            <nav class="flex items-center gap-2 sm:gap-6">
+            <nav class="flex items-center gap-2 sm:gap-6 flex-shrink-0">
                 <!-- Mobile Search Icon Button -->
-                <button type="button" onclick="openSearchModal()" aria-label="Suche öffnen" class="md:hidden w-10 h-10 rounded-xl bg-slate-100 flex items-center justify-center text-slate-700 hover:bg-blue-50 hover:text-blue-600 transition-all border border-slate-200 cursor-pointer">
-                    <i data-lucide="search" class="w-5 h-5"></i>
+                <button type="button" onclick="openSearchModal()" aria-label="Suche öffnen" class="md:hidden w-8 h-8 sm:w-10 sm:h-10 rounded-xl bg-slate-100 flex items-center justify-center text-slate-700 hover:bg-blue-50 hover:text-blue-600 transition-all border border-slate-200 cursor-pointer">
+                    <i data-lucide="search" class="w-4 h-4 sm:w-5 sm:h-5"></i>
                 </button>
                 <div class="hidden lg:flex space-x-7 items-center">
                     <a href="ratgeber.html" class="text-xs font-black text-slate-600 hover:text-blue-600 uppercase tracking-widest transition-colors">Ratgeber</a>
                     <a href="faq.html" class="text-xs font-black text-slate-600 hover:text-blue-600 uppercase tracking-widest transition-colors">FAQ</a>
                 </div>
-                <a href="index.html#versicherungen" class="bg-blue-600 hover:bg-blue-700 text-white rounded-full px-5 sm:px-7 py-2.5 sm:py-3 text-xs sm:text-sm font-black shadow-lg shadow-blue-500/20 transition-all duration-300 hover:-translate-y-0.5 whitespace-nowrap">
+                <a href="index.html#versicherungen" class="bg-blue-600 hover:bg-blue-700 text-white rounded-full px-3.5 sm:px-7 py-2 sm:py-3 text-[11px] sm:text-sm font-black shadow-md shadow-blue-500/20 transition-all duration-300 hover:-translate-y-0.5 whitespace-nowrap">
                     Tarife vergleichen*
                 </a>
             </nav>
@@ -196,10 +196,10 @@
             
 
             <div class="max-w-4xl prose pt-16 ">
-                <div class="mb-10"><h2 class="text-2xl font-black mb-4">Anbieter & Verantwortlich</h2><div class="prose font-medium"><p><strong>Jens Kathe</strong></p>
+                <div class="mb-10"><h2 class="text-2xl font-black mb-4">Anbieter & Betreiber</h2><div class="prose font-medium"><p >Jens Kathe</p>
               <p>Hansastraße 6</p>
               <p>34119 Kassel</p>
-              <p>Deutschland</p></div></div><div class="mb-10"><h2 class="text-2xl font-black mb-4">Kontakt</h2><div class="prose font-medium"><p >
+              <p>Deutschland</p></div></div><div class="mb-10"><h2 class="text-2xl font-black mb-4">Kontaktmöglichkeiten</h2><div class="prose font-medium"><p >
                 <Phone  />
                 <span>Telefon: 0178 6652623</span>
               </p>
@@ -210,44 +210,27 @@
               <p >
                 <Globe  />
                 <span>Web: www.versicherungsofort.de</span>
-              </p></div></div><div class="mb-10"><h2 class="text-2xl font-black mb-4">Gewerberechtliche Angaben</h2><div class="prose font-medium"><div >
-                <h3 >Kleinunternehmer</h3>
-                <p >
-                  Nach § 19 UStG wird keine Umsatzsteuer ausgewiesen.
-                </p>
-              </div></div></div><div class="mb-10"><h2 class="text-2xl font-black mb-4">Vermittlertätigkeit & Haftung</h2><div class="prose font-medium"><div >
-                <h3 >Vermittlerstatus</h3>
-                <p >
-                  Wir sind als Versicherungsmakler nach § 34d GewO tätig und vertreten die Interessen 
-                  unserer Kunden. Wir erhalten von unseren Versicherungspartnern eine Provision für 
-                  erfolgreich vermittelte Verträge.
-                </p>
-              </div>
-
-              <div>
-                <h3 >Berufshaftpflichtversicherung</h3>
-                <p >
-                  Vermittlertätigkeit erfolgt über lizenzierte Partner<br />
-                  Deckungssumme: 1.000.000 € je Versicherungsfall<br />
-                  Räumlicher Geltungsbereich: Europa
-                </p>
-              </div></div></div><div class="mb-10"><h2 class="text-2xl font-black mb-4">Haftungsausschluss</h2><div class="prose font-medium"><div>
-                <h3 >Inhalt des Onlineangebotes</h3>
+              </p></div></div><div class="mb-10"><h2 class="text-2xl font-black mb-4">Umsatzsteuer-Hinweis</h2><div class="prose font-medium"><p>
+                Gemäß § 19 UStG (Kleinunternehmerregelung) wird keine Umsatzsteuer berechnet und ausgewiesen.
+              </p></div></div><div class="mb-10"><h2 class="text-2xl font-black mb-4">Tätigkeit & Betreiberrolle</h2><div class="prose font-medium"><p>
+                <strong>versicherungsofort.de</strong> ist ein unabhängiges Verbraucher- und Informationsportal. Der Betreiber tritt nicht selbst als eigenständiger Versicherungsmakler oder Versicherungsvertreter nach § 34d GewO auf.
+              </p>
+              <p>
+                Die auf der Website bereitgestellten Vergleichsrechner und Vermittlungsstrecken werden durch zugelassene technische Partner und Vergleichsnetzwerke (wie z.B. TARIFCHECK24 GmbH, Zolltorstraße 11, 21502 Geesthacht) zur Verfügung gestellt. Die Tarifberechnung, Antragsprüfung und Vermittlungsleistung erfolgt direkt über die jeweiligen Einbindungspartner.
+              </p>
+              <p >
+                * Hinweis zu Vergütungen: Für vermittelte Verträge über Partnerlinks erhält der Betreiber gegebenenfalls eine Vermittlungsprovision vom jeweiligen Partnernetzwerk.
+              </p></div></div><div class="mb-10"><h2 class="text-2xl font-black mb-4">Haftungsausschluss</h2><div class="prose font-medium"><div>
+                <h3 >Inhalte des Onlineangebots</h3>
                 <p>
-                  Der Betreiber übernimmt keinerlei Gewähr für die Aktualität, Korrektheit, 
-                  Vollständigkeit oder Qualität der bereitgestellten Informationen. 
-                  Haftungsansprüche gegen den Betreiber, welche sich auf Schäden materieller 
-                  oder ideeller Art beziehen, sind grundsätzlich ausgeschlossen.
+                  Alle Inhalte dieser Website werden mit größtmöglicher Sorgfalt erstellt. Der Betreiber übernimmt jedoch keine Gewähr für die Richtigkeit, Vollständigkeit und Aktualität der bereitgestellten Informationen und Beitragsberechnungen der Partnerrechner.
                 </p>
               </div>
 
               <div>
                 <h3 >Verweise und Links</h3>
                 <p>
-                  Bei direkten oder indirekten Verweisen auf fremde Internetseiten 
-                  ("Links"), die außerhalb des Verantwortungsbereiches des Betreibers liegen, 
-                  würde eine Haftungsverpflichtung ausschließlich in dem Fall in Kraft treten, 
-                  in dem der Betreiber von den Inhalten Kenntnis hat.
+                  Diese Website enthält Verknüpfungen zu Websites Dritter ("externe Links"). Diese Websites unterliegen der Haftung der jeweiligen Betreiber.
                 </p>
               </div></div></div>
                 

@@ -15,16 +15,16 @@ const SYSTEM_FONT_CSS = `
 `;
 
 const HEADER_HTML = `
-<header class="sticky top-0 z-50 bg-white/90 backdrop-blur-xl border-b border-slate-200 transition-all duration-300">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex justify-between items-center h-20 gap-3 md:gap-6">
-            <a href="index.html" class="flex items-center space-x-2 group flex-shrink-0">
-                <div class="w-10 h-10 bg-slate-900 rounded-xl flex items-center justify-center shadow-sm group-hover:scale-105 transition-all duration-300">
-                    <i data-lucide="shield" class="w-5 h-5 text-white"></i>
+<header class="sticky top-0 z-50 bg-white/95 backdrop-blur-xl border-b border-slate-200 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16 sm:h-20 gap-2 sm:gap-6 overflow-hidden">
+            <a href="index.html" class="flex items-center space-x-2 group flex-shrink">
+                <div class="w-8 h-8 sm:w-10 sm:h-10 bg-slate-900 rounded-xl flex items-center justify-center shadow-xs group-hover:scale-105 transition-all duration-300 flex-shrink-0">
+                    <i data-lucide="shield" class="w-4 h-4 sm:w-5 sm:h-5 text-white"></i>
                 </div>
-                <div class="flex items-baseline tracking-tighter">
-                    <span class="text-xl font-black text-slate-900">versicherung</span>
-                    <span class="text-xl font-extrabold text-blue-600">sofort</span>
+                <div class="flex items-baseline tracking-tighter truncate">
+                    <span class="text-base sm:text-xl font-black text-slate-900">versicherung</span>
+                    <span class="text-base sm:text-xl font-extrabold text-blue-600">sofort</span>
                 </div>
             </a>
 
@@ -39,16 +39,16 @@ const HEADER_HTML = `
                 </button>
             </div>
 
-            <nav class="flex items-center gap-2 sm:gap-6">
+            <nav class="flex items-center gap-2 sm:gap-6 flex-shrink-0">
                 <!-- Mobile Search Icon Button -->
-                <button type="button" onclick="openSearchModal()" aria-label="Suche öffnen" class="md:hidden w-10 h-10 rounded-xl bg-slate-100 flex items-center justify-center text-slate-700 hover:bg-blue-50 hover:text-blue-600 transition-all border border-slate-200 cursor-pointer">
-                    <i data-lucide="search" class="w-5 h-5"></i>
+                <button type="button" onclick="openSearchModal()" aria-label="Suche öffnen" class="md:hidden w-8 h-8 sm:w-10 sm:h-10 rounded-xl bg-slate-100 flex items-center justify-center text-slate-700 hover:bg-blue-50 hover:text-blue-600 transition-all border border-slate-200 cursor-pointer">
+                    <i data-lucide="search" class="w-4 h-4 sm:w-5 sm:h-5"></i>
                 </button>
                 <div class="hidden lg:flex space-x-7 items-center">
                     <a href="ratgeber.html" class="text-xs font-black text-slate-600 hover:text-blue-600 uppercase tracking-widest transition-colors">Ratgeber</a>
                     <a href="faq.html" class="text-xs font-black text-slate-600 hover:text-blue-600 uppercase tracking-widest transition-colors">FAQ</a>
                 </div>
-                <a href="index.html#versicherungen" class="bg-blue-600 hover:bg-blue-700 text-white rounded-full px-5 sm:px-7 py-2.5 sm:py-3 text-xs sm:text-sm font-black shadow-lg shadow-blue-500/20 transition-all duration-300 hover:-translate-y-0.5 whitespace-nowrap">
+                <a href="index.html#versicherungen" class="bg-blue-600 hover:bg-blue-700 text-white rounded-full px-3.5 sm:px-7 py-2 sm:py-3 text-[11px] sm:text-sm font-black shadow-md shadow-blue-500/20 transition-all duration-300 hover:-translate-y-0.5 whitespace-nowrap">
                     Tarife vergleichen*
                 </a>
             </nav>
@@ -1466,20 +1466,20 @@ files.forEach(file => {
                                 </a>
                             `).join('')}
                         </div>
-                        <p class="text-[11px] text-slate-400 mt-4">* Partnerlink: Kostenloser und unverbindlicher Tarifvergleich über das Tarifcheck-Partnerprogramm (Partner-ID: 72057).</p>
+                        <p class="text-[11px] text-slate-400 mt-4">* Partnerlink: Kostenloser und unverbindlicher Tarifvergleich über unseren Einbindungspartner TARIFCHECK24 GmbH.</p>
                     </div>
                     `;
                 })() : ''}
 
                 ${!isLegalPage && data.iframes.length > 0 ? `
                 <div class="mt-16 bg-slate-50 p-10 rounded-3xl border border-slate-200">
-                    <h2 class="!border-none !p-0 !mt-0 text-2xl font-black text-slate-900 mb-4">Experten-Hinweis für Ihren Vergleich</h2>
-                    <p class="mb-0 text-slate-600 font-medium leading-relaxed">Achten Sie beim Vergleich von Versicherungen nicht nur auf den Monatsbeitrag. Besonders bei langfristigen Verträgen ist die Finanzstärke des Anbieters, die Kulanz im Schadensfall und die Flexibilität der Versicherungsbedingungen (z.B. Nachversicherungsgarantien oder Verzicht auf Einwand grober Fahrlässigkeit) von existenzieller Bedeutung.</p>
+                    <h2 class="!border-none !p-0 !mt-0 text-2xl font-black text-slate-900 mb-4">Hinweise zum Tarifvergleich</h2>
+                    <p class="mb-0 text-slate-600 font-medium leading-relaxed">Achten Sie beim Vergleich von Versicherungen nicht nur auf den Monatsbeitrag. Besonders bei langfristigen Verträgen sind der konkrete Leistungsumfang im Schadensfall und die Flexibilität der Tarifbedingungen von entscheidender Bedeutung.</p>
                 </div>` : ''}
 
                 ${!isLegalPage ? `
-                <!-- E-E-A-T Editorial Trust Box -->
-                <div class="mt-14 not-prose bg-white border border-slate-200 rounded-3xl p-6 sm:p-8 shadow-sm">
+                <!-- Redaktioneller Hinweis -->
+                <div class="mt-14 not-prose bg-white border border-slate-200 rounded-3xl p-6 sm:p-8 shadow-xs">
                     <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-6 pb-6 border-b border-slate-100">
                         <div class="flex items-center gap-4">
                             <div class="w-12 h-12 rounded-2xl bg-slate-900 text-white flex items-center justify-center font-black text-lg shadow-md flex-shrink-0">
@@ -1487,19 +1487,15 @@ files.forEach(file => {
                             </div>
                             <div>
                                 <div class="flex items-center gap-2 flex-wrap">
-                                    <span class="font-black text-slate-900 text-base">Fachredaktion versicherungsofort.de</span>
-                                    <span class="px-2.5 py-0.5 bg-emerald-100 text-emerald-800 text-[10px] font-black rounded-full uppercase tracking-wider border border-emerald-200">Geprüft September 2026</span>
+                                    <span class="font-black text-slate-900 text-base">Redaktion versicherungsofort.de</span>
+                                    <span class="px-2.5 py-0.5 bg-slate-100 text-slate-700 text-[10px] font-bold rounded-full uppercase tracking-wider border border-slate-200">Verbraucherinformation</span>
                                 </div>
-                                <p class="text-xs text-slate-500 font-medium mt-0.5">Unabhängige Tarifanalyse &amp; Verbraucherschutz nach VVG / BaFin-Standards</p>
+                                <p class="text-xs text-slate-500 font-medium mt-0.5">Unabhängige Informationen &amp; Tarifvergleiche über geprüfte Partner-Schnittstellen</p>
                             </div>
-                        </div>
-                        <div class="flex items-center gap-2 text-xs font-bold text-slate-600 bg-slate-50 px-3 py-1.5 rounded-xl border border-slate-200 self-start sm:self-auto">
-                            <i data-lucide="badge-check" class="w-4 h-4 text-blue-600"></i>
-                            <span>Zertifizierter Qualitätsstandard</span>
                         </div>
                     </div>
                     <div class="pt-5 text-xs text-slate-600 leading-relaxed font-medium">
-                        Unsere Fachredaktion analysiert Beitrags- und Tarifdaten neutral und verbraucherschutzkonform. Alle Beitragsberechnungen, Gesetzesverweise und Tarifdetails werden monatlich aktualisiert und gegen offizielle BaFin-Verordnungen und VVG-Novellen abgeglichen.
+                        Die Redaktion von versicherungsofort.de stellt verständliche Leitfäden und Tarifvergleiche bereit. Alle Beitrags- und Konditionsberechnungen werden in den Vergleichsrechnern unserer Partner (z.B. TARIFCHECK24 GmbH) auf Basis der Angaben der jeweiligen Versicherungsgesellschaften durchgeführt.
                     </div>
                 </div>` : ''}
             </div>
@@ -1578,35 +1574,80 @@ ALIAS_PAIRS.forEach(([src, dest]) => {
 
 // --- 5. INDEX.HTML REGENERATION ---
 
-const homeCode = fs.readFileSync(path.join(PAGES_DIR, 'Home.jsx'), 'utf8');
-const catMatch = homeCode.match(/const insuranceCategories = (\[[\s\S]*?\]);\n\nconst steps/s);
-let categories = [];
-if (catMatch) {
-    try { eval(`categories = ${catMatch[1].replace(/createPageUrl\("([^"]+)"\)/g, '"$1"')}`); } catch(e) { console.error(e); }
-}
+const categories = [
+  {
+    title: "Fahrzeuge & Mobilität",
+    items: [
+      { title: "Kfz-Versicherung", url: "kfz", icon: "car", description: "Pkw-Haftpflicht, Teilkasko & Vollkasko vergleichen.", type: "vergleich" },
+      { title: "Motorradversicherung", url: "motorrad", icon: "gauge", description: "Motorräder, Roller & Quads günstig absichern.", type: "vergleich" }
+    ]
+  },
+  {
+    title: "Haftpflicht & Sachwerte",
+    items: [
+      { title: "Privathaftpflicht", url: "haftpflicht", icon: "shield", description: "Absicherung vor Schadensersatzansprüchen Dritter.", type: "vergleich" },
+      { title: "Hausratversicherung", url: "hausrat", icon: "home", description: "Schutz für Möbel & Wertsachen bei Feuer, Einbruch & Sturm.", type: "vergleich" },
+      { title: "Wohngebäudeversicherung", url: "wohngebaeudeversicherung", icon: "home", description: "Immobilienschutz bei Feuer, Leitungswasser & Elementarschäden.", type: "vergleich" },
+      { title: "Hundehaftpflicht & Tierhalter", url: "tierhalterhaftpflicht", icon: "dog", description: "Haftpflichtschutz für Hunde- & Pferdehalter.", type: "vergleich" },
+      { title: "Hundekrankenversicherung", url: "hundekrankenversicherung", icon: "activity", description: "Tierarztkosten & Operationsschutz für Hunde.", type: "vergleich" },
+      { title: "Haus- & Grundbesitzerhaftpflicht", url: "grundbesitzerhaftpflicht", icon: "building-2", description: "Haftpflichtschutz für Vermieter & Grundstückseigentümer.", type: "vergleich" }
+    ]
+  },
+  {
+    title: "Recht & Gewerbe",
+    items: [
+      { title: "Rechtsschutzversicherung", url: "rechtsschutz", icon: "scale", description: "Kostenübernahme für Anwälte & Gerichte je nach Baustein.", type: "vergleich" },
+      { title: "Firmen- & Gewerbeversicherung", url: "firmenversicherung", icon: "building", description: "Betriebshaftpflicht & Inhaltsversicherung für Gewerbe.", type: "anfrage" }
+    ]
+  },
+  {
+    title: "Gesundheit & Pflege",
+    items: [
+      { title: "Private Krankenversicherung (PKV)", url: "pkv", icon: "heart-pulse", description: "Krankenvollversicherung für Angestellte über JAEG, Beamte & Selbstständige.", type: "vergleich" },
+      { title: "PKV für Beamte & Anwärter", url: "pkv-beamte", icon: "user-check", description: "Beihilfe-Ergänzungstarife für den öffentlichen Dienst.", type: "vergleich" },
+      { title: "PKV für Studenten", url: "pkv-studenten", icon: "graduation-cap", description: "Studentische Krankenversicherungstarife.", type: "vergleich" },
+      { title: "PKV Tarifwechsel ab 55", url: "pkv-55", icon: "users", description: "Beitragsoptimierung & interner Tarifwechsel nach § 204 VVG.", type: "anfrage" },
+      { title: "Zahnzusatz & Krankenzusatz", url: "krankenzusatz", icon: "smile", description: "Tarifabhängige Kostenerstattung für Zahnersatz & Prophylaxe.", type: "vergleich" },
+      { title: "Pflegezusatzversicherung", url: "pflege", icon: "activity", description: "Pflegetagegeld & Erstattung für Pflegegrade 1-5.", type: "vergleich" }
+    ]
+  },
+  {
+    title: "Vorsorge & Arbeitskraft",
+    items: [
+      { title: "Berufsunfähigkeitsversicherung (BU)", url: "berufsunfaehigkeit", icon: "briefcase", description: "Einkommensschutz bei dauerhafter Krankheit oder Unfall.", type: "vergleich" },
+      { title: "Unfallversicherung", url: "unfallversicherung", icon: "shield-alert", description: "24-Stunden-Invaliditätsschutz für Freizeit & Beruf.", type: "vergleich" },
+      { title: "Risikolebensversicherung", url: "risikolebensversicherung", icon: "life-buoy", description: "Hinterbliebenenschutz zur Immobilien- & Familienabsicherung.", type: "vergleich" },
+      { title: "Kapitallebensversicherung", url: "lebensversicherung", icon: "umbrella", description: "Kombination aus Todesfallschutz und Sparanteil.", type: "vergleich" },
+      { title: "Private Rentenversicherung", url: "rente", icon: "coins", description: "Private Altersvorsorgevereinbarung mit Rentenoption.", type: "vergleich" },
+      { title: "Riester-Rente", url: "riester", icon: "landmark", description: "Staatlich geförderte Altersvorsorge mit Zulagen.", type: "vergleich" },
+      { title: "Rürup-Rente (Basisrente)", url: "ruerup", icon: "trending-up", description: "Steuerbegünstigte Basisversorgung für Selbstständige & Angestellte.", type: "vergleich" }
+    ]
+  }
+];
 
 let catsHtml = '';
 categories.forEach(cat => {
     catsHtml += `
-    <div class="mb-24">
-        <div class="flex items-center space-x-6 mb-10">
-            <h3 class="text-xs font-black uppercase tracking-[0.35em] text-slate-500">${cat.title.normalize('NFC').replace(/[^\w\s\u00C0-\u017F]/g, '').trim()}</h3>
+    <div class="mb-16">
+        <div class="flex items-center space-x-6 mb-8">
+            <h3 class="text-xs font-black uppercase tracking-[0.25em] text-slate-500">${cat.title}</h3>
             <div class="flex-1 h-px bg-slate-200"></div>
         </div>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
     `;
     cat.items.forEach(item => {
+        const ctaText = item.type === 'anfrage' ? 'Angebot anfragen*' : 'Tarife vergleichen*';
         catsHtml += `
-            <a href="${getSafeName(item.url)}.html" class="glass group rounded-3xl p-8 hover:bg-white hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between h-full border border-slate-200">
+            <a href="${item.url}.html" class="glass group rounded-3xl p-7 hover:bg-white hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between h-full border border-slate-200">
                 <div>
-                    <div class="icon-pill mb-6 text-slate-900 group-hover:bg-blue-600 group-hover:text-white transition-colors duration-300">
-                        <span class="text-xl">${item.icon}</span>
+                    <div class="icon-pill mb-5 text-slate-900 group-hover:bg-blue-600 group-hover:text-white transition-colors duration-300">
+                        <i data-lucide="${item.icon}"></i>
                     </div>
-                    <h4 class="text-xl font-bold text-slate-900 mb-2 tracking-tight leading-snug">${item.title}</h4>
-                    <p class="text-slate-600 text-sm font-medium leading-relaxed mb-6">${item.description}</p>
+                    <h4 class="text-lg font-bold text-slate-900 mb-2 tracking-tight leading-snug">${item.title}</h4>
+                    <p class="text-slate-600 text-xs font-medium leading-relaxed mb-6">${item.description}</p>
                 </div>
                 <div class="flex items-center text-xs font-black uppercase tracking-wider text-blue-600 group-hover:translate-x-1 transition-transform">
-                    Tarife vergleichen* <i data-lucide="chevron-right" class="w-4 h-4 ml-1"></i>
+                    ${ctaText} <i data-lucide="chevron-right" class="w-4 h-4 ml-1"></i>
                 </div>
             </a>
         `;
@@ -1617,12 +1658,12 @@ categories.forEach(cat => {
 const indexContent = `
 <section class="relative bg-white pt-20 pb-28 lg:pt-32 lg:pb-40 overflow-hidden px-4 border-b border-slate-100">
     <div class="relative max-w-7xl mx-auto text-center">
-        <div class="inline-flex items-center gap-3 px-5 py-2 rounded-full border border-slate-200 text-xs font-black uppercase tracking-widest text-slate-600 mb-10 bg-slate-50 shadow-sm">
+        <div class="inline-flex items-center gap-3 px-5 py-2 rounded-full border border-slate-200 text-xs font-black uppercase tracking-widest text-slate-600 mb-10 bg-slate-50 shadow-xs">
             <span class="w-2 h-2 rounded-full bg-blue-600"></span>
-            Unabhängig & Sicherer Vergleich
+            Unabhängiges Informations- & Vergleichsportal
         </div>
         <h1 class="text-4xl sm:text-6xl lg:text-7xl font-black text-slate-900 mb-8 tracking-tightest leading-[1.1]">
-            Versicherungen vergleichen. <br/><span class="text-blue-600">Faktenbasiert & digital.</span>
+            Versicherungen vergleichen. <br/><span class="text-blue-600">Faktenbasiert & transparent.</span>
         </h1>
         <p class="text-lg md:text-xl text-slate-600 mb-12 max-w-2xl mx-auto leading-relaxed font-semibold tracking-tight">
             Transparente Tarifübersichten von über 300 Versicherungsgesellschaften. Ohne Verkaufsdruck, ohne versteckte Gebühren.
@@ -1643,18 +1684,18 @@ const indexContent = `
         <div class="grid md:grid-cols-3 gap-8">
             <div class="glass p-8 rounded-3xl border border-slate-200">
                 <div class="icon-pill mb-6 bg-slate-900 text-white"><i data-lucide="zap" class="w-5 h-5"></i></div>
-                <h3 class="text-xl font-black mb-2 tracking-tight">Echtzeit-Berechnung</h3>
-                <p class="text-slate-600 font-medium text-sm leading-relaxed">Modernste Vergleichs-Algorithmen berechnen Ihren persönlichen Beitrag in unter 60 Sekunden.</p>
+                <h3 class="text-xl font-black mb-2 tracking-tight">Direkte Rechner-Eingabe</h3>
+                <p class="text-slate-600 font-medium text-sm leading-relaxed">Eingestellte Online-Vergleichsrechner unserer Partner ermöglichen die sofortige Eingabe Ihrer Objektdaten.</p>
             </div>
             <div class="glass p-8 rounded-3xl border border-slate-200">
                 <div class="icon-pill mb-6 bg-slate-900 text-white"><i data-lucide="shield" class="w-5 h-5"></i></div>
-                <h3 class="text-xl font-black mb-2 tracking-tight">Verschlüsselt & Datenschutz</h3>
+                <h3 class="text-xl font-black mb-2 tracking-tight">Verschlüsselt & DSGVO-konform</h3>
                 <p class="text-slate-600 font-medium text-sm leading-relaxed">Verschlüsselte Datenübertragung (HTTPS). Lokaler System-Schriftarten-Stack ohne externe Google-Fonts-CDNs.</p>
             </div>
             <div class="glass p-8 rounded-3xl border border-slate-200">
                 <div class="icon-pill mb-6 bg-slate-900 text-white"><i data-lucide="trending-down" class="w-5 h-5"></i></div>
-                <h3 class="text-xl font-black mb-2 tracking-tight">Nachweisbare Ersparnis</h3>
-                <p class="text-slate-600 font-medium text-sm leading-relaxed">Durch den objektiven Marktüberblick sichern Sie sich exakt das passende Preis-Leistungs-Verhältnis.</p>
+                <h3 class="text-xl font-black mb-2 tracking-tight">Transparente Preisübersicht</h3>
+                <p class="text-slate-600 font-medium text-sm leading-relaxed">Vergleichen Sie Leistungen und Beiträge sachlich gegeneinander auf Basis der Anbieterkonditionen.</p>
             </div>
         </div>
     </div>
@@ -1663,7 +1704,7 @@ const indexContent = `
 <section id="versicherungen" class="py-24 bg-white">
     <div class="max-w-7xl mx-auto px-4">
         <div class="mb-20 text-center">
-            <h2 class="text-3xl md:text-5xl font-black text-slate-900 mb-6 tracking-tightest leading-tight">Alle Versicherungsvergleiche auf einen Blick</h2>
+            <h2 class="text-3xl md:text-5xl font-black text-slate-900 mb-6 tracking-tightest leading-tight">Alle verfügbaren Versicherungsvergleiche</h2>
             <p class="text-slate-600 font-medium text-base max-w-2xl mx-auto">Wählen Sie Ihre gewünschte Sparte für detaillierte Tarifrechner und transparente Konditionen.</p>
         </div>
         <div class="space-y-12">

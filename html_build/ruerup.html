@@ -129,16 +129,16 @@
 <body class="min-h-screen bg-slate-50/50 text-slate-900 flex flex-col antialiased relative">
     <div class="fixed inset-0 bg-grid pointer-events-none"></div>
     
-<header class="sticky top-0 z-50 bg-white/90 backdrop-blur-xl border-b border-slate-200 transition-all duration-300">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex justify-between items-center h-20 gap-3 md:gap-6">
-            <a href="index.html" class="flex items-center space-x-2 group flex-shrink-0">
-                <div class="w-10 h-10 bg-slate-900 rounded-xl flex items-center justify-center shadow-sm group-hover:scale-105 transition-all duration-300">
-                    <i data-lucide="shield" class="w-5 h-5 text-white"></i>
+<header class="sticky top-0 z-50 bg-white/95 backdrop-blur-xl border-b border-slate-200 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16 sm:h-20 gap-2 sm:gap-6 overflow-hidden">
+            <a href="index.html" class="flex items-center space-x-2 group flex-shrink">
+                <div class="w-8 h-8 sm:w-10 sm:h-10 bg-slate-900 rounded-xl flex items-center justify-center shadow-xs group-hover:scale-105 transition-all duration-300 flex-shrink-0">
+                    <i data-lucide="shield" class="w-4 h-4 sm:w-5 sm:h-5 text-white"></i>
                 </div>
-                <div class="flex items-baseline tracking-tighter">
-                    <span class="text-xl font-black text-slate-900">versicherung</span>
-                    <span class="text-xl font-extrabold text-blue-600">sofort</span>
+                <div class="flex items-baseline tracking-tighter truncate">
+                    <span class="text-base sm:text-xl font-black text-slate-900">versicherung</span>
+                    <span class="text-base sm:text-xl font-extrabold text-blue-600">sofort</span>
                 </div>
             </a>
 
@@ -153,16 +153,16 @@
                 </button>
             </div>
 
-            <nav class="flex items-center gap-2 sm:gap-6">
+            <nav class="flex items-center gap-2 sm:gap-6 flex-shrink-0">
                 <!-- Mobile Search Icon Button -->
-                <button type="button" onclick="openSearchModal()" aria-label="Suche öffnen" class="md:hidden w-10 h-10 rounded-xl bg-slate-100 flex items-center justify-center text-slate-700 hover:bg-blue-50 hover:text-blue-600 transition-all border border-slate-200 cursor-pointer">
-                    <i data-lucide="search" class="w-5 h-5"></i>
+                <button type="button" onclick="openSearchModal()" aria-label="Suche öffnen" class="md:hidden w-8 h-8 sm:w-10 sm:h-10 rounded-xl bg-slate-100 flex items-center justify-center text-slate-700 hover:bg-blue-50 hover:text-blue-600 transition-all border border-slate-200 cursor-pointer">
+                    <i data-lucide="search" class="w-4 h-4 sm:w-5 sm:h-5"></i>
                 </button>
                 <div class="hidden lg:flex space-x-7 items-center">
                     <a href="ratgeber.html" class="text-xs font-black text-slate-600 hover:text-blue-600 uppercase tracking-widest transition-colors">Ratgeber</a>
                     <a href="faq.html" class="text-xs font-black text-slate-600 hover:text-blue-600 uppercase tracking-widest transition-colors">FAQ</a>
                 </div>
-                <a href="index.html#versicherungen" class="bg-blue-600 hover:bg-blue-700 text-white rounded-full px-5 sm:px-7 py-2.5 sm:py-3 text-xs sm:text-sm font-black shadow-lg shadow-blue-500/20 transition-all duration-300 hover:-translate-y-0.5 whitespace-nowrap">
+                <a href="index.html#versicherungen" class="bg-blue-600 hover:bg-blue-700 text-white rounded-full px-3.5 sm:px-7 py-2 sm:py-3 text-[11px] sm:text-sm font-black shadow-md shadow-blue-500/20 transition-all duration-300 hover:-translate-y-0.5 whitespace-nowrap">
                     Tarife vergleichen*
                 </a>
             </nav>
@@ -388,13 +388,13 @@
 
                 
                 <div class="mt-16 bg-slate-50 p-10 rounded-3xl border border-slate-200">
-                    <h2 class="!border-none !p-0 !mt-0 text-2xl font-black text-slate-900 mb-4">Experten-Hinweis für Ihren Vergleich</h2>
-                    <p class="mb-0 text-slate-600 font-medium leading-relaxed">Achten Sie beim Vergleich von Versicherungen nicht nur auf den Monatsbeitrag. Besonders bei langfristigen Verträgen ist die Finanzstärke des Anbieters, die Kulanz im Schadensfall und die Flexibilität der Versicherungsbedingungen (z.B. Nachversicherungsgarantien oder Verzicht auf Einwand grober Fahrlässigkeit) von existenzieller Bedeutung.</p>
+                    <h2 class="!border-none !p-0 !mt-0 text-2xl font-black text-slate-900 mb-4">Hinweise zum Tarifvergleich</h2>
+                    <p class="mb-0 text-slate-600 font-medium leading-relaxed">Achten Sie beim Vergleich von Versicherungen nicht nur auf den Monatsbeitrag. Besonders bei langfristigen Verträgen sind der konkrete Leistungsumfang im Schadensfall und die Flexibilität der Tarifbedingungen von entscheidender Bedeutung.</p>
                 </div>
 
                 
-                <!-- E-E-A-T Editorial Trust Box -->
-                <div class="mt-14 not-prose bg-white border border-slate-200 rounded-3xl p-6 sm:p-8 shadow-sm">
+                <!-- Redaktioneller Hinweis -->
+                <div class="mt-14 not-prose bg-white border border-slate-200 rounded-3xl p-6 sm:p-8 shadow-xs">
                     <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-6 pb-6 border-b border-slate-100">
                         <div class="flex items-center gap-4">
                             <div class="w-12 h-12 rounded-2xl bg-slate-900 text-white flex items-center justify-center font-black text-lg shadow-md flex-shrink-0">
@@ -402,19 +402,15 @@
                             </div>
                             <div>
                                 <div class="flex items-center gap-2 flex-wrap">
-                                    <span class="font-black text-slate-900 text-base">Fachredaktion versicherungsofort.de</span>
-                                    <span class="px-2.5 py-0.5 bg-emerald-100 text-emerald-800 text-[10px] font-black rounded-full uppercase tracking-wider border border-emerald-200">Geprüft September 2026</span>
+                                    <span class="font-black text-slate-900 text-base">Redaktion versicherungsofort.de</span>
+                                    <span class="px-2.5 py-0.5 bg-slate-100 text-slate-700 text-[10px] font-bold rounded-full uppercase tracking-wider border border-slate-200">Verbraucherinformation</span>
                                 </div>
-                                <p class="text-xs text-slate-500 font-medium mt-0.5">Unabhängige Tarifanalyse &amp; Verbraucherschutz nach VVG / BaFin-Standards</p>
+                                <p class="text-xs text-slate-500 font-medium mt-0.5">Unabhängige Informationen &amp; Tarifvergleiche über geprüfte Partner-Schnittstellen</p>
                             </div>
-                        </div>
-                        <div class="flex items-center gap-2 text-xs font-bold text-slate-600 bg-slate-50 px-3 py-1.5 rounded-xl border border-slate-200 self-start sm:self-auto">
-                            <i data-lucide="badge-check" class="w-4 h-4 text-blue-600"></i>
-                            <span>Zertifizierter Qualitätsstandard</span>
                         </div>
                     </div>
                     <div class="pt-5 text-xs text-slate-600 leading-relaxed font-medium">
-                        Unsere Fachredaktion analysiert Beitrags- und Tarifdaten neutral und verbraucherschutzkonform. Alle Beitragsberechnungen, Gesetzesverweise und Tarifdetails werden monatlich aktualisiert und gegen offizielle BaFin-Verordnungen und VVG-Novellen abgeglichen.
+                        Die Redaktion von versicherungsofort.de stellt verständliche Leitfäden und Tarifvergleiche bereit. Alle Beitrags- und Konditionsberechnungen werden in den Vergleichsrechnern unserer Partner (z.B. TARIFCHECK24 GmbH) auf Basis der Angaben der jeweiligen Versicherungsgesellschaften durchgeführt.
                     </div>
                 </div>
             </div>
