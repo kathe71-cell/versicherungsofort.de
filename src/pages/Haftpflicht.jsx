@@ -29,7 +29,7 @@ const features = [
   "Internetkäufe und Ehrenamt mitversichert",
   "24/7 Schadenhotline und Rechtsschutz",
   "Sofortiger Online-Abschluss möglich",
-  "Keine Wartezeiten oder Ausschlüsse", 
+  "Tarifabhängige Schutz- & Leistungspakete",
   "Familienversicherung für Partner & Kinder"
 ];
 

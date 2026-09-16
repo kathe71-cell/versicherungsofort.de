@@ -194,7 +194,7 @@
             
 
             <div class="max-w-4xl prose pt-16 ">
-                Mit der Gründung einer Familie ändern sich die Prioritäten – auch bei den Versicherungen. Plötzlich geht es nicht mehr nur um die eigene Absicherung, sondern um den Schutz der gesamten Familie. Dieser Ratgeber zeigt, welche Versicherungen Familien unbedingt brauchen, welche sinnvoll sind und auf welche Sie verzichten können.
+                <p>Mit der Gründung einer Familie ändern sich die Prioritäten – auch bei den Versicherungen. Plötzlich geht es nicht mehr nur um die eigene Absicherung, sondern um den Schutz der gesamten Familie. Dieser Ratgeber zeigt, welche Versicherungen Familien unbedingt brauchen, welche sinnvoll sind und auf welche Sie verzichten können.</p>
 
       <h2>Pflichtversicherungen für jede Familie</h2>
 
@@ -411,6 +411,18 @@
 
     <script>
         lucide.createIcons();
+        (function enforceIframeTitles() {
+            function updateTitles() {
+                var iframes = document.getElementsByTagName('iframe');
+                for (var i = 0; i < iframes.length; i++) {
+                    if (!iframes[i].getAttribute('title') || iframes[i].getAttribute('title') === '') {
+                        iframes[i].setAttribute('title', 'Tarifcheck24 Vergleichsrechner - Unabhängiger Tarifvergleich');
+                    }
+                }
+            }
+            updateTitles();
+            setInterval(updateTitles, 1000);
+        })();
     </script>
     
 <script>

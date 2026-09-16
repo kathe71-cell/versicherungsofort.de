@@ -3,6 +3,9 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "engines": {
+    "node": "20.x"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build && node generate_html.cjs && cp -r html_build/* dist/ && cp -r html_build/* public/ && cp -r html_build/* .",

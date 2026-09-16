@@ -194,7 +194,7 @@
             
 
             <div class="max-w-4xl prose pt-16 ">
-                Die Berufsunfähigkeitsversicherung (BU) gilt unter Experten als die wichtigste Versicherung neben der Krankenversicherung. Dennoch haben nur rund 25 Prozent der Erwerbstätigen in Deutschland eine BU-Versicherung abgeschlossen. Dieser Ratgeber erklärt, warum eine BU-Versicherung so wichtig ist, welche Fallstricke es gibt und wie Sie die richtige Police finden.
+                <p>Die Berufsunfähigkeitsversicherung (BU) gilt unter Experten als die wichtigste Versicherung neben der Krankenversicherung. Dennoch haben nur rund 25 Prozent der Erwerbstätigen in Deutschland eine BU-Versicherung abgeschlossen. Dieser Ratgeber erklärt, warum eine BU-Versicherung so wichtig ist, welche Fallstricke es gibt und wie Sie die richtige Police finden.</p>
 
       <h2>Was ist eine Berufsunfähigkeitsversicherung?</h2>
       <p>Eine Berufsunfähigkeitsversicherung zahlt eine monatliche Rente, wenn Sie aus gesundheitlichen Gründen Ihren zuletzt ausgeübten Beruf zu mindestens 50 Prozent nicht mehr ausüben können. Die Ursache spielt keine Rolle – egal ob Unfall, Krankheit oder psychische Erkrankung.</p>
@@ -383,6 +383,18 @@
 
     <script>
         lucide.createIcons();
+        (function enforceIframeTitles() {
+            function updateTitles() {
+                var iframes = document.getElementsByTagName('iframe');
+                for (var i = 0; i < iframes.length; i++) {
+                    if (!iframes[i].getAttribute('title') || iframes[i].getAttribute('title') === '') {
+                        iframes[i].setAttribute('title', 'Tarifcheck24 Vergleichsrechner - Unabhängiger Tarifvergleich');
+                    }
+                }
+            }
+            updateTitles();
+            setInterval(updateTitles, 1000);
+        })();
     </script>
     
 <script>

@@ -194,7 +194,7 @@
             
 
             <div class="max-w-4xl prose pt-16 ">
-                Endlich der erste Job, das erste eigene Gehalt – und jetzt? Viele Berufseinsteiger vernachlässigen das Thema Versicherungen. Dabei ist gerade der Berufseinstieg der richtige Zeitpunkt, um die eigene Absicherung auf ein solides Fundament zu stellen. Dieser Ratgeber zeigt, welche Versicherungen wirklich wichtig sind und worauf Sie achten sollten.
+                <p>Endlich der erste Job, das erste eigene Gehalt – und jetzt? Viele Berufseinsteiger vernachlässigen das Thema Versicherungen. Dabei ist gerade der Berufseinstieg der richtige Zeitpunkt, um die eigene Absicherung auf ein solides Fundament zu stellen. Dieser Ratgeber zeigt, welche Versicherungen wirklich wichtig sind und worauf Sie achten sollten.</p>
 
       <h2>1. Berufsunfähigkeitsversicherung – Der wichtigste Schutz überhaupt</h2>
       <p>Die Berufsunfähigkeitsversicherung (BU) ist für Berufseinsteiger die wichtigste Versicherung, die sie abschließen können. Statistisch gesehen wird jeder vierte Arbeitnehmer im Laufe seines Berufslebens berufsunfähig – die häufigsten Ursachen sind psychische Erkrankungen, Erkrankungen des Bewegungsapparats und Krebserkrankungen.</p>
@@ -397,6 +397,18 @@
 
     <script>
         lucide.createIcons();
+        (function enforceIframeTitles() {
+            function updateTitles() {
+                var iframes = document.getElementsByTagName('iframe');
+                for (var i = 0; i < iframes.length; i++) {
+                    if (!iframes[i].getAttribute('title') || iframes[i].getAttribute('title') === '') {
+                        iframes[i].setAttribute('title', 'Tarifcheck24 Vergleichsrechner - Unabhängiger Tarifvergleich');
+                    }
+                }
+            }
+            updateTitles();
+            setInterval(updateTitles, 1000);
+        })();
     </script>
     
 <script>

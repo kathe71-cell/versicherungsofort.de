@@ -194,7 +194,7 @@
             
 
             <div class="max-w-4xl prose pt-16 ">
-                Gesunde und gepflegte Zähne sind ein Stück Lebensqualität, doch Zahnersatz, Implantate und hochwertige Kronen können schnell mehrere tausend Euro kosten. Die gesetzlichen Krankenkassen übernehmen oft nur einen geringen Festzuschuss für die sogenannte Regelversorgung. Eine private Zahnzusatzversicherung schließt diese finanzielle Lücke und schützt vor unerwartet hohen Zahnarztrechnungen.
+                <p>Gesunde und gepflegte Zähne sind ein Stück Lebensqualität, doch Zahnersatz, Implantate und hochwertige Kronen können schnell mehrere tausend Euro kosten. Die gesetzlichen Krankenkassen übernehmen oft nur einen geringen Festzuschuss für die sogenannte Regelversorgung. Eine private Zahnzusatzversicherung schließt diese finanzielle Lücke und schützt vor unerwartet hohen Zahnarztrechnungen.</p>
 
       <h2>Was zahlt die gesetzliche Krankenkasse beim Zahnarzt?</h2>
       <p>Seit der Gesundheitsreform erhalten gesetzlich Krankenversicherte bei Zahnersatz einen befundbezogenen Festzuschuss. Dieser deckt in der Regel nur etwa 60 Prozent der Kosten für die medizinisch notwendige Standard- bzw. Regelversorgung ab (z.B. eine einfache Nichtedelmetall-Krone oder eine Brücke).</p>
@@ -373,6 +373,18 @@
 
     <script>
         lucide.createIcons();
+        (function enforceIframeTitles() {
+            function updateTitles() {
+                var iframes = document.getElementsByTagName('iframe');
+                for (var i = 0; i < iframes.length; i++) {
+                    if (!iframes[i].getAttribute('title') || iframes[i].getAttribute('title') === '') {
+                        iframes[i].setAttribute('title', 'Tarifcheck24 Vergleichsrechner - Unabhängiger Tarifvergleich');
+                    }
+                }
+            }
+            updateTitles();
+            setInterval(updateTitles, 1000);
+        })();
     </script>
     
 <script>

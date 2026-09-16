@@ -194,7 +194,108 @@
             
 
             <div class="max-w-4xl prose pt-16 ">
-                
+                <div >
+            <p >
+              Die Kfz-Wechselsaison Ende 2025 bietet die perfekte Gelegenheit, bei der Autoversicherung 
+              richtig Geld zu sparen. Wir zeigen Ihnen, welche Fristen wichtig sind und wie Sie 
+              hunderte Euro pro Jahr sparen können.
+            </p>
+
+            <div >
+              <h3 >
+                ⏰ Wichtigster Termin: 30. November 2025
+              </h3>
+              <p >
+                Für einen Wechsel zum 1. Januar 2026 muss Ihre Kündigung spätestens am 30. November 2025 
+                bei Ihrem aktuellen Versicherer eingehen. Planen Sie einige Tage Postlaufzeit ein!
+              </p>
+            </div>
+
+            <h2 >
+              Warum gerade jetzt wechseln?
+            </h2>
+            <p >
+              Die Kfz-Wechselsaison zum Jahresende ist für die meisten Autofahrer der richtige Zeitpunkt 
+              für einen Versicherungswechsel, denn:
+            </p>
+            <ul >
+              <li >
+                <CheckCircle  />
+                <span >Die meisten Kfz-Versicherungen laufen zum 31.12. und können nur zu diesem Zeitpunkt gewechselt werden</span>
+              </li>
+              <li >
+                <CheckCircle  />
+                <span >Versicherer locken mit attraktiven Neukundenrabatten und Sonderaktionen</span>
+              </li>
+              <li >
+                <CheckCircle  />
+                <span >Viele Anbieter passen ihre Tarife zum Jahreswechsel an - vergleichen lohnt sich</span>
+              </li>
+              <li >
+                <CheckCircle  />
+                <span >Die Schadenfreiheitsklasse wird nahtlos übernommen</span>
+              </li>
+            </ul>
+
+            <h2 >
+              5 Spartipps für die Kfz-Wechselsaison
+            </h2>
+            
+            <div >
+              <div >
+                <h3 >1. Frühzeitig vergleichen</h3>
+                <p >
+                  Starten Sie Ihren Vergleich bereits Mitte Oktober. So haben Sie genug Zeit für die 
+                  Entscheidung und verpassen nicht den Stichtag am 30. November.
+                </p>
+              </div>
+
+              <div >
+                <h3 >2. Selbstbeteiligung erhöhen</h3>
+                <p >
+                  Eine höhere Selbstbeteiligung (z.B. 300€ statt 150€) kann den Beitrag deutlich senken. 
+                  Überlegen Sie, ob sich das für Sie lohnt.
+                </p>
+              </div>
+
+              <div >
+                <h3 >3. Kilometerbegrenzung prüfen</h3>
+                <p >
+                  Wenn Sie weniger fahren als angegeben, können Sie durch Anpassung der Jahreskilometer 
+                  oft mehrere hundert Euro sparen.
+                </p>
+              </div>
+
+              <div >
+                <h3 >4. Zahlweise optimieren</h3>
+                <p >
+                  Jährliche Zahlung ist meist 5-10% günstiger als monatliche Ratenzahlung. 
+                  Prüfen Sie, ob das für Sie machbar ist.
+                </p>
+              </div>
+
+              <div >
+                <h3 >5. Werkstattbindung akzeptieren</h3>
+                <p >
+                  Bei manchen Tarifen können Sie durch Werkstattbindung sparen. Das bedeutet, dass 
+                  Reparaturen nur in Partnerwerkstätten durchgeführt werden.
+                </p>
+              </div>
+            </div>
+
+            <div >
+              <h3 >Jetzt Kfz-Versicherung vergleichen!</h3>
+              <p >
+                Nutzen Sie die Wechselsaison und sichern Sie sich die besten Konditionen für 2026. 
+                Unser Vergleichsrechner zeigt Ihnen sofort, wie viel Sie sparen können.
+              </p>
+              <Link to={createPageUrl("kfz-versicherung")}>
+                <Button size="lg" >
+                  Zum Kfz-Vergleich
+                </Button>
+              </Link>
+            </div>
+          </div>
                 
                 
                     <div class="mt-16 p-8 md:p-10 bg-gradient-to-br from-blue-50 to-indigo-50/60 rounded-3xl border border-blue-200 not-prose shadow-sm">
@@ -334,6 +435,18 @@
 
     <script>
         lucide.createIcons();
+        (function enforceIframeTitles() {
+            function updateTitles() {
+                var iframes = document.getElementsByTagName('iframe');
+                for (var i = 0; i < iframes.length; i++) {
+                    if (!iframes[i].getAttribute('title') || iframes[i].getAttribute('title') === '') {
+                        iframes[i].setAttribute('title', 'Tarifcheck24 Vergleichsrechner - Unabhängiger Tarifvergleich');
+                    }
+                }
+            }
+            updateTitles();
+            setInterval(updateTitles, 1000);
+        })();
     </script>
     
 <script>

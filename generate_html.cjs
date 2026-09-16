@@ -486,6 +486,18 @@ function wrapHtml(title, description, content, slug = 'index', schemaJson = null
     ${SEARCH_MODAL_HTML}
     <script>
         lucide.createIcons();
+        (function enforceIframeTitles() {
+            function updateTitles() {
+                var iframes = document.getElementsByTagName('iframe');
+                for (var i = 0; i < iframes.length; i++) {
+                    if (!iframes[i].getAttribute('title') || iframes[i].getAttribute('title') === '') {
+                        iframes[i].setAttribute('title', 'Tarifcheck24 Vergleichsrechner - Unabhängiger Tarifvergleich');
+                    }
+                }
+            }
+            updateTitles();
+            setInterval(updateTitles, 1000);
+        })();
     </script>
     ${SEARCH_SCRIPT_HTML}
 </body>
@@ -574,15 +586,11 @@ function extractPageData(filePath) {
 
     // Fallback for Blog Articles (article > h1/h2/h3/p/ul/li)
     if (!seoContent) {
-        const articleMatch = code.match(/<article>([\s\S]*?)<\/article>/);
+        const articleMatch = code.match(/<article[^>]*>([\s\S]*?)<\/article>/i);
         if (articleMatch) {
             seoContent = articleMatch[1]
                 .replace(/className="[^"]*"/g, '')
-                .replace(/\{([^}]+)\}/g, '$1')
-                .replace(/<h1[^>]*>[\s\S]*?<\/h1>/, '')
-                .replace(/<p[^>]*>/, '<p_FIRST>')
-                .replace('<p_FIRST>', '')
-                .replace(/<\/p>/, '')
+                .replace(/<h1[^>]*>[\s\S]*?<\/h1>/i, '')
                 .trim();
         }
     }
@@ -1196,7 +1204,7 @@ files.forEach(file => {
                 <div class="flex flex-wrap items-center gap-4 text-xs font-semibold text-slate-500 pt-3 border-t border-slate-100">
                     <span class="flex items-center gap-1.5"><i data-lucide="shield-check" class="w-4 h-4 text-blue-600"></i> Rechtsnorm: <strong class="text-slate-700">${defSnippet.law}</strong></span>
                     <span class="flex items-center gap-1.5"><i data-lucide="calendar" class="w-4 h-4 text-emerald-600"></i> Geprüfter Stand: <strong class="text-slate-700">September 2026</strong></span>
-                    <span class="flex items-center gap-1.5"><i data-lucide="check-circle" class="w-4 h-4 text-slate-700"></i> Redaktionell zertifiziert</span>
+                    <span class="flex items-center gap-1.5"><i data-lucide="check-circle" class="w-4 h-4 text-slate-700"></i> Kostenfrei &amp; unabhängig</span>
                 </div>
             </div>` : ''}
 
@@ -1222,16 +1230,16 @@ files.forEach(file => {
                 <div class="lg:col-span-8 order-1 lg:order-2">
                     ${data.iframes.length > 0 ? (() => {
                         const quickPillsMap = {
-                            'pflege': ['Alle Pflegegrade (1-5)', 'Ambulant & Stationär', 'Ohne Wartezeit', 'Beitragsbefreiung'],
+                            'pflege': ['Alle Pflegegrade (1-5)', 'Ambulant & Stationär', 'Tarifabhängige Leistungen', 'Beitragsbefreiung'],
                             'kfz': ['Pkw Privatnutzung', 'Fahrzeugwechsel', 'Neuzulassung', 'Inkl. Rabattschutz'],
                             'motorrad': ['Motorrad über 125 ccm', 'Saisonkennzeichen', 'Teilkasko', 'Vollkasko'],
                             'haftpflicht': ['Single-Tarif', 'Paar ohne Kind', 'Familie mit Kindern', '50 Mio. € Deckung'],
                             'hausrat': ['Mietwohnung', 'Eigentumswohnung', 'Einfamilienhaus', 'Inkl. Elementarschutz'],
-                            'pkv': ['Angestellte (ab 69.300 €)', 'Selbstständige / Freiberufler', 'Beamte & Anwärter', 'Studenten'],
+                            'pkv': ['Angestellte (ab 77.400 € JAEG 2026)', 'Selbstständige / Freiberufler', 'Beamte & Anwärter', 'Studenten'],
                             'pkv-beamte': ['Bundesbeamte (50% Beihilfe)', 'Landesbeamte', 'Beamtenanwärter', 'Referendare'],
                             'pkv-studenten': ['Studenten unter 30', 'Günstiger Einstiegstarif', 'Freie Arztwahl', 'Auslandsschutz'],
                             'pkv-55': ['Wechsel über 55 Jahre', 'Standardtarif / Basistarif', 'Beitragsentlastung im Alter'],
-                            'krankenzusatz': ['Zahnersatz bis 100%', 'Inkl. Zahnreinigung (PZR)', 'Kieferorthopädie', 'Ohne Wartezeit'],
+                            'krankenzusatz': ['Zahnersatz bis 100%', 'Inkl. Zahnreinigung (PZR)', 'Kieferorthopädie', 'Leistungen laut Tarif'],
                             'berufsunfaehigkeit': ['Angestellte', 'Akademiker / Büro', 'Selbstständige', 'Verzicht auf Verweisung'],
                             'rechtsschutz': ['Privat + Beruf + Verkehr', 'Inkl. Mietrecht', 'Ohne Selbstbeteiligung', 'Kostenlose Erstberatung'],
                             'tierhalterhaftpflicht': ['Hundehaftpflicht', 'Pferdehaftpflicht', 'Ohne Leinenzwang', 'Inkl. Mietsachschäden'],
@@ -1247,7 +1255,7 @@ files.forEach(file => {
                             'wohngebaeudeversicherung': ['Einfamilienhaus', 'Mehrfamilienhaus', 'Inkl. Elementarschutz', 'Photovoltaik mitversichert'],
                             'wohngebaeude': ['Einfamilienhaus', 'Mehrfamilienhaus', 'Inkl. Elementarschutz', 'Photovoltaik mitversichert']
                         };
-                        const pills = quickPillsMap[safeName] || ['Optimaler Grundschutz', 'Top Preis-Leistung', 'Ohne Wartezeit'];
+                        const pills = quickPillsMap[safeName] || ['Optimaler Grundschutz', 'Top Preis-Leistung', 'Transparente Tarife'];
                         const defaultInitialHeights = {
                             'kfz': 385,
                             'motorrad': 385,
@@ -1265,23 +1273,22 @@ files.forEach(file => {
                         const initH = defaultInitialHeights[safeName] || 355;
 
                         return `
-                        <!-- Dynamische Schnellauswahl / Quick-Filter -->
-                        <div class="mb-4 bg-white/90 p-4 rounded-2xl border border-slate-200 shadow-sm">
-                            <div class="text-[11px] font-black uppercase tracking-wider text-slate-500 mb-2.5 flex items-center justify-between">
-                                <span class="flex items-center gap-1.5"><i data-lucide="sliders" class="w-3.5 h-3.5 text-blue-600"></i> Dynamische Tarif-Konfiguration</span>
-                                <span class="text-[10px] text-blue-600 font-bold">Klicken zum Anpassen</span>
+                        <!-- Tarifmerkmale & Schwerpunkte -->
+                        <div class="mb-4 bg-slate-50/90 p-3.5 rounded-2xl border border-slate-200">
+                            <div class="text-[11px] font-black uppercase tracking-wider text-slate-500 mb-2 flex items-center gap-1.5">
+                                <i data-lucide="check-square" class="w-3.5 h-3.5 text-blue-600"></i> Wichtige Tarifmerkmale im Vergleich
                             </div>
-                            <div class="flex flex-wrap gap-2" id="filter-pills-${safeName}">
-                                ${pills.map((p, idx) => `
-                                    <button type="button" onclick="this.classList.toggle('bg-blue-600'); this.classList.toggle('text-white'); this.classList.toggle('border-blue-600'); this.classList.toggle('bg-slate-50'); this.classList.toggle('text-slate-700'); var ic = this.querySelector('i'); if (ic) { var isAct = this.classList.contains('bg-blue-600'); ic.setAttribute('data-lucide', isAct ? 'check-circle-2' : 'circle'); if (window.lucide) lucide.createIcons(); }" class="px-3.5 py-1.5 rounded-full text-xs font-bold transition-all border ${idx === 0 ? 'bg-blue-600 text-white border-blue-600 shadow-sm' : 'bg-slate-50 text-slate-700 border-slate-200 hover:border-blue-300'} flex items-center gap-1.5">
-                                        <i data-lucide="${idx === 0 ? 'check-circle-2' : 'circle'}" class="w-3.5 h-3.5"></i> ${p}
-                                    </button>
+                            <div class="flex flex-wrap gap-2">
+                                ${pills.map(p => `
+                                    <span class="px-3 py-1 bg-white text-slate-700 rounded-full text-xs font-semibold border border-slate-200 flex items-center gap-1.5 shadow-xs">
+                                        <i data-lucide="check" class="w-3.5 h-3.5 text-blue-600"></i> ${p}
+                                    </span>
                                 `).join('')}
                             </div>
                         </div>
                         <div class="flex items-center justify-between px-4 py-2 bg-white/70 rounded-2xl mb-3 border border-slate-200 text-xs font-bold text-slate-600">
-                            <span class="flex items-center gap-2"><i data-lucide="shield-check" class="w-4 h-4 text-blue-600"></i> Geprüfter Tarifrechner</span>
-                            <span class="text-[11px] font-semibold text-slate-400">Partner-ID: 72057</span>
+                            <span class="flex items-center gap-2"><i data-lucide="shield-check" class="w-4 h-4 text-blue-600"></i> Transparenter Vergleichsrechner*</span>
+                            <span class="text-[11px] font-semibold text-slate-400">* Werbelink / Partnerlink</span>
                         </div>
                         <div class="calculator-card bg-white rounded-3xl window-frame p-2 md:p-3 transition-all duration-300 relative" style="overflow: hidden; min-height: 0px;">
                             ${data.iframes.map(iframe => `

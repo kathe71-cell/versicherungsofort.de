@@ -194,7 +194,7 @@
             
 
             <div class="max-w-4xl prose pt-16 ">
-                Die gesetzliche Rente wird für die meisten Menschen nicht ausreichen, um den Lebensstandard im Alter zu halten. Eine private Altersvorsorge ist daher unverzichtbar. Doch welche Form der Vorsorge passt zu Ihrem Lebensentwurf? Dieser umfassende Vergleich stellt alle Optionen gegenüber und hilft Ihnen bei der Entscheidung.
+                <p>Die gesetzliche Rente wird für die meisten Menschen nicht ausreichen, um den Lebensstandard im Alter zu halten. Eine private Altersvorsorge ist daher unverzichtbar. Doch welche Form der Vorsorge passt zu Ihrem Lebensentwurf? Dieser umfassende Vergleich stellt alle Optionen gegenüber und hilft Ihnen bei der Entscheidung.</p>
 
       <h2>Die Rentenlücke: Wie viel fehlt Ihnen im Alter?</h2>
       <p>Die durchschnittliche Altersrente in Deutschland liegt bei rund 1.550 Euro brutto für Männer und etwa 1.050 Euro für Frauen. Nach Abzug von Steuern und Krankenversicherungsbeiträgen bleiben oft weniger als 1.200 Euro netto. Experten empfehlen, im Ruhestand über mindestens 80 Prozent des letzten Nettoeinkommens zu verfügen. Die Differenz – die sogenannte Rentenlücke – muss durch private Vorsorge geschlossen werden.</p>
@@ -410,6 +410,18 @@
 
     <script>
         lucide.createIcons();
+        (function enforceIframeTitles() {
+            function updateTitles() {
+                var iframes = document.getElementsByTagName('iframe');
+                for (var i = 0; i < iframes.length; i++) {
+                    if (!iframes[i].getAttribute('title') || iframes[i].getAttribute('title') === '') {
+                        iframes[i].setAttribute('title', 'Tarifcheck24 Vergleichsrechner - Unabhängiger Tarifvergleich');
+                    }
+                }
+            }
+            updateTitles();
+            setInterval(updateTitles, 1000);
+        })();
     </script>
     
 <script>

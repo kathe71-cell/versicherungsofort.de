@@ -194,7 +194,131 @@
             
 
             <div class="max-w-4xl prose pt-16 ">
-                
+                {/* Removed the date/read time stamp div */}
+          {/*
+          <div >
+            <span >
+              <Calendar  />
+              12. November 2025
+            </span>
+            <span >
+              <Clock  />
+              4 min Lesezeit
+            </span>
+          </div>
+          */}
+
+          
+
+          <div >
+            <p >
+              Sie müssen nicht bis zum Jahresende warten! Bei Beitragserhöhung oder nach einem Schaden 
+              haben Sie ein Sonderkündigungsrecht. Wir zeigen Ihnen, wie Sie es richtig nutzen.
+            </p>
+
+            <div >
+              <div >
+                <AlertTriangle  />
+                <div>
+                  <h3 >
+                    Wichtig: Frist beachten!
+                  </h3>
+                  <p >
+                    Das Sonderkündigungsrecht muss innerhalb eines Monats nach Zugang der Mitteilung 
+                    (bei Beitragserhöhung) oder des Schadensfalls ausgeübt werden.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <h2 >
+              Gründe für eine Sonderkündigung
+            </h2>
+
+            <h3 >
+              1. Beitragserhöhung
+            </h3>
+            <p >
+              Der häufigste Grund für eine Sonderkündigung ist eine Beitragserhöhung. Wichtig: 
+              Auch wenn nur die Versicherungssteuer erhöht wird, haben Sie ein Sonderkündigungsrecht!
+            </p>
+            <div >
+              <p >
+                <strong>Tipp:</strong> Prüfen Sie Ihr Beitragsschreiben genau. Oft werden Erhöhungen 
+                versteckt oder nur im Kleingedruckten erwähnt.
+              </p>
+            </div>
+
+            <h3 >
+              2. Nach einem Schadensfall
+            </h3>
+            <p >
+              Nach jedem regulierten Schadensfall haben sowohl Sie als auch Ihr Versicherer das Recht 
+              zur Sonderkündigung. Dies gilt auch für Teilkaskoschäden.
+            </p>
+            <div >
+              <p >
+                <strong>Achtung:</strong> Nutzen Sie dieses Recht nur, wenn Sie einen besseren Tarif 
+                gefunden haben. Ihre SF-Klasse wird bei jedem Versicherer gleich berücksichtigt.
+              </p>
+            </div>
+
+            <h3 >
+              3. Fahrzeugwechsel
+            </h3>
+            <p >
+              Beim Kauf eines neuen Fahrzeugs können Sie Ihre Versicherung außerordentlich kündigen. 
+              Dies lohnt sich besonders, wenn sich durch das neue Fahrzeug Ihre Typklasse ändert.
+            </p>
+
+            <h2 >
+              So gehen Sie vor
+            </h2>
+            
+            <ol >
+              <li >
+                <span >1</span>
+                <div>
+                  <h4 >Kündigungsgrund prüfen</h4>
+                  <p >Stellen Sie sicher, dass ein gültiger Kündigungsgrund vorliegt.</p>
+                </div>
+              </li>
+              <li >
+                <span >2</span>
+                <div>
+                  <h4 >Neuen Tarif finden</h4>
+                  <p >Vergleichen Sie Angebote, bevor Sie kündigen - so vermeiden Sie Versicherungslücken.</p>
+                </div>
+              </li>
+              <li >
+                <span >3</span>
+                <div>
+                  <h4 >Schriftlich kündigen</h4>
+                  <p >Kündigen Sie immer schriftlich per E-Mail oder Brief mit Kündigungsgrund und Datum.</p>
+                </div>
+              </li>
+              <li >
+                <span >4</span>
+                <div>
+                  <h4 >Bestätigung abwarten</h4>
+                  <p >Warten Sie die Kündigungsbestätigung ab, bevor Sie den alten Vertrag als beendet betrachten.</p>
+                </div>
+              </li>
+            </ol>
+
+            <div >
+              <h3 >Jetzt besseren Tarif finden!</h3>
+              <p >
+                Nutzen Sie Ihr Sonderkündigungsrecht und vergleichen Sie jetzt kostenlos über 300 Kfz-Tarife. 
+                Oft können Sie mehrere hundert Euro pro Jahr sparen.
+              </p>
+              <Link to={createPageUrl("kfz-versicherung")}>
+                <Button size="lg" >
+                  Zum Kfz-Vergleich
+                </Button>
+              </Link>
+            </div>
+          </div>
                 
                 
                     <div class="mt-16 p-8 md:p-10 bg-gradient-to-br from-blue-50 to-indigo-50/60 rounded-3xl border border-blue-200 not-prose shadow-sm">
@@ -334,6 +458,18 @@
 
     <script>
         lucide.createIcons();
+        (function enforceIframeTitles() {
+            function updateTitles() {
+                var iframes = document.getElementsByTagName('iframe');
+                for (var i = 0; i < iframes.length; i++) {
+                    if (!iframes[i].getAttribute('title') || iframes[i].getAttribute('title') === '') {
+                        iframes[i].setAttribute('title', 'Tarifcheck24 Vergleichsrechner - Unabhängiger Tarifvergleich');
+                    }
+                }
+            }
+            updateTitles();
+            setInterval(updateTitles, 1000);
+        })();
     </script>
     
 <script>

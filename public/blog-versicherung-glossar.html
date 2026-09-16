@@ -194,7 +194,7 @@
             
 
             <div class="max-w-4xl prose pt-16 ">
-                Versicherungsverträge enthalten oft Fachbegriffe, die für Laien schwer verständlich sind. Unser umfassendes Glossar erklärt die wichtigsten Begriffe aus der Versicherungswelt – verständlich und praxisnah.
+                <p>Versicherungsverträge enthalten oft Fachbegriffe, die für Laien schwer verständlich sind. Unser umfassendes Glossar erklärt die wichtigsten Begriffe aus der Versicherungswelt – verständlich und praxisnah.</p>
 
       <h2>A</h2>
       <h3>Allgemeine Versicherungsbedingungen (AVB)</h3>
@@ -444,6 +444,18 @@
 
     <script>
         lucide.createIcons();
+        (function enforceIframeTitles() {
+            function updateTitles() {
+                var iframes = document.getElementsByTagName('iframe');
+                for (var i = 0; i < iframes.length; i++) {
+                    if (!iframes[i].getAttribute('title') || iframes[i].getAttribute('title') === '') {
+                        iframes[i].setAttribute('title', 'Tarifcheck24 Vergleichsrechner - Unabhängiger Tarifvergleich');
+                    }
+                }
+            }
+            updateTitles();
+            setInterval(updateTitles, 1000);
+        })();
     </script>
     
 <script>

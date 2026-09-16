@@ -194,7 +194,7 @@
             
 
             <div class="max-w-4xl prose pt-16 ">
-                Ein Rechtsstreit kann schnell tausende Euro kosten – selbst wenn Sie im Recht sind. Die Rechtsschutzversicherung übernimmt die Kosten für Anwalt, Gericht und Gutachter. Doch nicht jeder braucht sie, und nicht jeder Tarif ist gleich gut. Dieser Ratgeber hilft Ihnen bei der Entscheidung.
+                <p>Ein Rechtsstreit kann schnell tausende Euro kosten – selbst wenn Sie im Recht sind. Die Rechtsschutzversicherung übernimmt die Kosten für Anwalt, Gericht und Gutachter. Doch nicht jeder braucht sie, und nicht jeder Tarif ist gleich gut. Dieser Ratgeber hilft Ihnen bei der Entscheidung.</p>
 
       <h2>Was leistet eine Rechtsschutzversicherung?</h2>
       <p>Eine Rechtsschutzversicherung übernimmt die Kosten eines Rechtsstreits bis zu einer vereinbarten Versicherungssumme. Dazu gehören:</p>
@@ -385,6 +385,18 @@
 
     <script>
         lucide.createIcons();
+        (function enforceIframeTitles() {
+            function updateTitles() {
+                var iframes = document.getElementsByTagName('iframe');
+                for (var i = 0; i < iframes.length; i++) {
+                    if (!iframes[i].getAttribute('title') || iframes[i].getAttribute('title') === '') {
+                        iframes[i].setAttribute('title', 'Tarifcheck24 Vergleichsrechner - Unabhängiger Tarifvergleich');
+                    }
+                }
+            }
+            updateTitles();
+            setInterval(updateTitles, 1000);
+        })();
     </script>
     
 <script>

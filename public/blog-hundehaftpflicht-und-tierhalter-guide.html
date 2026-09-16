@@ -194,7 +194,7 @@
             
 
             <div class="max-w-4xl prose pt-16 ">
-                Als Hundehalter haften Sie in Deutschland nach dem Prinzip der Gefährdungshaftung (§ 833 BGB) in unbegrenzter Höhe für alle Schäden, die Ihr Vierbeiner verursacht – unabhängig davon, ob Sie ein persönliches Verschulden trifft oder nicht. Eine Tierhalterhaftpflichtversicherung ist daher für jeden Hundebesitzer unverzichtbar und in vielen Bundesländern sogar gesetzlich vorgeschrieben.
+                <p>Als Hundehalter haften Sie in Deutschland nach dem Prinzip der Gefährdungshaftung (§ 833 BGB) in unbegrenzter Höhe für alle Schäden, die Ihr Vierbeiner verursacht – unabhängig davon, ob Sie ein persönliches Verschulden trifft oder nicht. Eine Tierhalterhaftpflichtversicherung ist daher für jeden Hundebesitzer unverzichtbar und in vielen Bundesländern sogar gesetzlich vorgeschrieben.</p>
 
       <h2>Warum reicht die normale Privathaftpflichtversicherung nicht aus?</h2>
       <p>In der privaten Haftpflichtversicherung sind lediglich zahme Kleintiere wie Katzen, Hamster, Kaninchen oder Vögel beitragsfrei mitversichert. Größere Tiere wie Hunde und Pferde sind ausdrücklich vom Versicherungsschutz der Privathaftpflicht ausgeschlossen. Da von ihnen ein höheres Gefährdungspotenzial ausgeht (z.B. ein Hund reißt sich los und verursacht einen Auffahrunfall auf einer Bundesstraße), verlangt der Gesetzgeber eine gesonderte Tierhalterhaftpflicht.</p>
@@ -383,6 +383,18 @@
 
     <script>
         lucide.createIcons();
+        (function enforceIframeTitles() {
+            function updateTitles() {
+                var iframes = document.getElementsByTagName('iframe');
+                for (var i = 0; i < iframes.length; i++) {
+                    if (!iframes[i].getAttribute('title') || iframes[i].getAttribute('title') === '') {
+                        iframes[i].setAttribute('title', 'Tarifcheck24 Vergleichsrechner - Unabhängiger Tarifvergleich');
+                    }
+                }
+            }
+            updateTitles();
+            setInterval(updateTitles, 1000);
+        })();
     </script>
     
 <script>

@@ -203,7 +203,7 @@
                 <div class="flex flex-wrap items-center gap-4 text-xs font-semibold text-slate-500 pt-3 border-t border-slate-100">
                     <span class="flex items-center gap-1.5"><i data-lucide="shield-check" class="w-4 h-4 text-blue-600"></i> Rechtsnorm: <strong class="text-slate-700">§ 150 VVG (Lebensversicherung)</strong></span>
                     <span class="flex items-center gap-1.5"><i data-lucide="calendar" class="w-4 h-4 text-emerald-600"></i> Geprüfter Stand: <strong class="text-slate-700">September 2026</strong></span>
-                    <span class="flex items-center gap-1.5"><i data-lucide="check-circle" class="w-4 h-4 text-slate-700"></i> Redaktionell zertifiziert</span>
+                    <span class="flex items-center gap-1.5"><i data-lucide="check-circle" class="w-4 h-4 text-slate-700"></i> Kostenfrei &amp; unabhängig</span>
                 </div>
             </div>
 
@@ -252,35 +252,34 @@
                 </div>
                 <div class="lg:col-span-8 order-1 lg:order-2">
                     
-                        <!-- Dynamische Schnellauswahl / Quick-Filter -->
-                        <div class="mb-4 bg-white/90 p-4 rounded-2xl border border-slate-200 shadow-sm">
-                            <div class="text-[11px] font-black uppercase tracking-wider text-slate-500 mb-2.5 flex items-center justify-between">
-                                <span class="flex items-center gap-1.5"><i data-lucide="sliders" class="w-3.5 h-3.5 text-blue-600"></i> Dynamische Tarif-Konfiguration</span>
-                                <span class="text-[10px] text-blue-600 font-bold">Klicken zum Anpassen</span>
+                        <!-- Tarifmerkmale & Schwerpunkte -->
+                        <div class="mb-4 bg-slate-50/90 p-3.5 rounded-2xl border border-slate-200">
+                            <div class="text-[11px] font-black uppercase tracking-wider text-slate-500 mb-2 flex items-center gap-1.5">
+                                <i data-lucide="check-square" class="w-3.5 h-3.5 text-blue-600"></i> Wichtige Tarifmerkmale im Vergleich
                             </div>
-                            <div class="flex flex-wrap gap-2" id="filter-pills-risikolebensversicherung">
+                            <div class="flex flex-wrap gap-2">
                                 
-                                    <button type="button" onclick="this.classList.toggle('bg-blue-600'); this.classList.toggle('text-white'); this.classList.toggle('border-blue-600'); this.classList.toggle('bg-slate-50'); this.classList.toggle('text-slate-700'); var ic = this.querySelector('i'); if (ic) { var isAct = this.classList.contains('bg-blue-600'); ic.setAttribute('data-lucide', isAct ? 'check-circle-2' : 'circle'); if (window.lucide) lucide.createIcons(); }" class="px-3.5 py-1.5 rounded-full text-xs font-bold transition-all border bg-blue-600 text-white border-blue-600 shadow-sm flex items-center gap-1.5">
-                                        <i data-lucide="check-circle-2" class="w-3.5 h-3.5"></i> Familienschutz
-                                    </button>
+                                    <span class="px-3 py-1 bg-white text-slate-700 rounded-full text-xs font-semibold border border-slate-200 flex items-center gap-1.5 shadow-xs">
+                                        <i data-lucide="check" class="w-3.5 h-3.5 text-blue-600"></i> Familienschutz
+                                    </span>
                                 
-                                    <button type="button" onclick="this.classList.toggle('bg-blue-600'); this.classList.toggle('text-white'); this.classList.toggle('border-blue-600'); this.classList.toggle('bg-slate-50'); this.classList.toggle('text-slate-700'); var ic = this.querySelector('i'); if (ic) { var isAct = this.classList.contains('bg-blue-600'); ic.setAttribute('data-lucide', isAct ? 'check-circle-2' : 'circle'); if (window.lucide) lucide.createIcons(); }" class="px-3.5 py-1.5 rounded-full text-xs font-bold transition-all border bg-slate-50 text-slate-700 border-slate-200 hover:border-blue-300 flex items-center gap-1.5">
-                                        <i data-lucide="circle" class="w-3.5 h-3.5"></i> Darlehensabsicherung
-                                    </button>
+                                    <span class="px-3 py-1 bg-white text-slate-700 rounded-full text-xs font-semibold border border-slate-200 flex items-center gap-1.5 shadow-xs">
+                                        <i data-lucide="check" class="w-3.5 h-3.5 text-blue-600"></i> Darlehensabsicherung
+                                    </span>
                                 
-                                    <button type="button" onclick="this.classList.toggle('bg-blue-600'); this.classList.toggle('text-white'); this.classList.toggle('border-blue-600'); this.classList.toggle('bg-slate-50'); this.classList.toggle('text-slate-700'); var ic = this.querySelector('i'); if (ic) { var isAct = this.classList.contains('bg-blue-600'); ic.setAttribute('data-lucide', isAct ? 'check-circle-2' : 'circle'); if (window.lucide) lucide.createIcons(); }" class="px-3.5 py-1.5 rounded-full text-xs font-bold transition-all border bg-slate-50 text-slate-700 border-slate-200 hover:border-blue-300 flex items-center gap-1.5">
-                                        <i data-lucide="circle" class="w-3.5 h-3.5"></i> Konstante Summe
-                                    </button>
+                                    <span class="px-3 py-1 bg-white text-slate-700 rounded-full text-xs font-semibold border border-slate-200 flex items-center gap-1.5 shadow-xs">
+                                        <i data-lucide="check" class="w-3.5 h-3.5 text-blue-600"></i> Konstante Summe
+                                    </span>
                                 
-                                    <button type="button" onclick="this.classList.toggle('bg-blue-600'); this.classList.toggle('text-white'); this.classList.toggle('border-blue-600'); this.classList.toggle('bg-slate-50'); this.classList.toggle('text-slate-700'); var ic = this.querySelector('i'); if (ic) { var isAct = this.classList.contains('bg-blue-600'); ic.setAttribute('data-lucide', isAct ? 'check-circle-2' : 'circle'); if (window.lucide) lucide.createIcons(); }" class="px-3.5 py-1.5 rounded-full text-xs font-bold transition-all border bg-slate-50 text-slate-700 border-slate-200 hover:border-blue-300 flex items-center gap-1.5">
-                                        <i data-lucide="circle" class="w-3.5 h-3.5"></i> Fallende Summe
-                                    </button>
+                                    <span class="px-3 py-1 bg-white text-slate-700 rounded-full text-xs font-semibold border border-slate-200 flex items-center gap-1.5 shadow-xs">
+                                        <i data-lucide="check" class="w-3.5 h-3.5 text-blue-600"></i> Fallende Summe
+                                    </span>
                                 
                             </div>
                         </div>
                         <div class="flex items-center justify-between px-4 py-2 bg-white/70 rounded-2xl mb-3 border border-slate-200 text-xs font-bold text-slate-600">
-                            <span class="flex items-center gap-2"><i data-lucide="shield-check" class="w-4 h-4 text-blue-600"></i> Geprüfter Tarifrechner</span>
-                            <span class="text-[11px] font-semibold text-slate-400">Partner-ID: 72057</span>
+                            <span class="flex items-center gap-2"><i data-lucide="shield-check" class="w-4 h-4 text-blue-600"></i> Transparenter Vergleichsrechner*</span>
+                            <span class="text-[11px] font-semibold text-slate-400">* Werbelink / Partnerlink</span>
                         </div>
                         <div class="calculator-card bg-white rounded-3xl window-frame p-2 md:p-3 transition-all duration-300 relative" style="overflow: hidden; min-height: 0px;">
                             
@@ -519,6 +518,18 @@
 
     <script>
         lucide.createIcons();
+        (function enforceIframeTitles() {
+            function updateTitles() {
+                var iframes = document.getElementsByTagName('iframe');
+                for (var i = 0; i < iframes.length; i++) {
+                    if (!iframes[i].getAttribute('title') || iframes[i].getAttribute('title') === '') {
+                        iframes[i].setAttribute('title', 'Tarifcheck24 Vergleichsrechner - Unabhängiger Tarifvergleich');
+                    }
+                }
+            }
+            updateTitles();
+            setInterval(updateTitles, 1000);
+        })();
     </script>
     
 <script>

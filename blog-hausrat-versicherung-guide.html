@@ -194,7 +194,7 @@
             
 
             <div class="max-w-4xl prose pt-16 ">
-                Die Hausratversicherung gehört zu den wichtigsten Sachversicherungen in Deutschland – und wird dennoch von vielen Mietern und Eigenheimbesitzern vernachlässigt. Dieser umfassende Ratgeber erklärt, was genau versichert ist, welche Schäden abgedeckt werden und worauf Sie beim Abschluss achten sollten.
+                <p>Die Hausratversicherung gehört zu den wichtigsten Sachversicherungen in Deutschland – und wird dennoch von vielen Mietern und Eigenheimbesitzern vernachlässigt. Dieser umfassende Ratgeber erklärt, was genau versichert ist, welche Schäden abgedeckt werden und worauf Sie beim Abschluss achten sollten.</p>
 
       <h2>Was ist eine Hausratversicherung?</h2>
       <p>Die Hausratversicherung schützt alle beweglichen Gegenstände in Ihrer Wohnung oder Ihrem Haus gegen Schäden durch bestimmte Gefahren. Zum Hausrat gehört alles, was Sie bei einem Umzug mitnehmen würden: Möbel, Elektrogeräte, Kleidung, Schmuck, Sportgeräte, Bücher, Geschirr und vieles mehr.</p>
@@ -377,6 +377,18 @@
 
     <script>
         lucide.createIcons();
+        (function enforceIframeTitles() {
+            function updateTitles() {
+                var iframes = document.getElementsByTagName('iframe');
+                for (var i = 0; i < iframes.length; i++) {
+                    if (!iframes[i].getAttribute('title') || iframes[i].getAttribute('title') === '') {
+                        iframes[i].setAttribute('title', 'Tarifcheck24 Vergleichsrechner - Unabhängiger Tarifvergleich');
+                    }
+                }
+            }
+            updateTitles();
+            setInterval(updateTitles, 1000);
+        })();
     </script>
     
 <script>
