@@ -33,7 +33,7 @@ export default function PkvVsGkvGuide() {
       <h2>Herausforderungen &amp; Aspekte bei der Entscheidung</h2>
       <h3>Beitragsentwicklung &amp; Beitragsberechnung im Alter</h3>
       <p>Die Beitragsentwicklung in der PKV verläuft unabhängig vom Einkommen im Alter. Um Beitragsanpassungen abzufedern, bildet die PKV gesetzliche und tarifliche Alterungsrückstellungen. Zusätzlich entfällt ab dem 60. Lebensjahr der 10-%-Zuschlag, und Rentner können einen Beitragszuschuss der Rentenversicherung beantragen.</p>
-      <p>In der GKV zahlen versicherungspflichtige Rentner (KVdR) Beiträge auf ihre gesetzliche Rente. Freiwillig in der GKV versicherte Rentner zahlen hingegen Beiträge auf alle Einkünfte (inklusive Betriebsrenten, Mieteinnahmen und Kapitalerträge).</p>
+      <p>In der GKV zahlen pflichtversicherte Rentner (KVdR) Beiträge auf ihre gesetzliche Rente sowie auf Betriebsrenten, Versorgungsbezüge (unter Berücksichtigung gesetzlicher Freibeträge) und Arbeitseinkommen. Freiwillig in der GKV versicherte Rentner zahlen Beiträge auf sämtliche Einnahmen (inklusive Mieteinnahmen und Kapitalerträge bis zur Beitragsbemessungsgrenze).</p>
 
       <h3>Familienversicherung</h3>
       <p>In der GKV sind Ehepartner ohne eigenes Einkommen sowie Kinder unter bestimmten Voraussetzungen beitragsfrei familienversichert. In der PKV muss für jedes Familienmitglied ein eigener Vertrag abgeschlossen werden.</p>

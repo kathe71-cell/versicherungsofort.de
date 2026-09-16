@@ -489,14 +489,18 @@ function wrapHtml(title, description, content, slug = 'index', schemaJson = null
         (function enforceIframeTitles() {
             function updateTitles() {
                 var iframes = document.getElementsByTagName('iframe');
+                var rawTitle = document.title ? document.title.split('-')[0].trim() : 'Tarifvergleich';
+                var cleanTitle = rawTitle.replace(/Vergleich\s*\d*/i, '').trim();
+                if (!cleanTitle) cleanTitle = 'Tarifvergleich';
+                var titleText = cleanTitle + '-Angebotsanfrage des Vergleichspartners';
                 for (var i = 0; i < iframes.length; i++) {
-                    if (!iframes[i].getAttribute('title') || iframes[i].getAttribute('title') === '') {
-                        iframes[i].setAttribute('title', 'Tarifcheck24 Vergleichsrechner - Unabhängiger Tarifvergleich');
+                    if (!iframes[i].getAttribute('title') || iframes[i].getAttribute('title') === '' || iframes[i].getAttribute('title') === 'Tarifcheck24 Vergleichsrechner - Unabhängiger Tarifvergleich') {
+                        iframes[i].setAttribute('title', titleText);
                     }
                 }
             }
             updateTitles();
-            setInterval(updateTitles, 1000);
+            setInterval(updateTitles, 500);
         })();
     </script>
     ${SEARCH_SCRIPT_HTML}
