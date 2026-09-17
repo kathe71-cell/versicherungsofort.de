@@ -1,7 +1,19 @@
 {
   "version": 2,
   "framework": null,
-  "cleanUrls": true,
+  "routes": [
+    {
+      "handle": "filesystem"
+    },
+    {
+      "src": "/",
+      "dest": "/index.html"
+    },
+    {
+      "src": "/([^/]+)/?",
+      "dest": "/$1.html"
+    }
+  ],
   "headers": [
     {
       "source": "/(.*)",

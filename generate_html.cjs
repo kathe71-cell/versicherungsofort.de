@@ -358,7 +358,7 @@ const SEARCH_SCRIPT_HTML = `
 `;
 
 function wrapHtml(title, description, content, slug = 'index', schemaJson = null) {
-    const canonicalUrl = `https://versicherungsofort.de/${slug}.html`;
+    const canonicalUrl = slug === 'index' ? 'https://www.versicherungsofort.de/' : `https://www.versicherungsofort.de/${slug}`;
     const fullTitle = title.includes('versicherungsofort.de') ? title : `${title} | versicherungsofort.de`;
 
     const defaultSchema = {
@@ -366,18 +366,18 @@ function wrapHtml(title, description, content, slug = 'index', schemaJson = null
         "@graph": [
             {
                 "@type": "Organization",
-                "@id": "https://versicherungsofort.de/#organization",
+                "@id": "https://www.versicherungsofort.de/#organization",
                 "name": "versicherungsofort.de",
-                "url": "https://versicherungsofort.de",
-                "logo": "https://versicherungsofort.de/logo.svg",
+                "url": "https://www.versicherungsofort.de",
+                "logo": "https://www.versicherungsofort.de/logo.svg",
                 "description": "Unabhängiger Versicherungsvergleich und Verbraucherratgeber für Deutschland."
             },
             {
                 "@type": "WebSite",
-                "@id": "https://versicherungsofort.de/#website",
-                "url": "https://versicherungsofort.de",
+                "@id": "https://www.versicherungsofort.de/#website",
+                "url": "https://www.versicherungsofort.de",
                 "name": "versicherungsofort.de",
-                "publisher": { "@id": "https://versicherungsofort.de/#organization" },
+                "publisher": { "@id": "https://www.versicherungsofort.de/#organization" },
                 "inLanguage": "de"
             }
         ]
@@ -1588,13 +1588,13 @@ files.forEach(file => {
                     "@type": "ListItem",
                     "position": 1,
                     "name": "Startseite",
-                    "item": "https://versicherungsofort.de"
+                    "item": "https://www.versicherungsofort.de/"
                 },
                 {
                     "@type": "ListItem",
                     "position": 2,
                     "name": data.h1Title,
-                    "item": `https://versicherungsofort.de/${safeName}.html`
+                    "item": `https://www.versicherungsofort.de/${safeName}`
                 }
             ]
         };
@@ -1914,7 +1914,7 @@ console.log("✓ Generated Elite Home Page: index.html");
 // --- 6. GENERATE SITEMAP.XML & ROBOTS.TXT ---
 
 const sitemapUrls = Array.from(generatedSlugs).map(slug => {
-    const loc = slug === 'index' ? 'https://versicherungsofort.de/' : `https://versicherungsofort.de/${slug}.html`;
+    const loc = slug === 'index' ? 'https://www.versicherungsofort.de/' : `https://www.versicherungsofort.de/${slug}`;
     const priority = slug === 'index' ? '1.0' : (slug.startsWith('blog-') ? '0.8' : '0.9');
     const changefreq = slug === 'index' ? 'daily' : (slug.startsWith('blog-') ? 'monthly' : 'weekly');
     const today = new Date().toISOString().split('T')[0];
@@ -1938,7 +1938,7 @@ console.log(`✓ Generated sitemap.xml with ${generatedSlugs.size} verified URLs
 const robotsTxt = `User-agent: *
 Allow: /
 
-Sitemap: https://versicherungsofort.de/sitemap.xml
+Sitemap: https://www.versicherungsofort.de/sitemap.xml
 `;
 
 fs.writeFileSync(path.join(OUT_DIR, 'robots.txt'), robotsTxt);
@@ -1949,7 +1949,11 @@ console.log("✓ Generated robots.txt");
 const vercelJson = {
     "version": 2,
     "framework": null,
-    "cleanUrls": true,
+    "routes": [
+        { "handle": "filesystem" },
+        { "src": "/", "dest": "/index.html" },
+        { "src": "/([^/]+)/?", "dest": "/$1.html" }
+    ],
     "headers": [
         {
             "source": "/(.*)",

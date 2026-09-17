@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://versicherungsofort.de/sitemap.xml
+Sitemap: https://www.versicherungsofort.de/sitemap.xml
