@@ -404,12 +404,16 @@ function wrapHtml(title, description, content, slug = 'index', schemaJson = null
     <meta property="og:url" content="${canonicalUrl}">
     <meta property="og:title" content="${fullTitle}">
     <meta property="og:description" content="${description || 'Unabhängiger Versicherungsvergleich für Deutschland.'}">
+    <meta property="og:image" content="https://www.versicherungsofort.de/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
     <meta property="og:site_name" content="versicherungsofort.de">
     
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="${fullTitle}">
     <meta name="twitter:description" content="${description || 'Unabhängiger Versicherungsvergleich für Deutschland.'}">
+    <meta name="twitter:image" content="https://www.versicherungsofort.de/og-image.png">
     
     <!-- Tailwind CSS CDN & Lucide Icons -->
     <script src="https://cdn.tailwindcss.com"></script>
