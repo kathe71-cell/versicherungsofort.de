@@ -40,5 +40,18 @@
         }
       ]
     }
+  ],
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "versicherungsofort.de"
+        }
+      ],
+      "destination": "https://www.versicherungsofort.de/$1",
+      "permanent": true
+    }
   ]
 }
