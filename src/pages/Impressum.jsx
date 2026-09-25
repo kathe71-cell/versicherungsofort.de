@@ -57,20 +57,6 @@ export default function ImpressumPage() {
           <Card className="bg-white border-slate-200">
             <CardHeader>
               <CardTitle className="flex items-center gap-2 text-slate-900 font-bold">
-                <Info className="w-5 h-5 text-blue-600" />
-                Umsatzsteuer-Hinweis
-              </CardTitle>
-            </CardHeader>
-            <CardContent className="space-y-2 text-sm text-slate-700">
-              <p>
-                Gemäß § 19 UStG (Kleinunternehmerregelung) wird keine Umsatzsteuer berechnet und ausgewiesen.
-              </p>
-            </CardContent>
-          </Card>
-
-          <Card className="bg-white border-slate-200">
-            <CardHeader>
-              <CardTitle className="flex items-center gap-2 text-slate-900 font-bold">
                 <ShieldCheck className="w-5 h-5 text-blue-600" />
                 Tätigkeit & Betreiberrolle
               </CardTitle>

@@ -105,7 +105,7 @@ export default function SonderkuendigungBlogPost() {
                 <span className="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold flex-shrink-0">1</span>
                 <div>
                   <h4 className="font-semibold text-gray-900">Kündigungsgrund prüfen</h4>
-                  <p className="text-sm text-gray-600">Stellen Sie sicher, dass ein gültiger Kündigungsgrund vorliegt.</p>
+                  <p className="text-sm text-gray-600">Stellen Sie sicher, dass ein gültiger Kündigungsgrund vorliegt. Ob die Voraussetzungen erfüllt sind und wann Ihre einmonatige Frist endet, können Sie mit dem <a href="https://kfzwechselsaison.de/sonderkuendigungsrecht-kfz-versicherung/" target="_blank" rel="noopener" className="text-blue-600 font-semibold underline hover:text-blue-800">Sonderkündigungs-Checker für Kfz-Versicherungen</a> prüfen.</p>
                 </div>
               </li>
               <li className="flex items-start gap-3">
