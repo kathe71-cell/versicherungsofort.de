@@ -1,18 +1,31 @@
 # versicherungsofort.de
 
-> Das unabhängige deutsche Fachportal für Versicherungsvergleiche: KFZ-Versicherung, Privathaftpflicht, Hausrat, PKV & Zahnzusatz, Rechtsschutz und Berufsunfähigkeit (BU).
+> Das unabhängige deutsche Fachportal für Versicherungsvergleiche: KFZ-Versicherung, Privathaftpflicht, Hausrat, PKV & Zahnzusatz, Rechtsschutz und Berufsunfähigkeit (BU). Kostenlose Tarifrechner über unseren Partner TARIFCHECK24 GmbH – ohne Anmeldung, ohne Verpflichtung.
 
 ## Kern-Ressourcen
-- [Startseite](https://versicherungsofort.de/): Tarifrechner, Sparpotenzial (bis zu 850 €/Jahr), Leistungsübersichten.
-- [KFZ-Versicherung](https://versicherungsofort.de/): SF-Klassen, Vollkasko vs. Teilkasko, Werkstattbindung & Deckungssummen.
-- [Haftpflicht & Hausrat](https://versicherungsofort.de/): Gefälligkeitsschäden, Unterversicherungsverzicht, grobe Fahrlässigkeit.
+
+- [Startseite](https://versicherungsofort.de/): Übersicht aller Versicherungsarten, Tarifrechner und Sparpotenzial bis zu 850 €/Jahr.
+- [KFZ-Versicherung](https://versicherungsofort.de/kfz-versicherung): SF-Klassen, Vollkasko vs. Teilkasko, Werkstattbindung, Deckungssummen und Wechseltipps zur Kündigungsfrist 30. November.
+- [Haftpflichtversicherung](https://versicherungsofort.de/haftpflicht): Privathaftpflicht, Gefälligkeitsschäden, Unterversicherungsverzicht, grobe Fahrlässigkeit – ab ca. 40 €/Jahr.
+- [Hausratversicherung](https://versicherungsofort.de/hausrat): Einbruch, Feuer, Leitungswasser, Sturm; Versicherungssumme nach qm berechnen.
+- [Berufsunfähigkeitsversicherung (BU)](https://versicherungsofort.de/berufsunfaehigkeit): Wichtigste Absicherung für Arbeitnehmer; abstrakte Verweisung, Nachversicherungsgarantie, optimaler Abschluss unter 35 Jahren.
+- [Private Krankenversicherung (PKV)](https://versicherungsofort.de/pkv): PKV vs. GKV Vergleich, Einkommensgrenze 2026, Wechselmöglichkeiten, Tarife für Selbstständige, Beamte und Studenten.
+- [Zahnzusatzversicherung](https://versicherungsofort.de/krankenzusatz): Zahnersatz, Kieferorthopädie, Prophylaxe; Vergleich Erstattungssätze 70–100 %.
+- [Rechtsschutzversicherung](https://versicherungsofort.de/rechtsschutz): Verkehrs-, Berufs-, Privat- und Mietrechtsschutz; Wartezeiten und Selbstbeteiligung.
+- [Unfallversicherung](https://versicherungsofort.de/unfall): Invaliditätsgrundsumme, Progression, Bergungskosten.
+- [Ratgeber / Blog](https://versicherungsofort.de/ratgeber): Vertiefende Artikel zu allen Versicherungsthemen.
+- [FAQ](https://versicherungsofort.de/faq): Häufige Fragen zu Kündigungsfristen, Leistungsumfang und Vermittlerstatus.
 - [Impressum](https://versicherungsofort.de/impressum): Vermittlerstatus nach § 34d GewO & Anbieterangaben nach § 5 DDG.
 
-## Gesetzliche Grundlagen
-- **VVG**: Versicherungsvertragsgesetz (Rechte und Pflichten von Versicherungsnehmer und Versicherer).
-- **Vermittlerstatus**: Unabhängige Vermittlung nach § 34d GewO mit Berufshaftpflichtversicherung.
+## Gesetzliche Grundlagen & Marktinfos
+
+- **VVG**: Versicherungsvertragsgesetz – regelt Rechte und Pflichten von Versicherungsnehmer und Versicherer.
+- **Vermittlerstatus**: Unabhängige Vermittlung nach § 34d GewO mit Berufshaftpflichtversicherung; Provision durch Versicherer, kein Aufpreis für Kunden.
+- **Kündigungsfrist KFZ**: Jährlich zum 30. November (bei Hauptfälligkeit 1. Januar); Sonderkündigung bei Beitragserhöhung.
+- **PKV-Wechsel**: Arbeitnehmer ab Jahresarbeitsentgeltgrenze (2026: 69.300 €); nach 12 Monaten GKV-Mitgliedschaft.
 
 ## Betreiber
+
 - Jens Kathe, Hansastraße 6, 34119 Kassel, Deutschland.
 - E-Mail: jens@kathe.org | Tel: +49 178 6652623.
 - Kleinunternehmer nach § 19 UStG.
