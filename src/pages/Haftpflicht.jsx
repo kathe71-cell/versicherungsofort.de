@@ -89,7 +89,7 @@ export default function HaftpflichtPage() {
               
               <div className="bg-white p-6 rounded-2xl border border-blue-200 text-center flex flex-col items-center justify-center">
                 <p className="text-sm text-slate-600 mb-4 font-medium">Schützen Sie Ihr Hab und Gut bei Einbruch, Feuer und Wasserschäden.</p>
-                <a href="/hausrat.html" className="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-xl text-sm transition-all shadow-md">
+                <a href="/hausrat" className="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-xl text-sm transition-all shadow-md">
                   Hausrat-Tarife vergleichen*
                 </a>
               </div>

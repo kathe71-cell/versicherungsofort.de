@@ -101,7 +101,7 @@ export default function Home() {
             <a href="#versicherungen" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 text-base font-black rounded-full shadow-lg shadow-blue-500/20 transition-all hover:scale-105">
               Tarife vergleichen *
             </a>
-            <a href="/ratgeber.html" className="bg-white hover:bg-slate-100 text-slate-800 border border-slate-200 px-8 py-4 text-base font-bold rounded-full transition-all">
+            <a href="/ratgeber" className="bg-white hover:bg-slate-100 text-slate-800 border border-slate-200 px-8 py-4 text-base font-bold rounded-full transition-all">
               Zum Ratgeber
             </a>
           </div>
@@ -166,7 +166,7 @@ export default function Home() {
                   {group.items.map((cat, itemIdx) => (
                     <a 
                       key={itemIdx} 
-                      href={`/${cat.url}.html`} 
+                      href={`/${cat.url}`} 
                       className="bg-slate-50 p-6 rounded-3xl border border-slate-200 hover:bg-white hover:border-blue-300 hover:shadow-xl transition-all duration-300 flex flex-col justify-between group"
                     >
                       <div>

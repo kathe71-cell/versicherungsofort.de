@@ -18,7 +18,7 @@ const HEADER_HTML = `
 <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-xl border-b border-slate-200 transition-all duration-300">
     <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
         <div class="flex justify-between items-center h-16 sm:h-20 gap-2 sm:gap-6 overflow-hidden">
-            <a href="index.html" class="flex items-center space-x-2 group flex-shrink">
+            <a href="/" class="flex items-center space-x-2 group flex-shrink">
                 <div class="w-8 h-8 sm:w-10 sm:h-10 bg-slate-900 rounded-xl flex items-center justify-center shadow-xs group-hover:scale-105 transition-all duration-300 flex-shrink-0">
                     <i data-lucide="shield" class="w-4 h-4 sm:w-5 sm:h-5 text-white"></i>
                 </div>
@@ -45,10 +45,10 @@ const HEADER_HTML = `
                     <i data-lucide="search" class="w-4 h-4 sm:w-5 sm:h-5"></i>
                 </button>
                 <div class="hidden lg:flex space-x-7 items-center">
-                    <a href="ratgeber.html" class="text-xs font-black text-slate-600 hover:text-blue-600 uppercase tracking-widest transition-colors">Ratgeber</a>
-                    <a href="faq.html" class="text-xs font-black text-slate-600 hover:text-blue-600 uppercase tracking-widest transition-colors">FAQ</a>
+                    <a href="/ratgeber" class="text-xs font-black text-slate-600 hover:text-blue-600 uppercase tracking-widest transition-colors">Ratgeber</a>
+                    <a href="/faq" class="text-xs font-black text-slate-600 hover:text-blue-600 uppercase tracking-widest transition-colors">FAQ</a>
                 </div>
-                <a href="index.html#versicherungen" class="bg-blue-600 hover:bg-blue-700 text-white rounded-full px-3.5 sm:px-7 py-2 sm:py-3 text-[11px] sm:text-sm font-black shadow-md shadow-blue-500/20 transition-all duration-300 hover:-translate-y-0.5 whitespace-nowrap">
+                <a href="/#versicherungen" class="bg-blue-600 hover:bg-blue-700 text-white rounded-full px-3.5 sm:px-7 py-2 sm:py-3 text-[11px] sm:text-sm font-black shadow-md shadow-blue-500/20 transition-all duration-300 hover:-translate-y-0.5 whitespace-nowrap">
                     Tarife vergleichen*
                 </a>
             </nav>
@@ -89,18 +89,18 @@ const FOOTER_HTML = `
             <div>
                 <h3 class="text-xs font-black text-slate-900 mb-6 uppercase tracking-[0.25em]">Rechtliches</h3>
                 <ul class="space-y-4 text-sm font-semibold text-slate-600">
-                    <li><a href="impressum.html" class="hover:text-blue-600 transition-colors">Impressum</a></li>
-                    <li><a href="datenschutz.html" class="hover:text-blue-600 transition-colors">Datenschutzerklärung</a></li>
-                    <li><a href="haftungsausschluss.html" class="hover:text-blue-600 transition-colors">Haftungsausschluss</a></li>
+                    <li><a href="/impressum" class="hover:text-blue-600 transition-colors">Impressum</a></li>
+                    <li><a href="/datenschutz" class="hover:text-blue-600 transition-colors">Datenschutzerklärung</a></li>
+                    <li><a href="/haftungsausschluss" class="hover:text-blue-600 transition-colors">Haftungsausschluss</a></li>
                 </ul>
             </div>
             <div>
                 <h3 class="text-xs font-black text-slate-900 mb-6 uppercase tracking-[0.25em]">Wissen & Service</h3>
                 <ul class="space-y-4 text-sm font-semibold text-slate-600">
-                    <li><a href="ratgeber.html" class="hover:text-blue-600 transition-colors">Versicherungs-Ratgeber</a></li>
-                    <li><a href="faq.html" class="hover:text-blue-600 transition-colors">Häufige Fragen (FAQ)</a></li>
-                    <li><a href="blog-versicherung-glossar.html" class="hover:text-blue-600 transition-colors">Versicherungs-Glossar</a></li>
-                    <li><a href="index.html#versicherungen" class="hover:text-blue-600 transition-colors">Alle Vergleichsrechner</a></li>
+                    <li><a href="/ratgeber" class="hover:text-blue-600 transition-colors">Versicherungs-Ratgeber</a></li>
+                    <li><a href="/faq" class="hover:text-blue-600 transition-colors">Häufige Fragen (FAQ)</a></li>
+                    <li><a href="/blog-versicherung-glossar" class="hover:text-blue-600 transition-colors">Versicherungs-Glossar</a></li>
+                    <li><a href="/#versicherungen" class="hover:text-blue-600 transition-colors">Alle Vergleichsrechner</a></li>
                 </ul>
             </div>
         </div>
@@ -110,7 +110,7 @@ const FOOTER_HTML = `
         </div>
 
         <div class="border-t border-slate-200 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs font-bold text-slate-400">
-            <div>© 2025 versicherungsofort.de – Alle Rechte vorbehalten.</div>
+            <div>© 2026 versicherungsofort.de – Alle Rechte vorbehalten.</div>
             <div>Unabhängiges Portal für smarte Absicherung</div>
         </div>
     </div>
@@ -119,47 +119,47 @@ const FOOTER_HTML = `
 
 const SEARCH_INDEX = [
     // 22 Vergleichsrechner
-    { title: "Kfz-Versicherung Rechner", url: "kfz.html", category: "Rechner", badgeColor: "bg-blue-100 text-blue-800 border-blue-200", icon: "car", desc: "Pkw-Haftpflicht, Teilkasko & Vollkasko. Rabatte bei Fahrzeugwechsel & Neuzulassung vergleichen.", keywords: "auto autoversicherung pkw kfz kasko teilkasko vollkasko schadenfreiheitsklasse sf rabattschutz evb zulassung wechseln" },
-    { title: "Motorradversicherung Rechner", url: "motorrad.html", category: "Rechner", badgeColor: "bg-blue-100 text-blue-800 border-blue-200", icon: "gauge", desc: "Motorräder, Roller & Quads günstig versichern. Saisonkennzeichen & Kasko-Optionen.", keywords: "motorrad moped roller quad kraftrad krad teilkasko saisonkennzeichen" },
-    { title: "Privathaftpflicht Rechner", url: "haftpflicht.html", category: "Rechner", badgeColor: "bg-blue-100 text-blue-800 border-blue-200", icon: "shield", desc: "Existenzschutz ab ca. 2 € im Monat. Bis zu 50 Mio. € Deckung für Singles, Paare & Familien.", keywords: "haftpflicht privathaftpflicht phv missgeschick schluesselverlust mietsachschaden single familie deliktsunfaehig" },
-    { title: "Hausratversicherung Rechner", url: "hausrat.html", category: "Rechner", badgeColor: "bg-blue-100 text-blue-800 border-blue-200", icon: "home", desc: "Schutz für Möbel, Elektronik & Wertsachen bei Einbruch, Feuer, Wasser & Elementarschäden.", keywords: "hausrat wohnung haus einbruch diebstahl feuer leitungswasser sturm fahrrad fahrraddiebstahl elementarschutz" },
-    { title: "Private Krankenversicherung (PKV)", url: "pkv.html", category: "Rechner", badgeColor: "bg-blue-100 text-blue-800 border-blue-200", icon: "heart-pulse", desc: "Erstklassige medizinische Versorgung, Chefarzt & Einbettzimmer für Angestellte, Selbstständige & Beamte.", keywords: "pkv private krankenversicherung krankenvollversicherung chefarzt selbststaendige freiberufler beitragsentlastung" },
-    { title: "PKV für Beamte & Anwärter", url: "pkv-beamte.html", category: "Rechner", badgeColor: "bg-blue-100 text-blue-800 border-blue-200", icon: "user-check", desc: "Beihilfe-Ergänzungstarife mit bis zu 50-70% Beihilfebemessungssatz für Bund und Länder.", keywords: "beamte anwaerter referendare beihilfe lehrer lehramt polizei justiz restkosten" },
-    { title: "PKV für Studenten", url: "pkv-studenten.html", category: "Rechner", badgeColor: "bg-blue-100 text-blue-800 border-blue-200", icon: "graduation-cap", desc: "Günstige Krankenversicherung für Studierende bis zum 30. Lebensjahr mit Top-Leistungen.", keywords: "studenten studium universitaet hochschule semester studentische krankenversicherung praktikum" },
-    { title: "PKV Tarifwechsel & Optimierung ab 55", url: "pkv-55.html", category: "Rechner", badgeColor: "bg-blue-100 text-blue-800 border-blue-200", icon: "users", desc: "Beitragssenkung im Alter, Standardtarif, Basistarif & interner Tarifwechsel nach § 204 VVG.", keywords: "pkv55 pkv ab 55 tarifwechsel vvg 204 beitragssenkung basistarif standardtarif altersrueckstellung" },
-    { title: "Pflegezusatzversicherung Rechner", url: "pflege.html", category: "Rechner", badgeColor: "bg-blue-100 text-blue-800 border-blue-200", icon: "activity", desc: "Pflegetagegeld & Kostenschutz für Pflegegrade 1-5. Schützt das private Vermögen der Familie.", keywords: "pflege pflegegrade pflegegrad pflegetagegeld demenz pflegekosten pflegeheim ambulant stationaer" },
-    { title: "Zahnzusatz & Krankenzusatz Rechner", url: "krankenzusatz.html", category: "Rechner", badgeColor: "bg-blue-100 text-blue-800 border-blue-200", icon: "smile", desc: "Bis zu 100% Erstattung für Zahnersatz, Implantate, professionelle Zahnreinigung (PZR) & Inlays.", keywords: "zahn zahnzusatz zaehne implantat pzr zahnreinigung kieferorthopaedie inlays zahnersatz krankenhaus brille" },
-    { title: "Berufsunfähigkeitsversicherung (BU)", url: "berufsunfaehigkeit.html", category: "Rechner", badgeColor: "bg-blue-100 text-blue-800 border-blue-200", icon: "briefcase", desc: "Arbeitskraft- und Einkommensschutz bei schwerer Krankheit oder Unfall. Ohne abstrakte Verweisung.", keywords: "bu berufsunfaehigkeit arbeitskraft einkommen rente bu-rente krankheit unfall bu-schutz" },
-    { title: "Rechtsschutzversicherung Rechner", url: "rechtsschutz.html", category: "Rechner", badgeColor: "bg-blue-100 text-blue-800 border-blue-200", icon: "scale", desc: "Kostenübernahme für Anwälte, Gutachter & Gerichte. Privat-, Berufs-, Verkehrs- & Mietrechtsschutz.", keywords: "rechtsschutz anwalt gericht verkehrsrechtsschutz arbeitsrecht mietrecht kuendigung klage streit" },
-    { title: "Hundehaftpflicht & Tierhalter Rechner", url: "tierhalterhaftpflicht.html", category: "Rechner", badgeColor: "bg-blue-100 text-blue-800 border-blue-200", icon: "dog", desc: "Gesetzliche Haftpflicht für Hunde & Pferde ab ca. 3,50 €/Monat. Inklusive Mietsachschäden & Leinenzwang.", keywords: "hund hunde hundehaftpflicht pferd pferde tierhalter leine biss mietschaeden tierschaeden" },
-    { title: "Hundekrankenversicherung & OP-Schutz", url: "hundekrankenversicherung.html", category: "Rechner", badgeColor: "bg-blue-100 text-blue-800 border-blue-200", icon: "heart", desc: "Übernahme hoher Tierarzt- und Operationskosten nach GOT. Freie Wahl des Tierarztes oder Tierklinik.", keywords: "hundekranken hundekrankenversicherung op tierarzt tierklinik got welpe hund medizin behandlung" },
-    { title: "Unfallversicherung Rechner", url: "unfallversicherung.html", category: "Rechner", badgeColor: "bg-blue-100 text-blue-800 border-blue-200", icon: "shield-alert", desc: "24-Stunden-Rundumschutz weltweit für Freizeit & Beruf mit Progression und lebenslanger Unfallrente.", keywords: "unfall unfallversicherung invaliditaet progression unfallrente bergung freizeit freizeitunfall" },
-    { title: "Private Rentenversicherung Rechner", url: "rente.html", category: "Rechner", badgeColor: "bg-blue-100 text-blue-800 border-blue-200", icon: "coins", desc: "Flexible Altersvorsorge mit lebenslanger Rentengarantie, ETF-Optionen & Steuervorteilen im Alter.", keywords: "rente rentenversicherung altersvorsorge ruhestand etf rendite sparplan lebenslang" },
-    { title: "Riester-Rente Rechner", url: "riester.html", category: "Rechner", badgeColor: "bg-blue-100 text-blue-800 border-blue-200", icon: "landmark", desc: "Staatliche Zulagen (Grundzulage + Kinderzulagen) & Steuervorteile durch Sonderausgabenabzug sichern.", keywords: "riester riesterrente zulagen kinderzulage staatlich sonderausgaben wohnriester foerderung" },
-    { title: "Rürup-Rente (Basisrente) Rechner", url: "ruerup.html", category: "Rechner", badgeColor: "bg-blue-100 text-blue-800 border-blue-200", icon: "trending-up", desc: "Maximale Steuerersparnis für Selbstständige, Freiberufler & Gutverdiener. Insolvenz- und pfändungssicher.", keywords: "ruerup rueruprente basisrente selbststaendige steuern sparen freiberufler steuerabzug" },
-    { title: "Risikolebensversicherung (RLV) Rechner", url: "risikolebensversicherung.html", category: "Rechner", badgeColor: "bg-blue-100 text-blue-800 border-blue-200", icon: "life-buoy", desc: "Günstiger Todesfallschutz zur Absicherung von Familie, Kindern und Immobilien-Darlehen.", keywords: "risikoleben rlv todesfall kredit baufinanzierung hinterbliebene absicherung darlehen konstante summe" },
-    { title: "Kapitallebensversicherung Rechner", url: "lebensversicherung.html", category: "Rechner", badgeColor: "bg-blue-100 text-blue-800 border-blue-200", icon: "umbrella", desc: "Kombination aus sicherem Hinterbliebenenschutz und garantierten Ersparnissen für das Alter.", keywords: "lebensversicherung kapitalleben sparbeitrag todesfall kapital kapitalauszahlung vermoegensaufbau" },
-    { title: "Haus- & Grundbesitzerhaftpflicht Rechner", url: "grundbesitzerhaftpflicht.html", category: "Rechner", badgeColor: "bg-blue-100 text-blue-800 border-blue-200", icon: "building-2", desc: "Schutz für Vermieter, Eigentümergemeinschaften und Eigentümer unbebauter Grundstücke.", keywords: "grundbesitzer vermieter eigentum mietshaus streupflicht gehweg verkehrssicherung dachziegel" },
-    { title: "Firmen- & Gewerbeversicherung Rechner", url: "firmenversicherung.html", category: "Rechner", badgeColor: "bg-blue-100 text-blue-800 border-blue-200", icon: "building", desc: "Betriebshaftpflicht, Inhaltsversicherung & Gewerberechtsschutz für Unternehmer und Betriebe.", keywords: "gewerbe firma betrieb betriebshaftpflicht inhaltsversicherung firmenversicherung unternehmen selbstaendig" },
-    { title: "Wohngebäudeversicherung Rechner", url: "wohngebaeudeversicherung.html", category: "Rechner", badgeColor: "bg-blue-100 text-blue-800 border-blue-200", icon: "home", desc: "Optimaler Schutz für Haus- & Immobilieneigentümer bei Feuer, Leitungswasser, Sturm & Elementarschäden.", keywords: "wohngebaeude wohngebaeudeversicherung haus gebaeudeversicherung immobilie eigenheim unfall elementar starkregen rohrbruch photovoltaik" },
+    { title: "Kfz-Versicherung Rechner", url: "kfz", category: "Rechner", badgeColor: "bg-blue-100 text-blue-800 border-blue-200", icon: "car", desc: "Pkw-Haftpflicht, Teilkasko & Vollkasko. Rabatte bei Fahrzeugwechsel & Neuzulassung vergleichen.", keywords: "auto autoversicherung pkw kfz kasko teilkasko vollkasko schadenfreiheitsklasse sf rabattschutz evb zulassung wechseln" },
+    { title: "Motorradversicherung Rechner", url: "motorrad", category: "Rechner", badgeColor: "bg-blue-100 text-blue-800 border-blue-200", icon: "gauge", desc: "Motorräder, Roller & Quads günstig versichern. Saisonkennzeichen & Kasko-Optionen.", keywords: "motorrad moped roller quad kraftrad krad teilkasko saisonkennzeichen" },
+    { title: "Privathaftpflicht Rechner", url: "haftpflicht", category: "Rechner", badgeColor: "bg-blue-100 text-blue-800 border-blue-200", icon: "shield", desc: "Existenzschutz ab ca. 2 € im Monat. Bis zu 50 Mio. € Deckung für Singles, Paare & Familien.", keywords: "haftpflicht privathaftpflicht phv missgeschick schluesselverlust mietsachschaden single familie deliktsunfaehig" },
+    { title: "Hausratversicherung Rechner", url: "hausrat", category: "Rechner", badgeColor: "bg-blue-100 text-blue-800 border-blue-200", icon: "home", desc: "Schutz für Möbel, Elektronik & Wertsachen bei Einbruch, Feuer, Wasser & Elementarschäden.", keywords: "hausrat wohnung haus einbruch diebstahl feuer leitungswasser sturm fahrrad fahrraddiebstahl elementarschutz" },
+    { title: "Private Krankenversicherung (PKV)", url: "pkv", category: "Rechner", badgeColor: "bg-blue-100 text-blue-800 border-blue-200", icon: "heart-pulse", desc: "Erstklassige medizinische Versorgung, Chefarzt & Einbettzimmer für Angestellte, Selbstständige & Beamte.", keywords: "pkv private krankenversicherung krankenvollversicherung chefarzt selbststaendige freiberufler beitragsentlastung" },
+    { title: "PKV für Beamte & Anwärter", url: "pkv-beamte", category: "Rechner", badgeColor: "bg-blue-100 text-blue-800 border-blue-200", icon: "user-check", desc: "Beihilfe-Ergänzungstarife mit bis zu 50-70% Beihilfebemessungssatz für Bund und Länder.", keywords: "beamte anwaerter referendare beihilfe lehrer lehramt polizei justiz restkosten" },
+    { title: "PKV für Studenten", url: "pkv-studenten", category: "Rechner", badgeColor: "bg-blue-100 text-blue-800 border-blue-200", icon: "graduation-cap", desc: "Günstige Krankenversicherung für Studierende bis zum 30. Lebensjahr mit Top-Leistungen.", keywords: "studenten studium universitaet hochschule semester studentische krankenversicherung praktikum" },
+    { title: "PKV Tarifwechsel & Optimierung ab 55", url: "pkv-55", category: "Rechner", badgeColor: "bg-blue-100 text-blue-800 border-blue-200", icon: "users", desc: "Beitragssenkung im Alter, Standardtarif, Basistarif & interner Tarifwechsel nach § 204 VVG.", keywords: "pkv55 pkv ab 55 tarifwechsel vvg 204 beitragssenkung basistarif standardtarif altersrueckstellung" },
+    { title: "Pflegezusatzversicherung Rechner", url: "pflege", category: "Rechner", badgeColor: "bg-blue-100 text-blue-800 border-blue-200", icon: "activity", desc: "Pflegetagegeld & Kostenschutz für Pflegegrade 1-5. Schützt das private Vermögen der Familie.", keywords: "pflege pflegegrade pflegegrad pflegetagegeld demenz pflegekosten pflegeheim ambulant stationaer" },
+    { title: "Zahnzusatz & Krankenzusatz Rechner", url: "krankenzusatz", category: "Rechner", badgeColor: "bg-blue-100 text-blue-800 border-blue-200", icon: "smile", desc: "Bis zu 100% Erstattung für Zahnersatz, Implantate, professionelle Zahnreinigung (PZR) & Inlays.", keywords: "zahn zahnzusatz zaehne implantat pzr zahnreinigung kieferorthopaedie inlays zahnersatz krankenhaus brille" },
+    { title: "Berufsunfähigkeitsversicherung (BU)", url: "berufsunfaehigkeit", category: "Rechner", badgeColor: "bg-blue-100 text-blue-800 border-blue-200", icon: "briefcase", desc: "Arbeitskraft- und Einkommensschutz bei schwerer Krankheit oder Unfall. Ohne abstrakte Verweisung.", keywords: "bu berufsunfaehigkeit arbeitskraft einkommen rente bu-rente krankheit unfall bu-schutz" },
+    { title: "Rechtsschutzversicherung Rechner", url: "rechtsschutz", category: "Rechner", badgeColor: "bg-blue-100 text-blue-800 border-blue-200", icon: "scale", desc: "Kostenübernahme für Anwälte, Gutachter & Gerichte. Privat-, Berufs-, Verkehrs- & Mietrechtsschutz.", keywords: "rechtsschutz anwalt gericht verkehrsrechtsschutz arbeitsrecht mietrecht kuendigung klage streit" },
+    { title: "Hundehaftpflicht & Tierhalter Rechner", url: "tierhalterhaftpflicht", category: "Rechner", badgeColor: "bg-blue-100 text-blue-800 border-blue-200", icon: "dog", desc: "Gesetzliche Haftpflicht für Hunde & Pferde ab ca. 3,50 €/Monat. Inklusive Mietsachschäden & Leinenzwang.", keywords: "hund hunde hundehaftpflicht pferd pferde tierhalter leine biss mietschaeden tierschaeden" },
+    { title: "Hundekrankenversicherung & OP-Schutz", url: "hundekrankenversicherung", category: "Rechner", badgeColor: "bg-blue-100 text-blue-800 border-blue-200", icon: "heart", desc: "Übernahme hoher Tierarzt- und Operationskosten nach GOT. Freie Wahl des Tierarztes oder Tierklinik.", keywords: "hundekranken hundekrankenversicherung op tierarzt tierklinik got welpe hund medizin behandlung" },
+    { title: "Unfallversicherung Rechner", url: "unfallversicherung", category: "Rechner", badgeColor: "bg-blue-100 text-blue-800 border-blue-200", icon: "shield-alert", desc: "24-Stunden-Rundumschutz weltweit für Freizeit & Beruf mit Progression und lebenslanger Unfallrente.", keywords: "unfall unfallversicherung invaliditaet progression unfallrente bergung freizeit freizeitunfall" },
+    { title: "Private Rentenversicherung Rechner", url: "rente", category: "Rechner", badgeColor: "bg-blue-100 text-blue-800 border-blue-200", icon: "coins", desc: "Flexible Altersvorsorge mit lebenslanger Rentengarantie, ETF-Optionen & Steuervorteilen im Alter.", keywords: "rente rentenversicherung altersvorsorge ruhestand etf rendite sparplan lebenslang" },
+    { title: "Riester-Rente Rechner", url: "riester", category: "Rechner", badgeColor: "bg-blue-100 text-blue-800 border-blue-200", icon: "landmark", desc: "Staatliche Zulagen (Grundzulage + Kinderzulagen) & Steuervorteile durch Sonderausgabenabzug sichern.", keywords: "riester riesterrente zulagen kinderzulage staatlich sonderausgaben wohnriester foerderung" },
+    { title: "Rürup-Rente (Basisrente) Rechner", url: "ruerup", category: "Rechner", badgeColor: "bg-blue-100 text-blue-800 border-blue-200", icon: "trending-up", desc: "Maximale Steuerersparnis für Selbstständige, Freiberufler & Gutverdiener. Insolvenz- und pfändungssicher.", keywords: "ruerup rueruprente basisrente selbststaendige steuern sparen freiberufler steuerabzug" },
+    { title: "Risikolebensversicherung (RLV) Rechner", url: "risikolebensversicherung", category: "Rechner", badgeColor: "bg-blue-100 text-blue-800 border-blue-200", icon: "life-buoy", desc: "Günstiger Todesfallschutz zur Absicherung von Familie, Kindern und Immobilien-Darlehen.", keywords: "risikoleben rlv todesfall kredit baufinanzierung hinterbliebene absicherung darlehen konstante summe" },
+    { title: "Kapitallebensversicherung Rechner", url: "lebensversicherung", category: "Rechner", badgeColor: "bg-blue-100 text-blue-800 border-blue-200", icon: "umbrella", desc: "Kombination aus sicherem Hinterbliebenenschutz und garantierten Ersparnissen für das Alter.", keywords: "lebensversicherung kapitalleben sparbeitrag todesfall kapital kapitalauszahlung vermoegensaufbau" },
+    { title: "Haus- & Grundbesitzerhaftpflicht Rechner", url: "grundbesitzerhaftpflicht", category: "Rechner", badgeColor: "bg-blue-100 text-blue-800 border-blue-200", icon: "building-2", desc: "Schutz für Vermieter, Eigentümergemeinschaften und Eigentümer unbebauter Grundstücke.", keywords: "grundbesitzer vermieter eigentum mietshaus streupflicht gehweg verkehrssicherung dachziegel" },
+    { title: "Firmen- & Gewerbeversicherung Rechner", url: "firmenversicherung", category: "Rechner", badgeColor: "bg-blue-100 text-blue-800 border-blue-200", icon: "building", desc: "Betriebshaftpflicht, Inhaltsversicherung & Gewerberechtsschutz für Unternehmer und Betriebe.", keywords: "gewerbe firma betrieb betriebshaftpflicht inhaltsversicherung firmenversicherung unternehmen selbstaendig" },
+    { title: "Wohngebäudeversicherung Rechner", url: "wohngebaeudeversicherung", category: "Rechner", badgeColor: "bg-blue-100 text-blue-800 border-blue-200", icon: "home", desc: "Optimaler Schutz für Haus- & Immobilieneigentümer bei Feuer, Leitungswasser, Sturm & Elementarschäden.", keywords: "wohngebaeude wohngebaeudeversicherung haus gebaeudeversicherung immobilie eigenheim unfall elementar starkregen rohrbruch photovoltaik" },
 
     // 12 Ratgeber & Guide-Artikel
-    { title: "Ratgeber: 5 wichtigste Versicherungen für Berufsstarter", url: "blog-fuenf-wichtigste-versicherungen-berufsstarter.html", category: "Ratgeber", badgeColor: "bg-emerald-100 text-emerald-800 border-emerald-200", icon: "book-open", desc: "Welche Policen zum Berufseinstieg Pflicht sind und worauf junge Erwachsene verzichten können.", keywords: "berufsstarter ausbildung erster job karriere junge leute absicherung wichtig haftpflicht bu" },
-    { title: "Ratgeber: PKV vs. GKV Systemvergleich 2025", url: "blog-pkv-vs-gkv-der-ultimative-vergleich.html", category: "Ratgeber", badgeColor: "bg-emerald-100 text-emerald-800 border-emerald-200", icon: "book-open", desc: "Kosten, Leistungen, Familienversicherung & Wechselgrenzen im direkten Gegenüberstellungs-Check.", keywords: "pkv gkv gesetzlich privat krankenversicherung vorteile nachteile unterschiede jaei grenze vergleich" },
-    { title: "Ratgeber: Zahnzusatzversicherung – Worauf achten?", url: "blog-zahnzusatzversicherung-ratgeber.html", category: "Ratgeber", badgeColor: "bg-emerald-100 text-emerald-800 border-emerald-200", icon: "book-open", desc: "Wartezeiten, Zahnstaffel, Implantat-Kosten & professionelle Zahnreinigung verständlich erklärt.", keywords: "zahnzusatz ratgeber zahnstaffel wartezeit zahnreinigung eigenanteil zahnarzt implantat" },
-    { title: "Ratgeber: Hundehaftpflicht & Tierhalter Guide", url: "blog-hundehaftpflicht-und-tierhalter-guide.html", category: "Ratgeber", badgeColor: "bg-emerald-100 text-emerald-800 border-emerald-200", icon: "book-open", desc: "Gesetzliche Pflicht nach Bundesländern, Gefährdungshaftung & sinnvoller OP-Kostenschutz.", keywords: "hundehaftpflicht ratgeber pflicht bundesland leinenzwang tierschutz tierschaeden hund" },
-    { title: "Ratgeber: Kfz-Wechselsaison – Stichtag 30. November", url: "blog-kfz-wechselsaison-fristen-spartipps-2025.html", category: "Ratgeber", badgeColor: "bg-emerald-100 text-emerald-800 border-emerald-200", icon: "book-open", desc: "Wie Sie bis zu mehrere hundert Euro sparen, Kündigungsfristen einhalten und Rabatte sichern.", keywords: "kfz wechsel stichtag 30 november kuendigung frist autoversicherung kfz-wechsel spartipps" },
-    { title: "Ratgeber: Sonderkündigungsrecht Kfz-Versicherung", url: "blog-sonderkuendigung-kfz-versicherung.html", category: "Ratgeber", badgeColor: "bg-emerald-100 text-emerald-800 border-emerald-200", icon: "book-open", desc: "Beitragserhöhung erhalten? So kündigen Sie Ihre Autoversicherung auch außerhalb der regulären Frist.", keywords: "sonderkuendigung kfz preiserhoehung beitragserhoehung kuendigen 4 wochen frist musterkuendigung" },
-    { title: "Ratgeber: Hausratversicherung & Elementarschäden", url: "blog-hausrat-versicherung-guide.html", category: "Ratgeber", badgeColor: "bg-emerald-100 text-emerald-800 border-emerald-200", icon: "book-open", desc: "Überschwemmung, Starkregen, Unterversicherungsverzicht und Quadratmeter-Faustformel.", keywords: "hausrat ratgeber starkregen hochwasser ueberschwemmung quadratmeter fahrrad" },
-    { title: "Ratgeber: Berufsunfähigkeit – Gesundheitsfragen", url: "blog-berufsunfaehigkeit-ratgeber.html", category: "Ratgeber", badgeColor: "bg-emerald-100 text-emerald-800 border-emerald-200", icon: "book-open", desc: "Warum wahrheitsgemäße Angaben bei Vorerkrankungen über die spätere Rentenauszahlung entscheiden.", keywords: "bu ratgeber gesundheitsfragen vorerkrankungen arztakte vorvertragliche anzeigepflicht" },
-    { title: "Ratgeber: Private Altersvorsorge im Vergleich", url: "blog-private-altersvorsorge-vergleich.html", category: "Ratgeber", badgeColor: "bg-emerald-100 text-emerald-800 border-emerald-200", icon: "book-open", desc: "Klassische Rente, ETF-Rentenversicherung, Riester oder Rürup? Welches Modell für wen passt.", keywords: "altersvorsorge ratgeber rendite steuervergleich schichten etf-sparplan ruhestand" },
-    { title: "Ratgeber: Versicherungen für Familien", url: "blog-versicherungen-fuer-familien.html", category: "Ratgeber", badgeColor: "bg-emerald-100 text-emerald-800 border-emerald-200", icon: "book-open", desc: "Vollständiger Absicherungs-Check für Eltern und Kinder: Haftpflicht, RLV, Unfall & Sparpläne.", keywords: "familie kinder eltern baby familienschutz absicherung sparplan schutz" },
-    { title: "Ratgeber: Rechtsschutzversicherung ohne Wartezeit?", url: "blog-rechtsschutzversicherung-ratgeber.html", category: "Ratgeber", badgeColor: "bg-emerald-100 text-emerald-800 border-emerald-200", icon: "book-open", desc: "In welchen Bereichen wie Verkehrsrechtsschutz der Versicherungsschutz sofort ab Tag 1 greift.", keywords: "rechtsschutz ratgeber wartezeit verkehrsrecht anwaltskosten streitfall soforthilfe" },
-    { title: "Versicherungs-Glossar: Fachbegriffe erklärt", url: "blog-versicherung-glossar.html", category: "Ratgeber", badgeColor: "bg-emerald-100 text-emerald-800 border-emerald-200", icon: "book-open", desc: "Selbstbeteiligung, Obliegenheit, Deckungssumme, Unterversicherung & Regress einfach erklärt.", keywords: "glossar fachbegriffe erklaerung lexikon definition obliegenheit selbstbeteiligung grobe fahrlaessigkeit" },
+    { title: "Ratgeber: 5 wichtigste Versicherungen für Berufsstarter", url: "blog-fuenf-wichtigste-versicherungen-berufsstarter", category: "Ratgeber", badgeColor: "bg-emerald-100 text-emerald-800 border-emerald-200", icon: "book-open", desc: "Welche Policen zum Berufseinstieg Pflicht sind und worauf junge Erwachsene verzichten können.", keywords: "berufsstarter ausbildung erster job karriere junge leute absicherung wichtig haftpflicht bu" },
+    { title: "Ratgeber: PKV vs. GKV Systemvergleich 2025", url: "blog-pkv-vs-gkv-der-ultimative-vergleich", category: "Ratgeber", badgeColor: "bg-emerald-100 text-emerald-800 border-emerald-200", icon: "book-open", desc: "Kosten, Leistungen, Familienversicherung & Wechselgrenzen im direkten Gegenüberstellungs-Check.", keywords: "pkv gkv gesetzlich privat krankenversicherung vorteile nachteile unterschiede jaei grenze vergleich" },
+    { title: "Ratgeber: Zahnzusatzversicherung – Worauf achten?", url: "blog-zahnzusatzversicherung-ratgeber", category: "Ratgeber", badgeColor: "bg-emerald-100 text-emerald-800 border-emerald-200", icon: "book-open", desc: "Wartezeiten, Zahnstaffel, Implantat-Kosten & professionelle Zahnreinigung verständlich erklärt.", keywords: "zahnzusatz ratgeber zahnstaffel wartezeit zahnreinigung eigenanteil zahnarzt implantat" },
+    { title: "Ratgeber: Hundehaftpflicht & Tierhalter Guide", url: "blog-hundehaftpflicht-und-tierhalter-guide", category: "Ratgeber", badgeColor: "bg-emerald-100 text-emerald-800 border-emerald-200", icon: "book-open", desc: "Gesetzliche Pflicht nach Bundesländern, Gefährdungshaftung & sinnvoller OP-Kostenschutz.", keywords: "hundehaftpflicht ratgeber pflicht bundesland leinenzwang tierschutz tierschaeden hund" },
+    { title: "Ratgeber: Kfz-Wechselsaison – Stichtag 30. November", url: "blog-kfz-wechselsaison-fristen-spartipps-2025", category: "Ratgeber", badgeColor: "bg-emerald-100 text-emerald-800 border-emerald-200", icon: "book-open", desc: "Wie Sie bis zu mehrere hundert Euro sparen, Kündigungsfristen einhalten und Rabatte sichern.", keywords: "kfz wechsel stichtag 30 november kuendigung frist autoversicherung kfz-wechsel spartipps" },
+    { title: "Ratgeber: Sonderkündigungsrecht Kfz-Versicherung", url: "blog-sonderkuendigung-kfz-versicherung", category: "Ratgeber", badgeColor: "bg-emerald-100 text-emerald-800 border-emerald-200", icon: "book-open", desc: "Beitragserhöhung erhalten? So kündigen Sie Ihre Autoversicherung auch außerhalb der regulären Frist.", keywords: "sonderkuendigung kfz preiserhoehung beitragserhoehung kuendigen 4 wochen frist musterkuendigung" },
+    { title: "Ratgeber: Hausratversicherung & Elementarschäden", url: "blog-hausrat-versicherung-guide", category: "Ratgeber", badgeColor: "bg-emerald-100 text-emerald-800 border-emerald-200", icon: "book-open", desc: "Überschwemmung, Starkregen, Unterversicherungsverzicht und Quadratmeter-Faustformel.", keywords: "hausrat ratgeber starkregen hochwasser ueberschwemmung quadratmeter fahrrad" },
+    { title: "Ratgeber: Berufsunfähigkeit – Gesundheitsfragen", url: "blog-berufsunfaehigkeit-ratgeber", category: "Ratgeber", badgeColor: "bg-emerald-100 text-emerald-800 border-emerald-200", icon: "book-open", desc: "Warum wahrheitsgemäße Angaben bei Vorerkrankungen über die spätere Rentenauszahlung entscheiden.", keywords: "bu ratgeber gesundheitsfragen vorerkrankungen arztakte vorvertragliche anzeigepflicht" },
+    { title: "Ratgeber: Private Altersvorsorge im Vergleich", url: "blog-private-altersvorsorge-vergleich", category: "Ratgeber", badgeColor: "bg-emerald-100 text-emerald-800 border-emerald-200", icon: "book-open", desc: "Klassische Rente, ETF-Rentenversicherung, Riester oder Rürup? Welches Modell für wen passt.", keywords: "altersvorsorge ratgeber rendite steuervergleich schichten etf-sparplan ruhestand" },
+    { title: "Ratgeber: Versicherungen für Familien", url: "blog-versicherungen-fuer-familien", category: "Ratgeber", badgeColor: "bg-emerald-100 text-emerald-800 border-emerald-200", icon: "book-open", desc: "Vollständiger Absicherungs-Check für Eltern und Kinder: Haftpflicht, RLV, Unfall & Sparpläne.", keywords: "familie kinder eltern baby familienschutz absicherung sparplan schutz" },
+    { title: "Ratgeber: Rechtsschutzversicherung ohne Wartezeit?", url: "blog-rechtsschutzversicherung-ratgeber", category: "Ratgeber", badgeColor: "bg-emerald-100 text-emerald-800 border-emerald-200", icon: "book-open", desc: "In welchen Bereichen wie Verkehrsrechtsschutz der Versicherungsschutz sofort ab Tag 1 greift.", keywords: "rechtsschutz ratgeber wartezeit verkehrsrecht anwaltskosten streitfall soforthilfe" },
+    { title: "Versicherungs-Glossar: Fachbegriffe erklärt", url: "blog-versicherung-glossar", category: "Ratgeber", badgeColor: "bg-emerald-100 text-emerald-800 border-emerald-200", icon: "book-open", desc: "Selbstbeteiligung, Obliegenheit, Deckungssumme, Unterversicherung & Regress einfach erklärt.", keywords: "glossar fachbegriffe erklaerung lexikon definition obliegenheit selbstbeteiligung grobe fahrlaessigkeit" },
 
     // FAQ & Ratgeber-Übersicht
-    { title: "Häufig gestellte Fragen (FAQ)", url: "faq.html", category: "FAQ", badgeColor: "bg-amber-100 text-amber-900 border-amber-200", icon: "help-circle", desc: "Antworten zu Rechnernutzung, Unverbindlichkeit, Datenschutz, Kündigungsfristen & Datensicherheit.", keywords: "faq fragen antworten hilfe kostenlos unverbindlich datenschutz sicherheit kuendigung wechsel" },
-    { title: "Versicherungs-Ratgeber Gesamtübersicht", url: "ratgeber.html", category: "Ratgeber", badgeColor: "bg-emerald-100 text-emerald-800 border-emerald-200", icon: "book-open", desc: "Alle Fachartikel, Leitfäden und Spartipps für private und gewerbliche Absicherung im Überblick.", keywords: "ratgeber artikel blog uebersicht spartipps guides informationen" }
+    { title: "Häufig gestellte Fragen (FAQ)", url: "faq", category: "FAQ", badgeColor: "bg-amber-100 text-amber-900 border-amber-200", icon: "help-circle", desc: "Antworten zu Rechnernutzung, Unverbindlichkeit, Datenschutz, Kündigungsfristen & Datensicherheit.", keywords: "faq fragen antworten hilfe kostenlos unverbindlich datenschutz sicherheit kuendigung wechsel" },
+    { title: "Versicherungs-Ratgeber Gesamtübersicht", url: "ratgeber", category: "Ratgeber", badgeColor: "bg-emerald-100 text-emerald-800 border-emerald-200", icon: "book-open", desc: "Alle Fachartikel, Leitfäden und Spartipps für private und gewerbliche Absicherung im Überblick.", keywords: "ratgeber artikel blog uebersicht spartipps guides informationen" }
 ];
 
 const SEARCH_MODAL_HTML = `
@@ -801,10 +801,10 @@ function buildFAQPage() {
                     Entdecken Sie unsere ausführlichen Ratgeber-Artikel mit tiefgehendem Fachwissen oder vergleichen Sie direkt die Tarife.
                 </p>
                 <div class="flex flex-wrap justify-center gap-4">
-                    <a href="ratgeber.html" class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3.5 rounded-full font-bold shadow-lg shadow-blue-500/25 transition-all">
+                    <a href="/ratgeber" class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3.5 rounded-full font-bold shadow-lg shadow-blue-500/25 transition-all">
                         Zum Ratgeber
                     </a>
-                    <a href="index.html#versicherungen" class="bg-white hover:bg-slate-100 text-slate-800 border border-slate-200 px-8 py-3.5 rounded-full font-bold transition-all">
+                    <a href="/#versicherungen" class="bg-white hover:bg-slate-100 text-slate-800 border border-slate-200 px-8 py-3.5 rounded-full font-bold transition-all">
                         Tarife vergleichen*
                     </a>
                 </div>
@@ -827,7 +827,7 @@ function buildRatgeberPage() {
             title: "Die 5 wichtigsten Versicherungen für Berufseinsteiger",
             desc: "Welche Policen zum Berufsstart unverzichtbar sind und auf was junge Erwerbstätige verzichten können.",
             tag: "Berufseinstieg",
-            url: "blog-fuenf-wichtigste-versicherungen-berufsstarter.html",
+            url: "blog-fuenf-wichtigste-versicherungen-berufsstarter",
             icon: "graduation-cap",
             readTime: "7 Min. Lesezeit"
         },
@@ -835,7 +835,7 @@ function buildRatgeberPage() {
             title: "PKV vs. GKV: Der ultimative System-Vergleich",
             desc: "Vor- und Nachteile der Privaten und Gesetzlichen Krankenversicherung. Für wen sich der Wechsel rechnet.",
             tag: "Krankenversicherung",
-            url: "blog-pkv-vs-gkv-der-ultimative-vergleich.html",
+            url: "blog-pkv-vs-gkv-der-ultimative-vergleich",
             icon: "heart-pulse",
             readTime: "8 Min. Lesezeit"
         },
@@ -843,7 +843,7 @@ function buildRatgeberPage() {
             title: "Hausratversicherung: Was ist wirklich versichert?",
             desc: "Vollständige Übersicht zu Leistungsumfang, Unterversicherungsverzicht, Elementarschäden und Fahrraddiebstahl.",
             tag: "Sachwerte",
-            url: "blog-hausrat-versicherung-guide.html",
+            url: "blog-hausrat-versicherung-guide",
             icon: "home",
             readTime: "6 Min. Lesezeit"
         },
@@ -851,7 +851,7 @@ function buildRatgeberPage() {
             title: "Berufsunfähigkeitsversicherung: Warum unverzichtbar?",
             desc: "Statistiken, Pflichtklauseln wie abstrakte Verweisung und Tipps zur richtigen Rentenhöhe.",
             tag: "Existenzschutz",
-            url: "blog-berufsunfaehigkeit-ratgeber.html",
+            url: "blog-berufsunfaehigkeit-ratgeber",
             icon: "briefcase",
             readTime: "9 Min. Lesezeit"
         },
@@ -859,7 +859,7 @@ function buildRatgeberPage() {
             title: "Zahnzusatzversicherung: Wann lohnt sie sich wirklich?",
             desc: "Festzuschüsse der Kasse, Implantate, Zahnstaffeln und Wartezeiten detailliert aufgeschlüsselt.",
             tag: "Zahngesundheit",
-            url: "blog-zahnzusatzversicherung-ratgeber.html",
+            url: "blog-zahnzusatzversicherung-ratgeber",
             icon: "smile",
             readTime: "6 Min. Lesezeit"
         },
@@ -867,7 +867,7 @@ function buildRatgeberPage() {
             title: "Hundehaftpflicht & Tierhalterhaftpflicht Guide",
             desc: "Gesetzliche Pflicht in den Bundesländern, unbegrenzte Gefährdungshaftung und Deckungssummen.",
             tag: "Tierhalter",
-            url: "blog-hundehaftpflicht-und-tierhalter-guide.html",
+            url: "blog-hundehaftpflicht-und-tierhalter-guide",
             icon: "dog",
             readTime: "6 Min. Lesezeit"
         },
@@ -875,7 +875,7 @@ function buildRatgeberPage() {
             title: "Versicherungen für Familien: Der komplette Absicherungsplan",
             desc: "Vom Familiengunst-Tarif bei Haftpflicht über Risikoleben bis hin zum Kinderschutz.",
             tag: "Familie",
-            url: "blog-versicherungen-fuer-familien.html",
+            url: "blog-versicherungen-fuer-familien",
             icon: "users",
             readTime: "8 Min. Lesezeit"
         },
@@ -883,7 +883,7 @@ function buildRatgeberPage() {
             title: "Private Altersvorsorge im Vergleich: Riester, Rürup & Co.",
             desc: "Rentenlücke schließen: Staatliche Förderungen, steuerliche Absetzbarkeit und flexible Vorsorgewege.",
             tag: "Altersvorsorge",
-            url: "blog-private-altersvorsorge-vergleich.html",
+            url: "blog-private-altersvorsorge-vergleich",
             icon: "piggy-bank",
             readTime: "8 Min. Lesezeit"
         },
@@ -891,7 +891,7 @@ function buildRatgeberPage() {
             title: "Rechtsschutzversicherung: Wann sie sich lohnt",
             desc: "Kostenrisiken bei Zivil-, Arbeits- und Mietrecht. Bausteine, Selbstbeteiligung und Ausschlussklauseln.",
             tag: "Rechtsschutz",
-            url: "blog-rechtsschutzversicherung-ratgeber.html",
+            url: "blog-rechtsschutzversicherung-ratgeber",
             icon: "scale",
             readTime: "7 Min. Lesezeit"
         },
@@ -899,7 +899,7 @@ function buildRatgeberPage() {
             title: "Versicherungs-Glossar von A bis Z",
             desc: "Alle wichtigen Versicherungsbegriffe und Klauseln einfach und verständlich auf den Punkt erklärt.",
             tag: "Lexikon",
-            url: "blog-versicherung-glossar.html",
+            url: "blog-versicherung-glossar",
             icon: "book-open",
             readTime: "12 Min. Nachschlagewerk"
         },
@@ -907,7 +907,7 @@ function buildRatgeberPage() {
             title: "Kfz-Wechselsaison: Fristen, Kündigung & Spartipps",
             desc: "Stichtag 30. November: Wie Sie durch Fahrleistung, Werkstattbindung und SF-Klassen sparen.",
             tag: "Mobilität",
-            url: "blog-kfz-wechselsaison-fristen-spartipps-2025.html",
+            url: "blog-kfz-wechselsaison-fristen-spartipps-2025",
             icon: "car",
             readTime: "5 Min. Lesezeit"
         },
@@ -915,7 +915,7 @@ function buildRatgeberPage() {
             title: "Sonderkündigung bei Kfz-Versicherungen richtig nutzen",
             desc: "Preiserhöhung oder Schadensfall: So kündigen Sie auch außerhalb des regulären Stichtags.",
             tag: "Kfz-Recht",
-            url: "blog-sonderkuendigung-kfz-versicherung.html",
+            url: "blog-sonderkuendigung-kfz-versicherung",
             icon: "alert-circle",
             readTime: "5 Min. Lesezeit"
         }
@@ -996,7 +996,7 @@ function buildRatgeberPage() {
             <div class="bg-slate-900 text-white rounded-3xl p-10 md:p-16 text-center">
                 <h2 class="text-3xl md:text-4xl font-black mb-4 tracking-tight">Bereit für Ihren persönlichen Tarifvergleich?</h2>
                 <p class="text-slate-300 max-w-xl mx-auto mb-8 font-medium">Vergleichen Sie hunderte Tarife von über 300 Versicherern in wenigen Minuten kostenlos und unverbindlich.</p>
-                <a href="index.html#versicherungen" class="inline-block bg-blue-600 hover:bg-blue-700 text-white px-10 py-4 rounded-full font-black shadow-xl shadow-blue-500/25 transition-all hover:scale-105">
+                <a href="/#versicherungen" class="inline-block bg-blue-600 hover:bg-blue-700 text-white px-10 py-4 rounded-full font-black shadow-xl shadow-blue-500/25 transition-all hover:scale-105">
                     Zu allen Vergleichsrechnern*
                 </a>
             </div>
@@ -1234,7 +1234,7 @@ files.forEach(file => {
     <section class="py-16 md:py-24">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="max-w-4xl mb-12">
-                <a href="${isBlogPage ? 'ratgeber.html' : 'index.html'}" class="inline-flex items-center text-xs font-black uppercase tracking-[0.2em] text-slate-500 hover:text-blue-600 mb-8 group transition-colors">
+                <a href="${isBlogPage ? '/ratgeber' : '/'}" class="inline-flex items-center text-xs font-black uppercase tracking-[0.2em] text-slate-500 hover:text-blue-600 mb-8 group transition-colors">
                     <i data-lucide="chevron-left" class="w-4 h-4 mr-1 group-hover:-translate-x-1 transition-transform"></i> 
                     ${isBlogPage ? 'Zurück zum Ratgeber' : 'Zurück zur Übersicht'}
                 </a>
@@ -1702,7 +1702,7 @@ categories.forEach(cat => {
     cat.items.forEach(item => {
         const ctaText = item.type === 'anfrage' ? 'Angebot anfragen*' : 'Tarife vergleichen*';
         catsHtml += `
-            <a href="${item.url}.html" class="glass group rounded-3xl p-7 hover:bg-white hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between h-full border border-slate-200">
+            <a href="/${item.url}" class="glass group rounded-3xl p-7 hover:bg-white hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between h-full border border-slate-200">
                 <div>
                     <div class="icon-pill mb-5 text-slate-900 group-hover:bg-blue-600 group-hover:text-white transition-colors duration-300">
                         <i data-lucide="${item.icon}"></i>
@@ -1736,7 +1736,7 @@ const indexContent = `
             <a href="#versicherungen" class="bg-blue-600 hover:bg-blue-700 text-white px-10 py-4 text-base font-black rounded-full shadow-xl shadow-blue-500/25 transition-all duration-300 hover:scale-105">
                 Tarife vergleichen*
             </a>
-            <a href="ratgeber.html" class="bg-white hover:bg-slate-100 text-slate-800 border border-slate-200 px-10 py-4 text-base font-bold rounded-full transition-all">
+            <a href="/ratgeber" class="bg-white hover:bg-slate-100 text-slate-800 border border-slate-200 px-10 py-4 text-base font-bold rounded-full transition-all">
                 Zum Ratgeber
             </a>
         </div>
@@ -1788,7 +1788,7 @@ const indexContent = `
             <p class="text-base text-slate-600 font-medium max-w-2xl mx-auto">Fundiertes Expertenwissen für Ihre Versicherungsentscheidungen – kostenlos, unabhängig und nachprüfbar.</p>
         </div>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-            <a href="blog-fuenf-wichtigste-versicherungen-berufsstarter.html" class="glass group rounded-3xl p-7 hover:bg-white hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border border-slate-200 flex flex-col justify-between">
+            <a href="/blog-fuenf-wichtigste-versicherungen-berufsstarter" class="glass group rounded-3xl p-7 hover:bg-white hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border border-slate-200 flex flex-col justify-between">
                 <div>
                     <div class="icon-pill mb-5 text-blue-600 group-hover:bg-blue-600 group-hover:text-white transition-colors"><i data-lucide="graduation-cap"></i></div>
                     <div class="text-[10px] font-black uppercase tracking-[0.2em] text-blue-600 mb-2">Ratgeber</div>
@@ -1797,7 +1797,7 @@ const indexContent = `
                 </div>
                 <div class="text-xs font-bold text-blue-600 flex items-center gap-1 group-hover:translate-x-1 transition-transform">Lesen <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i></div>
             </a>
-            <a href="blog-pkv-vs-gkv-der-ultimative-vergleich.html" class="glass group rounded-3xl p-7 hover:bg-white hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border border-slate-200 flex flex-col justify-between">
+            <a href="/blog-pkv-vs-gkv-der-ultimative-vergleich" class="glass group rounded-3xl p-7 hover:bg-white hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border border-slate-200 flex flex-col justify-between">
                 <div>
                     <div class="icon-pill mb-5 text-blue-600 group-hover:bg-blue-600 group-hover:text-white transition-colors"><i data-lucide="heart-pulse"></i></div>
                     <div class="text-[10px] font-black uppercase tracking-[0.2em] text-blue-600 mb-2">Systemvergleich</div>
@@ -1806,7 +1806,7 @@ const indexContent = `
                 </div>
                 <div class="text-xs font-bold text-blue-600 flex items-center gap-1 group-hover:translate-x-1 transition-transform">Lesen <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i></div>
             </a>
-            <a href="blog-zahnzusatzversicherung-ratgeber.html" class="glass group rounded-3xl p-7 hover:bg-white hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border border-slate-200 flex flex-col justify-between">
+            <a href="/blog-zahnzusatzversicherung-ratgeber" class="glass group rounded-3xl p-7 hover:bg-white hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border border-slate-200 flex flex-col justify-between">
                 <div>
                     <div class="icon-pill mb-5 text-blue-600 group-hover:bg-blue-600 group-hover:text-white transition-colors"><i data-lucide="smile"></i></div>
                     <div class="text-[10px] font-black uppercase tracking-[0.2em] text-blue-600 mb-2">Gesundheit</div>
@@ -1815,7 +1815,7 @@ const indexContent = `
                 </div>
                 <div class="text-xs font-bold text-blue-600 flex items-center gap-1 group-hover:translate-x-1 transition-transform">Lesen <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i></div>
             </a>
-            <a href="blog-hundehaftpflicht-und-tierhalter-guide.html" class="glass group rounded-3xl p-7 hover:bg-white hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border border-slate-200 flex flex-col justify-between">
+            <a href="/blog-hundehaftpflicht-und-tierhalter-guide" class="glass group rounded-3xl p-7 hover:bg-white hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border border-slate-200 flex flex-col justify-between">
                 <div>
                     <div class="icon-pill mb-5 text-blue-600 group-hover:bg-blue-600 group-hover:text-white transition-colors"><i data-lucide="dog"></i></div>
                     <div class="text-[10px] font-black uppercase tracking-[0.2em] text-blue-600 mb-2">Tierhalter</div>
@@ -1824,7 +1824,7 @@ const indexContent = `
                 </div>
                 <div class="text-xs font-bold text-blue-600 flex items-center gap-1 group-hover:translate-x-1 transition-transform">Lesen <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i></div>
             </a>
-            <a href="blog-hausrat-versicherung-guide.html" class="glass group rounded-3xl p-7 hover:bg-white hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border border-slate-200 flex flex-col justify-between">
+            <a href="/blog-hausrat-versicherung-guide" class="glass group rounded-3xl p-7 hover:bg-white hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border border-slate-200 flex flex-col justify-between">
                 <div>
                     <div class="icon-pill mb-5 text-blue-600 group-hover:bg-blue-600 group-hover:text-white transition-colors"><i data-lucide="home"></i></div>
                     <div class="text-[10px] font-black uppercase tracking-[0.2em] text-blue-600 mb-2">Sachwerte</div>
@@ -1833,7 +1833,7 @@ const indexContent = `
                 </div>
                 <div class="text-xs font-bold text-blue-600 flex items-center gap-1 group-hover:translate-x-1 transition-transform">Lesen <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i></div>
             </a>
-            <a href="blog-berufsunfaehigkeit-ratgeber.html" class="glass group rounded-3xl p-7 hover:bg-white hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border border-slate-200 flex flex-col justify-between">
+            <a href="/blog-berufsunfaehigkeit-ratgeber" class="glass group rounded-3xl p-7 hover:bg-white hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border border-slate-200 flex flex-col justify-between">
                 <div>
                     <div class="icon-pill mb-5 text-blue-600 group-hover:bg-blue-600 group-hover:text-white transition-colors"><i data-lucide="briefcase"></i></div>
                     <div class="text-[10px] font-black uppercase tracking-[0.2em] text-blue-600 mb-2">Existenzschutz</div>
@@ -1842,7 +1842,7 @@ const indexContent = `
                 </div>
                 <div class="text-xs font-bold text-blue-600 flex items-center gap-1 group-hover:translate-x-1 transition-transform">Lesen <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i></div>
             </a>
-            <a href="blog-versicherungen-fuer-familien.html" class="glass group rounded-3xl p-7 hover:bg-white hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border border-slate-200 flex flex-col justify-between">
+            <a href="/blog-versicherungen-fuer-familien" class="glass group rounded-3xl p-7 hover:bg-white hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border border-slate-200 flex flex-col justify-between">
                 <div>
                     <div class="icon-pill mb-5 text-blue-600 group-hover:bg-blue-600 group-hover:text-white transition-colors"><i data-lucide="users"></i></div>
                     <div class="text-[10px] font-black uppercase tracking-[0.2em] text-blue-600 mb-2">Familienplan</div>
@@ -1851,7 +1851,7 @@ const indexContent = `
                 </div>
                 <div class="text-xs font-bold text-blue-600 flex items-center gap-1 group-hover:translate-x-1 transition-transform">Lesen <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i></div>
             </a>
-            <a href="blog-versicherung-glossar.html" class="glass group rounded-3xl p-7 hover:bg-white hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border border-slate-200 flex flex-col justify-between">
+            <a href="/blog-versicherung-glossar" class="glass group rounded-3xl p-7 hover:bg-white hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border border-slate-200 flex flex-col justify-between">
                 <div>
                     <div class="icon-pill mb-5 text-blue-600 group-hover:bg-blue-600 group-hover:text-white transition-colors"><i data-lucide="book-open"></i></div>
                     <div class="text-[10px] font-black uppercase tracking-[0.2em] text-blue-600 mb-2">Lexikon A-Z</div>
@@ -1862,7 +1862,7 @@ const indexContent = `
             </a>
         </div>
         <div class="mt-12 text-center">
-            <a href="ratgeber.html" class="inline-flex items-center text-sm font-black text-blue-600 hover:text-blue-700 uppercase tracking-widest transition-colors">
+            <a href="/ratgeber" class="inline-flex items-center text-sm font-black text-blue-600 hover:text-blue-700 uppercase tracking-widest transition-colors">
                 Alle Ratgeber und Spartipps ansehen <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i>
             </a>
         </div>
@@ -1939,7 +1939,28 @@ fs.writeFileSync(path.join(OUT_DIR, 'sitemap.xml'), sitemapXml);
 fs.writeFileSync(path.join(PUBLIC_DIR, 'sitemap.xml'), sitemapXml);
 console.log(`✓ Generated sitemap.xml with ${generatedSlugs.size} verified URLs`);
 
-const robotsTxt = `User-agent: *
+const robotsTxt = `User-agent: GPTBot
+Allow: /
+User-agent: ChatGPT-User
+Allow: /
+User-agent: CCBot
+Allow: /
+User-agent: anthropic-ai
+Allow: /
+User-agent: Claude-Web
+Allow: /
+User-agent: ClaudeBot
+Allow: /
+User-agent: PerplexityBot
+Allow: /
+User-agent: Google-Extended
+Allow: /
+User-agent: GoogleOther
+Allow: /
+User-agent: cohere-ai
+Allow: /
+
+User-agent: *
 Allow: /
 
 Sitemap: https://www.versicherungsofort.de/sitemap.xml
