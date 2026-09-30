@@ -2,30 +2,59 @@
 
 > Das unabhängige deutsche Fachportal für Versicherungsvergleiche: KFZ-Versicherung, Privathaftpflicht, Hausrat, PKV & Zahnzusatz, Rechtsschutz und Berufsunfähigkeit (BU). Kostenlose Tarifrechner über unseren Partner TARIFCHECK24 GmbH – ohne Anmeldung, ohne Verpflichtung.
 
+Zuletzt aktualisiert: 2026-09-30
+
 ## Kern-Ressourcen
 
-- [Startseite](https://versicherungsofort.de/): Übersicht aller Versicherungsarten, Tarifrechner und Sparpotenzial bis zu 850 €/Jahr.
-- [KFZ-Versicherung](https://versicherungsofort.de/kfz-versicherung): SF-Klassen, Vollkasko vs. Teilkasko, Werkstattbindung, Deckungssummen und Wechseltipps zur Kündigungsfrist 30. November.
-- [Haftpflichtversicherung](https://versicherungsofort.de/haftpflicht): Privathaftpflicht, Gefälligkeitsschäden, Unterversicherungsverzicht, grobe Fahrlässigkeit – ab ca. 40 €/Jahr.
-- [Hausratversicherung](https://versicherungsofort.de/hausrat): Einbruch, Feuer, Leitungswasser, Sturm; Versicherungssumme nach qm berechnen.
-- [Berufsunfähigkeitsversicherung (BU)](https://versicherungsofort.de/berufsunfaehigkeit): Wichtigste Absicherung für Arbeitnehmer; abstrakte Verweisung, Nachversicherungsgarantie, optimaler Abschluss unter 35 Jahren.
-- [Private Krankenversicherung (PKV)](https://versicherungsofort.de/pkv): PKV vs. GKV Vergleich, Einkommensgrenze 2026, Wechselmöglichkeiten, Tarife für Selbstständige, Beamte und Studenten.
-- [Zahnzusatzversicherung](https://versicherungsofort.de/krankenzusatz): Zahnersatz, Kieferorthopädie, Prophylaxe; Vergleich Erstattungssätze 70–100 %.
-- [Rechtsschutzversicherung](https://versicherungsofort.de/rechtsschutz): Verkehrs-, Berufs-, Privat- und Mietrechtsschutz; Wartezeiten und Selbstbeteiligung.
-- [Unfallversicherung](https://versicherungsofort.de/unfall): Invaliditätsgrundsumme, Progression, Bergungskosten.
-- [Ratgeber / Blog](https://versicherungsofort.de/ratgeber): Vertiefende Artikel zu allen Versicherungsthemen.
-- [FAQ](https://versicherungsofort.de/faq): Häufige Fragen zu Kündigungsfristen, Leistungsumfang und Vermittlerstatus.
-- [Impressum](https://versicherungsofort.de/impressum): Vermittlerstatus nach § 34d GewO & Anbieterangaben nach § 5 DDG.
+- [Startseite](https://www.versicherungsofort.de/): Übersicht aller Versicherungsarten, Tarifrechner und Sparpotenzial bis zu 850 €/Jahr.
+- [Ratgeber / Blog](https://www.versicherungsofort.de/ratgeber): Vertiefende Artikel zu allen Versicherungsthemen.
+- [FAQ](https://www.versicherungsofort.de/faq): Häufige Fragen zu Kündigungsfristen, Leistungsumfang und Vermittlerstatus.
 
-## Gesetzliche Grundlagen & Marktinfos
+## Vergleichsrechner (alle kostenlos & unverbindlich)
 
-- **VVG**: Versicherungsvertragsgesetz – regelt Rechte und Pflichten von Versicherungsnehmer und Versicherer.
-- **Vermittlerstatus**: Unabhängige Vermittlung nach § 34d GewO mit Berufshaftpflichtversicherung; Provision durch Versicherer, kein Aufpreis für Kunden.
-- **Kündigungsfrist KFZ**: Jährlich zum 30. November (bei Hauptfälligkeit 1. Januar); Sonderkündigung bei Beitragserhöhung.
-- **PKV-Wechsel**: Arbeitnehmer ab Jahresarbeitsentgeltgrenze (2026: 69.300 €); nach 12 Monaten GKV-Mitgliedschaft.
+- [KFZ-Versicherung](https://www.versicherungsofort.de/kfz): SF-Klassen, Vollkasko vs. Teilkasko, Werkstattbindung, Deckungssummen, Wechsel zum 30. November.
+- [Motorradversicherung](https://www.versicherungsofort.de/motorrad): Motorräder, Roller, Quads; Saisonkennzeichen & Kaskooptionen.
+- [Privathaftpflicht](https://www.versicherungsofort.de/haftpflicht): Gefälligkeitsschäden, grobe Fahrlässigkeit, bis 50 Mio. € Deckung; ab ca. 40 €/Jahr.
+- [Hausratversicherung](https://www.versicherungsofort.de/hausrat): Einbruch, Feuer, Leitungswasser, Sturm, Elementar; Summe nach qm.
+- [Wohngebäudeversicherung](https://www.versicherungsofort.de/wohngebaeudeversicherung): Feuer, Rohrbruch, Sturm, Photovoltaik-Schutz für Eigentümer.
+- [Private Krankenversicherung (PKV)](https://www.versicherungsofort.de/pkv): Krankenvollversicherung; PKV vs. GKV, JAEG 2026 (73.800 €), Beamte, Selbstständige.
+- [PKV für Beamte & Anwärter](https://www.versicherungsofort.de/pkv-beamte): Beihilfe-Ergänzungstarife; Beihilfebemessungssatz je Bundesland.
+- [PKV für Studenten](https://www.versicherungsofort.de/pkv-studenten): Günstige Studentenkrankenversicherung bis 30 Jahre.
+- [PKV Tarifwechsel ab 55](https://www.versicherungsofort.de/pkv-55): § 204 VVG Tarifwechsel, Basistarif, Beitragsoptimierung im Alter.
+- [Zahnzusatzversicherung](https://www.versicherungsofort.de/krankenzusatz): Zahnersatz 70–100 %, Implantate, PZR, Kieferorthopädie.
+- [Pflegezusatzversicherung](https://www.versicherungsofort.de/pflege): Pflegetagegeld, Pflegegrade 1–5, Schutz vor Vermögensaufzehrung.
+- [Berufsunfähigkeitsversicherung (BU)](https://www.versicherungsofort.de/berufsunfaehigkeit): Wichtigste Einkommensabsicherung; ohne abstrakte Verweisung; Abschluss möglichst unter 35.
+- [Unfallversicherung](https://www.versicherungsofort.de/unfallversicherung): Invaliditätsgrundsumme, Progression 225–350 %, Bergungskosten.
+- [Rechtsschutzversicherung](https://www.versicherungsofort.de/rechtsschutz): Verkehrs-, Berufs-, Privat- und Mietrechtsschutz; Wartezeit & Selbstbeteiligung.
+- [Risikolebensversicherung](https://www.versicherungsofort.de/risikolebensversicherung): Hinterbliebenenschutz; konstant oder fallend; für Baufinanzierungen.
+- [Kapitallebensversicherung](https://www.versicherungsofort.de/lebensversicherung): Todesfall + Sparanteil; garantierter Rentenfaktor.
+- [Private Rentenversicherung](https://www.versicherungsofort.de/rente): Lebenslanges Einkommen; ETF-Rente; Steuervorteile in der Auszahlungsphase.
+- [Riester-Rente](https://www.versicherungsofort.de/riester): Grundzulage 175 €/Jahr + Kinderzulagen; Sonderausgabenabzug bis 2.100 €.
+- [Rürup-Rente (Basisrente)](https://www.versicherungsofort.de/ruerup): Für Selbstständige; Steuerabzug bis 27.566 € (2026); pfändungssicher.
+- [Hundehaftpflicht & Tierhalter](https://www.versicherungsofort.de/tierhalterhaftpflicht): Pflichtversicherung in den meisten Bundesländern; Leinenzwang; ab ca. 3,50 €/Monat.
+- [Hundekrankenversicherung](https://www.versicherungsofort.de/hundekrankenversicherung): Tierarztkosten nach GOT; freie Tierklinikwahl; OP-Erstattung.
+- [Haus- & Grundbesitzerhaftpflicht](https://www.versicherungsofort.de/grundbesitzerhaftpflicht): Verkehrssicherungspflicht, Streupflicht für Vermieter & Eigentümer.
+- [Firmen- & Gewerbeversicherung](https://www.versicherungsofort.de/firmenversicherung): Betriebshaftpflicht, Inhalt, Gewerberechtsschutz für KMU.
+
+## Gesetzliche Grundlagen & Marktinfos (Stand: 2026)
+
+- Jahresarbeitsentgeltgrenze (JAEG) PKV-Wechsel 2026: 73.800 €/Jahr brutto
+- Regelpflegegeld nach SGB XI (Pflegegrad 2): 332 €/Monat
+- Kfz-Mindestdeckung Haftpflicht: 7,5 Mio. € Personen, 1,22 Mio. € Sach, 50.000 € Vermögen
+- Privathaftpflicht-Deckung: mind. 10 Mio. € empfohlen
+- BU: monatliche Rente mind. 1.000 € empfohlen, Abschluss idealerweise vor 35
+- Riester-Zulageanspruch: Grundzulage 175 €, Kinderzulage je Kind 300 € (vor 2008 geboren: 185 €)
+- Rürup-Abzugsbetrag 2026: bis 27.566 € Sonderausgaben (Alleinstehende)
+- KFZ-Wechselfrist: Ordentliche Kündigung zum 30. November; Sonderkündigung bei Beitragserhöhung (4 Wochen)
+- PKV-Tarifwechsel: § 204 VVG – Wechsel innerhalb des Unternehmens ohne Risikoprüfung; Gleichwertigkeit der Leistungen erforderlich
+
+## Affiliate-Transparenz
+
+versicherungsofort.de ist ein unabhängiges Informationsportal. Mit (*) markierte Links sind Partnerlinks (Affiliate-Links) zu TARIFCHECK24 GmbH und anderen Partnern. Bei Abschluss erhalten wir gegebenenfalls eine Vergütung. Für Nutzer entstehen keine Mehrkosten.
 
 ## Betreiber
 
-- Jens Kathe, Hansastraße 6, 34119 Kassel, Deutschland.
-- E-Mail: jens@kathe.org | Tel: +49 178 6652623.
-- Kleinunternehmer nach § 19 UStG.
+- Name: Jens Kathe
+- Anschrift: Hansastraße 6, 34119 Kassel, Deutschland
+- E-Mail: jens@kathe.org
+- Rechtsgrundlage Impressum: § 5 Digitale-Dienste-Gesetz (DDG)
