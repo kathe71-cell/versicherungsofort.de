@@ -20,7 +20,7 @@ export default function ImpressumPage() {
             <CardHeader>
               <CardTitle className="flex items-center gap-2 text-slate-900 font-bold">
                 <User className="w-5 h-5 text-blue-600" />
-                Anbieter & Betreiber
+                Angaben gemäß § 5 Digitale-Dienste-Gesetz (DDG)
               </CardTitle>
             </CardHeader>
             <CardContent className="space-y-1.5 text-sm text-slate-700">
