@@ -41,7 +41,6 @@ export default function ImpressumPage() {
             <CardContent className="space-y-2 text-sm text-slate-700">
               <p className="flex items-center gap-2">
                 <Phone className="w-4 h-4 text-slate-500" />
-                <span>Telefon: 0178 6652623</span>
               </p>
               <p className="flex items-center gap-2">
                 <Mail className="w-4 h-4 text-slate-500" />

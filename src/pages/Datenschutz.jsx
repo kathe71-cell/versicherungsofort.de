@@ -55,7 +55,6 @@ export default function DatenschutzPage() {
                 <p>34119 Kassel</p>
                 <p>Deutschland</p>
                 <p>E-Mail: jens@kathe.org</p>
-                <p>Telefon: 0178 6652623</p>
               </div>
             </CardContent>
           </Card>
