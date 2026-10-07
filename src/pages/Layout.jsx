@@ -5,7 +5,6 @@ import { createPageUrl } from "@/utils";
 import { Shield, Menu, X, Settings, FileText, Lock, Eye, Cookie, ArrowUp, Zap, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
-import CookieBanner from "@/components/CookieBanner";
 import InsuranceChatbot from "@/components/InsuranceChatbot";
 
 const navigationItems = [
@@ -282,8 +281,7 @@ export default function Layout({ children, currentPageName }) {
         </div>
       </footer>
 
-      {/* Cookie Banner */}
-      <CookieBanner />
+      {/* Cookie Banner removed as it's not needed */}
 
       {/* Insurance Chatbot */}
       <InsuranceChatbot />
