@@ -1,3 +1,4 @@
+import Projektuebernahme from "./Projektuebernahme";
 import React from 'react';
 import Layout from "./Layout.jsx";
 import Page404 from "./404";
@@ -49,6 +50,7 @@ import RechnerEmbed from "./RechnerEmbed";
 import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
 
 const PAGES = {
+    Projektuebernahme: Projektuebernahme,
     "404": Page404,
     Berufsunfähigkeit: Berufsunfähigkeit,
     Datenschutz: Datenschutz,
